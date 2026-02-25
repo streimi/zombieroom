@@ -1,0 +1,511 @@
+THIS:IS:A:MESSAGE:FOR:THE
+GENERAL:OF:THE:GREAT:ARMY:FROM
+AGENT:DOUBLEDOT:AS:INSTRUCTED:I:GATHERED
+THE:REQUIRED:INFORMATION:THIS:FILE:CONTAINS
+THE:DATA:IN:A:COLON:SEPARATED
+FORMAT:START:READING:FROM:LINE:8
+AND:STOP:AT:LINE:508: 
+location:time_of_report:infection_severity:government_loyalty:riot_status:termination_recommended
+Auersbach:11.44.43:6:1:2:False
+Aug-Radisch:11.08.06:6:1:1:False
+Bad Gleichenberg:12.40.10:4:3:5:False
+Bairisch Kölldorf:11.57.48:3:2:1:False
+Baumgarten bei Gnas:08.47.21:5:2:3:False
+Breitenfeld an der Rittschein:03.22.34:5:3:5:False
+Edelsbach bei Feldbach:13.50.03:2:3:3:False
+Edelstauden:09.57.06:5:1:2:False
+Eichkögl:21.17.29:3:1:0:False
+Fehring:20.45.58:3:2:1:False
+Feldbach:10.16.11:4:1:0:False
+Fladnitz im Raabtal:09.58.06:5:1:2:False
+Frannach:08.30.10:3:3:4:False
+Frutten-Gießelsdorf:21.11.37:4:3:3:False
+Glojach:16.47.43:7:2:4:False
+Gnas:15.12.56:2:1:1:False
+Gniebing-Weißenbach:15.27.37:4:2:2:False
+Gossendorf:10.17.31:2:1:0:False
+Grabersdorf:10.13.11:5:1:1:False
+Hatzendorf:23.35.51:3:1:1:False
+Hohenbrugg-Weinberg:11.56.41:6:3:5:False
+Jagerberg:05.35.19:1:2:3:False
+Johnsdorf-Brunn:21.26.45:5:3:3:False
+Kapfenstein:14.55.41:5:1:2:False
+Kirchbach in Steiermark:14.08.12:2:2:2:False
+Kirchberg an der Raab:04.24.06:2:2:3:False
+Kohlberg:23.02.12:5:1:2:False
+Kornberg bei Riegersburg:23.12.48:5:2:2:False
+Krusdorf:18.11.50:4:1:0:False
+Leitersdorf im Raabtal:11.38.08:6:3:4:False
+Lödersdorf:10.46.12:3:2:1:False
+Maierdorf:04.50.20:5:1:2:False
+Merkendorf:14.03.54:5:2:2:False
+Mitterlabill:23.27.53:2:2:1:False
+Mühldorf bei Feldbach:12.29.05:4:1:1:False
+Oberdorf am Hochegg:12.30.27:3:3:3:False
+Oberstorcha:15.56.16:2:2:3:False
+Paldau:04.16.31:1:2:1:False
+Perlsdorf:13.16.18:7:1:2:False
+Pertlstein:20.15.29:5:1:0:False
+Petersdorf II:10.39.48:3:1:0:False
+Pirching am Traubenberg:01.51.31:1:2:4:False
+Poppendorf:04.21.40:4:3:3:False
+Raabau:12.04.01:6:3:5:False
+Raning:12.04.52:2:2:4:False
+Riegersburg:12.02.44:3:3:4:False
+Sankt Anna am Aigen:13.10.38:2:1:0:False
+Sankt Stefan im Rosental:03.46.32:0:1:2:False
+Schwarzau im Schwarzautal:10.53.52:1:1:1:False
+Stainz bei Straden:18.36.55:5:3:3:False
+Studenzen:16.41.43:6:3:5:False
+Trautmannsdorf in Oststeiermark:08.13.01:5:3:3:False
+Unterauersbach:08.59.12:5:1:0:False
+Unterlamm:23.55.22:2:2:2:False
+Zerlach:20.01.40:3:1:0:False
+Altenmarkt bei Fürstenfeld:05.26.54:4:3:5:False
+Bad Blumau:19.38.09:5:2:2:False
+Burgau:19.13.21:5:3:3:False
+Fürstenfeld:12.10.02:5:2:4:False
+Großsteinbach:04.55.04:4:2:2:False
+Großwilfersdorf:20.23.18:6:3:3:False
+Hainersdorf:08.03.04:3:1:2:False
+Ilz:05.07.52:3:1:2:False
+Loipersdorf bei Fürstenfeld:14.59.37:5:1:1:False
+Nestelbach im Ilztal:04.44.48:3:2:4:False
+Ottendorf an der Rittschein:23.40.06:4:1:1:False
+Söchau:23.29.35:4:1:0:False
+Stein:21.43.49:6:1:0:False
+Übersbach:16.13.12:5:2:3:False
+Attendorf:13.42.08:3:2:1:False
+Brodingberg:20.37.17:1:2:3:False
+Deutschfeistritz:05.54.38:1:3:5:False
+Dobl:04.07.12:0:2:4:False
+Edelsgrub:12.38.16:1:1:2:False
+Eggersdorf bei Graz:00.12.48:0:2:3:False
+Eisbach:01.01.45:3:1:2:False
+Feldkirchen bei Graz:10.36.43:0:3:4:False
+Fernitz:06.36.04:0:2:4:False
+Frohnleiten:15.43.40:1:2:2:False
+Gössendorf:18.28.12:1:3:3:False
+Grambach:10.43.03:2:1:0:False
+Gratkorn:15.32.25:3:3:5:False
+Gratwein:07.18.02:0:3:5:False
+Großstübing:13.25.42:5:2:3:False
+Gschnaidt:19.07.32:3:1:1:False
+Hart bei Graz:01.02.32:1:3:3:False
+Haselsdorf-Tobelbad:00.17.40:0:3:5:False
+Hausmannstätten:10.30.24:2:1:1:False
+Hitzendorf:04.49.55:0:3:4:False
+Höf-Präbach:17.06.32:2:1:2:False
+Judendorf-Straßengel:05.02.04:2:1:1:False
+Kainbach bei Graz:09.32.23:1:2:2:False
+Kalsdorf bei Graz:06.00.28:3:2:3:False
+Krumegg:19.26.15:1:3:5:False
+Kumberg:12.17.39:0:3:5:False
+Langegg bei Graz:15.02.33:1:2:3:False
+Laßnitzhöhe:16.14.16:1:3:4:False
+Lieboch:21.39.21:1:1:1:False
+Mellach:01.35.40:2:3:4:False
+Nestelbach bei Graz:22.17.12:1:3:4:False
+Peggau:14.02.09:2:2:3:False
+Pirka:13.28.30:1:3:4:False
+Hart-Purgstall:07.54.59:0:1:1:False
+Raaba:21.14.01:0:3:3:False
+Röthelstein:05.58.13:4:1:0:False
+Rohrbach-Steinberg:23.05.57:3:3:3:False
+Sankt Bartholomä:23.02.16:2:1:2:False
+Sankt Marein bei Graz:14.54.18:3:2:2:False
+Sankt Oswald bei Plankenwarth:20.38.43:1:1:2:False
+Sankt Radegund bei Graz:19.15.59:3:3:3:False
+Schrems bei Frohnleiten:23.31.56:2:1:1:False
+Seiersberg:21.53.58:0:3:5:False
+Semriach:08.05.23:3:1:0:False
+Stattegg:16.38.31:1:1:0:False
+Stiwoll:03.01.34:2:1:1:False
+Thal:19.32.43:4:3:3:False
+Tulwitz:17.37.30:3:3:4:False
+Tyrnau:11.50.47:5:2:3:False
+Übelbach:02.31.09:1:3:3:False
+Unterpremstätten:06.22.18:3:1:1:False
+Vasoldsberg:09.18.25:2:2:3:False
+Weinitzen:20.24.24:4:1:1:False
+Werndorf:15.03.14:3:1:0:False
+Wundschuh:05.48.47:1:2:2:False
+Zettling:01.19.23:1:2:3:False
+Zwaring-Pöls:13.40.36:1:1:0:False
+Blaindorf:00.21.41:5:2:3:False
+Buch-Geiseldorf:17.08.43:4:2:2:False
+Dechantskirchen:21.16.29:4:1:0:False
+Dienersdorf:04.02.57:7:1:1:False
+Ebersdorf:07.39.22:5:1:2:False
+Friedberg:18.37.32:3:3:5:False
+Grafendorf bei Hartberg:23.08.50:4:3:5:False
+Greinbach:00.05.13:5:3:4:False
+Großhart:22.03.19:3:3:3:False
+Hartberg:18.56.55:4:3:4:False
+Hartberg Umgebung:21.58.42:3:1:2:False
+Hartl:00.16.22:4:2:1:False
+Hofkirchen bei Hartberg:21.47.05:4:1:2:False
+Kaibing:00.24.08:5:2:1:False
+Kaindorf:02.35.35:6:2:3:False
+Eichberg:22.47.55:3:1:0:False
+Lafnitz:17.10.24:3:2:4:False
+Limbach bei Neudau:01.04.22:4:1:0:False
+Mönichwald:20.44.46:3:1:0:False
+Neudau:05.52.06:5:3:3:False
+Pinggau:10.47.51:5:3:5:False
+Pöllau:09.16.44:5:1:1:False
+Pöllauberg:12.07.38:2:3:5:False
+Puchegg:21.14.10:4:2:4:False
+Rabenwald:07.15.40:4:3:4:False
+Riegersberg:10.48.33:5:1:2:False
+Rohr bei Hartberg:08.22.18:7:1:0:False
+Rohrbach an der Lafnitz:22.28.44:5:1:2:False
+Saifen-Boden:06.29.02:2:3:5:False
+Sankt Jakob im Walde:07.12.39:5:3:4:False
+Sankt Johann bei Herberstein:18.26.15:7:2:1:False
+Sankt Johann in der Haide:16.52.49:3:1:2:False
+Sankt Lorenzen am Wechsel:23.22.11:4:1:1:False
+Sankt Magdalena am Lemberg:16.59.30:4:2:2:False
+Schachen bei Vorau:06.28.56:3:3:5:False
+Schäffern:13.05.29:4:2:3:False
+Schlag bei Thalberg:02.12.12:6:1:2:False
+Schönegg bei Pöllau:22.35.55:3:1:1:False
+Sebersdorf:05.09.41:3:2:2:False
+Siegersdorf bei Herberstein:04.59.02:5:2:4:False
+Sonnhofen:12.51.25:3:3:3:False
+Stambach:17.04.28:5:2:1:False
+Stubenberg:11.04.57:4:3:4:False
+Tiefenbach bei Kaindorf:03.38.12:4:3:4:False
+Vorau:04.03.05:3:2:3:False
+Vornholz:08.53.06:3:2:1:False
+Waldbach:03.56.50:3:2:3:False
+Bad Waltersdorf:22.36.31:2:3:4:False
+Wenigzell:23.34.18:5:2:4:False
+Wörth an der Lafnitz:14.18.35:5:1:2:False
+Amering:22.25.50:2:1:2:False
+Bretstein:04.28.22:2:2:3:False
+Eppenstein:06.41.14:3:2:1:False
+Fohnsdorf:02.18.06:2:2:3:False
+Hohentauern:18.35.48:2:3:3:False
+Judenburg:22.14.23:0:3:3:False
+Sankt Wolfgang-Kienberg:20.34.53:4:2:2:False
+Sankt Anna am Lavantegg:17.12.49:4:3:4:False
+Maria Buch-Feistritz:13.40.42:3:1:1:False
+Obdach:20.47.12:2:2:3:False
+Oberkurzheim:18.58.53:1:1:1:False
+Oberweg:07.13.05:4:3:3:False
+Oberzeiring:23.56.28:3:3:3:False
+Pöls:01.12.25:3:3:4:False
+Pusterwald:14.56.30:4:3:3:False
+Reifling:11.44.20:4:2:2:False
+Reisstraße:08.34.16:6:2:1:False
+Sankt Georgen ob Judenburg:06.37.53:3:1:2:False
+Sankt Johann am Tauern:07.19.19:2:3:4:False
+Sankt Oswald-Möderbrugg:03.04.20:4:1:1:False
+Sankt Peter ob Judenburg:18.30.35:2:1:2:False
+Unzmarkt-Frauenburg:01.02.18:2:2:3:False
+Weißkirchen in Steiermark:05.32.19:4:3:5:False
+Zeltweg:18.53.58:2:2:2:False
+Apfelberg:09.50.46:3:1:2:False
+Feistritz bei Knittelfeld:23.09.28:2:1:2:False
+Flatschach:11.38.42:7:1:1:False
+Gaal:01.40.27:3:2:3:False
+Großlobming:14.43.38:2:2:4:False
+Kleinlobming:09.29.54:2:3:4:False
+Knittelfeld:06.36.10:1:1:2:False
+Kobenz:03.19.06:1:2:2:False
+Rachau:11.49.46:2:1:1:False
+Sankt Lorenzen bei Knittelfeld:11.48.48:5:2:2:False
+Sankt Marein bei Knittelfeld:10.37.53:3:3:3:False
+Sankt Margarethen bei Knittelfeld:22.17.45:2:3:4:False
+Seckau:04.34.39:3:1:1:False
+Spielberg bei Knittelfeld:02.03.01:3:1:2:False
+Allerheiligen bei Wildon:01.13.47:3:1:1:False
+Arnfels:06.49.33:2:1:0:False
+Berghausen:04.23.03:4:2:3:False
+Breitenfeld am Tannenriegel:00.45.54:8:1:2:False
+Ehrenhausen:06.52.10:5:2:4:False
+Eichberg-Trautenburg:02.36.50:1:2:4:False
+Empersdorf:20.29.55:4:1:1:False
+Gabersdorf:02.13.38:4:3:3:False
+Gamlitz:23.25.03:1:1:2:False
+Glanz an der Weinstraße:01.04.08:1:2:1:False
+Gleinstätten:06.37.23:3:1:0:False
+Gralla:17.11.13:2:1:2:False
+Großklein:19.20.59:3:1:2:False
+Hainsdorf im Schwarzautal:11.20.03:4:3:4:False
+Heiligenkreuz am Waasen:22.09.56:3:3:5:False
+Heimschuh:09.01.54:3:3:3:False
+Hengsberg:13.37.14:1:1:2:False
+Kaindorf an der Sulm:06.55.47:2:2:3:False
+Kitzeck im Sausal:18.13.56:3:2:1:False
+Lang:11.08.59:1:3:5:False
+Lebring-Sankt Margarethen:19.59.03:1:2:3:False
+Leibnitz:01.41.01:3:1:0:False
+Leutschach:14.29.03:2:1:0:False
+Oberhaag:21.02.34:3:1:2:False
+Obervogau:09.20.32:3:1:1:False
+Pistorf:20.51.22:2:2:1:False
+Ragnitz:20.43.13:3:1:0:False
+Ratsch an der Weinstraße:06.03.09:1:1:2:False
+Retznei:13.00.48:1:2:1:False
+Sankt Andrä-Höch:04.41.09:2:2:4:False
+Sankt Georgen an der Stiefing:21.34.23:2:1:1:False
+Sankt Johann im Saggautal:19.30.10:2:3:5:False
+Sankt Nikolai im Sausal:19.40.33:1:3:5:False
+Sankt Nikolai ob Draßling:21.38.20:4:2:2:False
+Sankt Ulrich am Waasen:13.39.50:2:1:2:False
+Sankt Veit am Vogau:19.06.32:2:2:4:False
+Schloßberg:17.54.22:3:2:2:False
+Seggauberg:00.48.39:3:2:1:False
+Spielfeld:16.39.58:4:1:2:False
+Stocking:15.21.30:1:2:1:False
+Straß in Steiermark:15.49.16:4:3:5:False
+Sulztal an der Weinstraße:10.47.42:10:3:4:False
+Tillmitsch:14.54.46:1:2:2:False
+Vogau:06.28.50:3:2:3:False
+Wagna:10.14.56:0:2:1:False
+Weitendorf:09.25.09:0:2:2:False
+Wildon:20.51.33:2:1:0:False
+Wolfsberg im Schwarzautal:22.01.49:3:1:2:False
+Eisenerz:00.14.36:4:2:4:False
+Gai:07.35.22:1:2:2:False
+Hafning bei Trofaiach:07.10.12:2:2:3:False
+Hieflau:14.55.28:1:1:1:False
+Kalwang:20.24.18:4:2:3:False
+Kammern im Liesingtal:01.40.13:1:2:1:False
+Kraubath an der Mur:10.41.48:3:1:1:False
+Leoben:18.23.26:2:3:4:False
+Mautern in Steiermark:07.38.45:2:1:0:False
+Niklasdorf:01.07.13:3:2:2:False
+Proleb:07.28.44:4:2:4:False
+Radmer:03.54.52:6:3:5:False
+Sankt Michael in Obersteiermark:03.31.42:4:2:2:False
+Sankt Peter-Freienstein:09.16.10:4:2:4:False
+Sankt Stefan ob Leoben:14.00.19:4:3:5:False
+Traboch:04.05.24:2:3:4:False
+Trofaiach:15.14.01:4:3:4:False
+Vordernberg:04.42.14:2:1:2:False
+Wald am Schoberpaß:13.58.03:2:2:4:False
+Admont:12.35.43:0:1:2:False
+Aich:05.35.17:0:3:4:False
+Aigen im Ennstal:06.18.27:2:2:3:False
+Altaussee:18.53.40:1:2:2:False
+Altenmarkt bei Sankt Gallen:03.30.42:0:3:3:False
+Ardning:11.46.49:2:1:2:False
+Bad Aussee:18.50.31:2:1:2:False
+Donnersbach:04.42.27:2:2:4:False
+Donnersbachwald:16.37.07:1:2:4:False
+Gaishorn am See:11.02.01:3:3:3:False
+Gams bei Hieflau:07.52.25:4:1:1:False
+Gössenberg:11.07.30:2:1:1:False
+Gröbming:21.26.09:0:3:5:False
+Großsölk:01.03.19:3:2:2:False
+Grundlsee:00.39.07:4:2:3:False
+Hall:13.33.24:1:1:0:False
+Haus:15.45.22:1:3:3:False
+Irdning:08.17.58:1:2:1:False
+Johnsbach:21.53.36:4:3:4:False
+Kleinsölk:03.29.10:1:2:2:False
+Landl:02.40.12:3:3:5:False
+Lassing:03.26.59:2:2:1:False
+Liezen:21.36.27:1:2:2:False
+Michaelerberg:18.24.37:6:3:3:False
+Mitterberg:22.02.42:1:1:2:False
+Bad Mitterndorf:06.03.46:0:3:3:False
+Niederöblarn:08.03.30:2:1:2:False
+Öblarn:05.38.24:3:2:3:False
+Oppenberg:14.22.39:2:2:3:False
+Palfau:22.47.28:3:2:2:False
+Pichl-Preunegg:03.13.46:3:2:1:False
+Pichl-Kainisch:14.35.28:4:2:4:False
+Pruggern:08.57.31:2:1:0:False
+Pürgg-Trautenfels:00.39.59:2:1:0:False
+Ramsau am Dachstein:10.49.54:2:2:1:False
+Rohrmoos-Untertal:03.51.35:1:3:4:False
+Rottenmann:23.51.34:0:2:4:False
+Sankt Gallen:03.41.52:1:3:5:False
+Sankt Martin am Grimming:17.02.04:1:2:2:False
+Sankt Nikolai im Sölktal:01.10.12:4:2:4:False
+Schladming:20.59.23:0:3:4:False
+Selzthal:14.26.40:1:3:3:False
+Stainach:23.57.47:0:1:2:False
+Tauplitz:23.24.51:2:2:2:False
+Treglwang:06.52.42:3:3:3:False
+Trieben:15.45.01:3:2:1:False
+Weißenbach an der Enns:22.18.21:3:1:1:False
+Weißenbach bei Liezen:02.54.36:2:1:2:False
+Weng im Gesäuse:03.54.10:3:1:1:False
+Wildalpen:03.57.17:2:3:3:False
+Wörschach:19.33.07:2:1:2:False
+Allerheiligen im Mürztal:04.54.25:2:2:2:False
+Altenberg an der Rax:19.49.05:8:3:5:False
+Ganz:04.42.59:7:2:3:False
+Kapellen:05.06.51:4:2:4:False
+Kindberg:20.18.57:4:1:2:False
+Krieglach:09.32.18:2:2:3:False
+Langenwang:00.09.07:4:1:2:False
+Mitterdorf im Mürztal:06.58.00:2:2:4:False
+Mürzhofen:09.03.44:4:3:4:False
+Mürzsteg:01.46.21:3:2:3:False
+Mürzzuschlag:11.26.07:5:1:0:False
+Neuberg an der Mürz:11.34.06:4:2:1:False
+Spital am Semmering:21.06.24:4:2:3:False
+Stanz im Mürztal:19.02.42:4:3:3:False
+Veitsch:20.25.58:1:1:0:False
+Wartberg im Mürztal:07.36.57:4:2:3:False
+Dürnstein in der Steiermark:15.27.49:5:3:4:False
+Falkendorf:04.03.07:10:1:0:False
+Frojach-Katsch:16.20.54:4:1:0:False
+Krakaudorf:09.20.52:1:3:3:False
+Krakauhintermühlen:02.37.14:2:2:2:False
+Krakauschatten:23.12.42:3:3:5:False
+Kulm am Zirbitz:18.02.40:3:1:2:False
+Laßnitz bei Murau:06.44.20:0:1:2:False
+Mariahof:01.06.25:1:1:1:False
+Mühlen:00.22.10:3:2:2:False
+Murau:07.00.48:2:3:5:False
+Neumarkt in Steiermark:10.37.42:2:3:4:False
+Niederwölz:22.07.40:3:2:1:False
+Oberwölz Stadt:04.28.08:1:2:1:False
+Oberwölz Umgebung:14.50.16:2:1:1:False
+Perchau am Sattel:13.52.10:4:1:0:False
+Predlitz-Turrach:12.50.20:2:1:1:False
+Ranten:17.45.31:0:2:2:False
+Rinegg:19.48.26:5:1:2:False
+Sankt Blasen:05.38.00:2:3:4:False
+Sankt Georgen ob Murau:20.13.01:0:3:3:False
+Sankt Lambrecht:18.50.00:3:3:3:False
+Sankt Lorenzen bei Scheifling:03.50.21:2:1:2:False
+Sankt Marein bei Neumarkt:08.32.23:1:3:4:False
+Sankt Peter am Kammersberg:22.10.09:2:1:0:False
+Sankt Ruprecht ob Murau:12.29.25:10:3:4:False
+Scheifling:02.33.11:2:3:3:False
+Schöder:11.47.03:2:2:2:False
+Schönberg-Lachtal:18.42.17:3:2:1:False
+Stadl an der Mur:18.16.03:0:3:3:False
+Stolzalpe:05.13.38:2:2:3:False
+Teufenbach:15.58.11:1:2:2:False
+Triebendorf:08.11.36:5:3:5:False
+Winklern bei Oberwölz:16.44.25:1:3:5:False
+Zeutschach:13.06.00:5:1:1:False
+Sankt Ruprecht - Falkendorf:17.14.50:2:2:3:False
+Bierbaum am Auersbach:05.27.15:6:2:2:False
+Deutsch Goritz:23.01.10:3:2:1:False
+Dietersdorf am Gnasbach:04.35.50:6:1:1:False
+Eichfeld:21.27.10:4:1:2:False
+Gosdorf:16.08.16:3:1:0:False
+Halbenrain:00.03.40:4:2:1:False
+Hof bei Straden:03.17.34:3:2:2:False
+Klöch:09.48.41:5:3:4:False
+Mettersdorf am Saßbach:18.32.16:2:2:1:False
+Mureck:00.55.52:1:3:4:False
+Murfeld:02.04.44:1:1:2:False
+Bad Radkersburg:20.46.09:3:1:2:False
+Radkersburg Umgebung:08.51.22:4:2:3:False
+Ratschendorf:17.55.58:5:1:0:False
+Sankt Peter am Ottersbach:00.56.07:4:2:4:False
+Straden:07.36.01:1:3:4:False
+Tieschen:12.05.35:2:3:5:False
+Trössing:00.04.34:3:2:4:False
+Weinburg am Saßbach:11.36.29:1:3:4:False
+Bärnbach:22.07.39:3:2:1:False
+Edelschrott:02.54.25:1:2:4:False
+Gallmannsegg:05.42.25:7:1:2:False
+Geistthal:13.05.24:1:3:3:False
+Gößnitz:21.22.03:1:1:2:False
+Graden:16.37.04:2:2:3:False
+Hirschegg:18.41.14:2:3:3:False
+Kainach bei Voitsberg:12.54.52:5:3:3:False
+Köflach:01.35.38:3:2:3:False
+Kohlschwarz:17.32.23:2:3:3:False
+Krottendorf-Gaisfeld:14.12.20:4:3:4:False
+Ligist:17.28.15:0:3:4:False
+Maria Lankowitz:02.05.35:2:1:1:False
+Modriach:19.40.10:2:2:3:False
+Mooskirchen:09.21.32:4:1:0:False
+Pack:09.17.27:3:3:4:False
+Piberegg:02.27.00:5:2:2:False
+Rosental an der Kainach:11.26.13:1:3:3:False
+Salla:10.10.01:2:1:1:False
+Sankt Johann-Köppling:09.16.50:4:2:4:False
+Sankt Martin am Wöllmißberg:14.50.18:1:1:1:False
+Söding:17.34.14:1:1:1:False
+Södingberg:08.18.27:2:3:3:False
+Stallhofen:07.49.46:2:1:1:False
+Voitsberg:18.02.07:1:1:2:False
+Albersdorf-Prebuch:11.43.48:3:3:4:False
+Anger:00.44.51:3:2:2:False
+Arzberg:04.21.03:3:2:1:False
+Baierdorf bei Anger:09.32.53:3:2:1:False
+Birkfeld:01.42.42:3:1:2:False
+Etzersdorf-Rollsdorf:01.03.50:1:3:3:False
+Feistritz bei Anger:12.28.53:4:3:3:False
+Fischbach:18.16.53:4:3:3:False
+Fladnitz an der Teichalm:08.00.42:3:1:1:False
+Floing:07.48.35:1:1:0:False
+Gasen:23.07.58:5:3:4:False
+Gersdorf an der Feistritz:22.56.54:3:3:4:False
+Gleisdorf:03.59.27:2:2:2:False
+Gschaid bei Birkfeld:04.03.23:3:3:4:False
+Gutenberg an der Raabklamm:07.15.57:3:1:2:False
+Markt Hartmannsdorf:11.33.35:4:2:4:False
+Haslau bei Birkfeld:17.43.01:5:1:2:False
+Hirnsdorf:11.25.54:6:1:2:False
+Hofstätten an der Raab:15.00.40:1:2:2:False
+Hohenau an der Raab:22.39.19:1:3:5:False
+Ilztal:10.59.20:2:1:0:False
+Koglhof:03.50.06:5:2:4:False
+Krottendorf:00.11.08:1:3:5:False
+Kulm bei Weiz:21.07.10:5:3:5:False
+Labuch:10.03.42:4:2:3:False
+Laßnitzthal:18.54.46:2:1:2:False
+Ludersdorf-Wilfersdorf:10.22.14:0:3:3:False
+Miesenbach bei Birkfeld:16.58.01:3:2:2:False
+Mitterdorf an der Raab:04.31.40:0:3:3:False
+Mortantsch:13.19.28:3:1:2:False
+Naas:12.25.17:0:1:0:False
+Naintsch:22.24.56:4:2:3:False
+Neudorf bei Passail:23.45.57:3:1:0:False
+Nitscha:02.02.30:1:2:1:False
+Oberrettenbach:09.55.29:2:1:2:False
+Passail:02.45.04:0:3:4:False
+Pischelsdorf in der Steiermark:21.39.39:2:1:0:False
+Preßguts:05.47.37:3:2:2:False
+Puch bei Weiz:18.10.11:0:3:5:False
+Ratten:14.40.50:5:1:2:False
+Reichendorf:15.20.40:5:3:5:False
+Rettenegg:18.08.46:5:2:2:False
+Sankt Kathrein am Hauenstein:19.55.21:5:3:3:False
+Sankt Kathrein am Offenegg:18.34.04:2:2:2:False
+Sankt Margarethen an der Raab:23.27.39:0:1:2:False
+Sankt Ruprecht an der Raab:20.55.16:1:3:5:False
+Sinabelkirchen:23.45.02:1:3:5:False
+Stenzengreith:20.16.15:4:3:5:False
+Strallegg:02.22.29:3:1:1:False
+Thannhausen:07.12.15:1:3:4:False
+Ungerdorf:06.20.56:1:1:1:False
+Unterfladnitz:05.10.14:4:2:3:False
+Waisenegg:19.13.13:3:3:5:False
+Weiz:23.40.14:3:1:1:False
+Innsbruck:00.57.39:1:1:0:False
+Arzl im Pitztal:13.25.10:1:2:3:False
+Haiming:04.49.21:1:1:0:False
+Imst:00.36.10:3:3:5:False
+Imsterberg:19.25.14:3:1:0:False
+Jerzens:05.49.22:2:2:3:False
+Karres:00.02.11:1:3:3:False
+Karrösten:17.39.53:2:3:5:False
+Längenfeld:07.16.11:1:1:1:False
+Mieming:02.21.48:0:2:4:False
+Mils bei Imst:19.32.40:0:3:3:False
+Mötz:20.34.19:3:3:3:False
+Nassereith:07.25.36:2:3:5:False
+Obsteig:06.19.56:2:1:2:False
+Oetz:12.42.51:2:3:4:False
+Rietz:07.51.46:0:1:0:False
+Roppen:22.22.43:3:2:2:False
+Sankt Leonhard im Pitztal:21.17.47:0:2:3:False
+THANK:YOU:FOR:YOUR:SUPPORT:I
+HOPE:THIS:INFORMATION:WAS:RECEIVED:WITHOUT
+ANY:MAJOR:ISSUES:KIND:REGARDS:DOUBLEDOT

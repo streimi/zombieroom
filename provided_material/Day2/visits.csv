@@ -1,0 +1,346 @@
+Day,Name,Location
+1,Abel Kellner,Farmhouse at Landstraße
+1,Abel Kellner,Open air farmers market at Kronauer Straße
+1,Annabell Kellner,Farmhouse at Landstraße
+1,Clemens Metternich,House at Franz-Josef-Straße
+1,Clemens Metternich,Open air farmers market at Kronauer Straße
+1,Clemens Metternich,Gas Station at Holzhackerstraße
+1,David Fanto,Apartmentblock at Technopark
+1,David Fanto,Gas Station at Holzhackerstraße
+1,David Fanto,Bicycle shop at Bahnhofstraße
+1,Elisabeth Farkas,Apartmentblock at Rochusgasse
+1,Elisabeth Farkas,Park at Donaulände
+1,Elisabeth Farkas,Apartmentblock at Siegfried-Ludwig-Straße
+1,Ernst Geiger,Apartmentblock at Jakob-Schefzik-Gasse
+1,Ernst Geiger,Fitness Studio at Kaplanstraße
+1,Felix Schlögl,Apartmentblock at Fuchsengasse
+1,Felix Schlögl,Medical University at Konrad-Lorenz-Straße
+1,Felix Schlögl,Park at Donaulände
+1,Felix Schlögl,Library at Wiener Straße
+1,Gabriele Possanner,Apartmentblock at Fuchsengasse
+1,Gabriele Possanner,Library at Wiener Straße
+1,Jakob Adler,House at Frauentorgasse
+1,Jakob Adler,Apartmentblock at Rochusgasse
+1,Jakob Adler,Government Office at Hauptplatz
+1,Johann Burger,House at Vogelweidgasse
+1,Johann Burger,Doctors Office at Robert-Stolz-Straße
+1,Johann Mendel,House at Gartenfeldstraße
+1,Johann Mendel,Biotech startup office at Technopark
+1,Johann Mendel,Supermarket at Königstetter Straße
+1,Johann Mendel,Park at Donaulände
+1,Joseph Ettenreich,Apartmentblock at Siegfried-Ludwig-Straße
+1,Joseph Ettenreich,Slaughterhouse at Hauptplatz
+1,Karl Wlaschek,Apartmentblock at Ignaz-Josef-Pleyel-Straße
+1,Karl Wlaschek,Supermarket at Langenlebarner Straße
+1,Konrad Schwestermüller,House at An der Wehr
+1,Konrad Schwestermüller,Medical University at Konrad-Lorenz-Straße
+1,Mark Felt,House at Freidlgasse
+1,Mark Felt,Government Office at Langenlebarner Straße
+1,Mark Felt,Supermarket at Langenlebarner Straße
+1,Moritz Speckl,Apartmentblock at Jakob-Schefzik-Gasse
+1,Moritz Speckl,Slaughterhouse at Hauptplatz
+1,Moritz Speckl,Sewage plant at Donaulände
+1,Natalie Glaser,House at Gartenfeldstraße
+1,Natalie Glaser,Medical University at Konrad-Lorenz-Straße
+1,Natalie Glaser,Supermarket at Königstetter Straße
+1,Natalie Glaser,Hairdresser salon at Frauenhofner Straße
+1,Stephanie Bechter,Apartmentblock at Langenlebarner Straße
+1,Stephanie Bechter,Internet Cafe at Raaber-Bahn-Gasse
+1,Umberto Tavella,Apartmentblock at Bonvicinistraße
+1,Waltraud Wagner,Apartmentblock at Bonvicinistraße
+1,Waltraud Wagner,Hospital at Alter Ziegelweg
+1,Waltraud Wagner,Fitness Studio at Kaplanstraße
+2,Abel Kellner,Farmhouse at Landstraße
+2,Annabell Kellner,Farmhouse at Landstraße
+2,Annabell Kellner,Hairdresser salon at Frauenhofner Straße
+2,Clemens Metternich,House at Franz-Josef-Straße
+2,Clemens Metternich,Hospital at Alter Ziegelweg
+2,Clemens Metternich,Farmhouse at Landstraße
+2,David Fanto,Apartmentblock at Technopark
+2,David Fanto,Gas Station at Holzhackerstraße
+2,David Fanto,Fitness Studio at Kaplanstraße
+2,Elisabeth Farkas,Apartmentblock at Rochusgasse
+2,Elisabeth Farkas,Park at Donaulände
+2,Ernst Geiger,Apartmentblock at Jakob-Schefzik-Gasse
+2,Ernst Geiger,Supermarket at Königstetter Straße
+2,Ernst Geiger,Club and bar at Hauptplatz
+2,Felix Schlögl,Apartmentblock at Fuchsengasse
+2,Felix Schlögl,Medical University at Konrad-Lorenz-Straße
+2,Felix Schlögl,Apartmentblock at Langenlebarner Straße
+2,Gabriele Possanner,Apartmentblock at Fuchsengasse
+2,Gabriele Possanner,Medical University at Konrad-Lorenz-Straße
+2,Jakob Adler,House at Frauentorgasse
+2,Jakob Adler,Government Office at Hauptplatz
+2,Johann Burger,House at Vogelweidgasse
+2,Johann Mendel,House at Gartenfeldstraße
+2,Johann Mendel,Biotech startup office at Technopark
+2,Joseph Ettenreich,Apartmentblock at Siegfried-Ludwig-Straße
+2,Joseph Ettenreich,Slaughterhouse at Hauptplatz
+2,Karl Wlaschek,Apartmentblock at Ignaz-Josef-Pleyel-Straße
+2,Karl Wlaschek,Supermarket at Langenlebarner Straße
+2,Karl Wlaschek,Park at Donaulände
+2,Konrad Schwestermüller,House at An der Wehr
+2,Konrad Schwestermüller,Medical University at Konrad-Lorenz-Straße
+2,Mark Felt,House at Freidlgasse
+2,Mark Felt,Government Office at Langenlebarner Straße
+2,Mark Felt,Gas Station at Holzhackerstraße
+2,Moritz Speckl,Apartmentblock at Jakob-Schefzik-Gasse
+2,Moritz Speckl,Open air farmers market at Kronauer Straße
+2,Moritz Speckl,Sewage plant at Donaulände
+2,Moritz Speckl,Park at Donaulände
+2,Natalie Glaser,House at Gartenfeldstraße
+2,Natalie Glaser,Doctors Office at Robert-Stolz-Straße
+2,Natalie Glaser,Apothecary at Staasdorfer Straße
+2,Stephanie Bechter,Apartmentblock at Langenlebarner Straße
+2,Stephanie Bechter,Medical University at Konrad-Lorenz-Straße
+2,Umberto Tavella,Apartmentblock at Bonvicinistraße
+2,Umberto Tavella,Italian restaurant at Minoritenplatz
+2,Umberto Tavella,Office at Albrechtsgasse
+2,Umberto Tavella,Apartmentblock at Jakob-Schefzik-Gasse
+2,Umberto Tavella,House at Dammweg
+2,Umberto Tavella,House at Bahnhofstraße
+2,Waltraud Wagner,Apartmentblock at Bonvicinistraße
+2,Waltraud Wagner,Hospital at Alter Ziegelweg
+2,Waltraud Wagner,Apothecary at Staasdorfer Straße
+3,Abel Kellner,Farmhouse at Landstraße
+3,Abel Kellner,Supermarket at Langenlebarner Straße
+3,Annabell Kellner,Farmhouse at Landstraße
+3,Clemens Metternich,House at Franz-Josef-Straße
+3,Clemens Metternich,Slaughterhouse at Hauptplatz
+3,Clemens Metternich,Open air farmers market at Kronauer Straße
+3,David Fanto,Apartmentblock at Technopark
+3,David Fanto,Gas Station at Holzhackerstraße
+3,David Fanto,Park at Donaulände
+3,Elisabeth Farkas,Apartmentblock at Rochusgasse
+3,Elisabeth Farkas,Park at Donaulände
+3,Ernst Geiger,Apartmentblock at Jakob-Schefzik-Gasse
+3,Ernst Geiger,Fitness Studio at Kaplanstraße
+3,Ernst Geiger,Club and bar at Hauptplatz
+3,Felix Schlögl,Apartmentblock at Fuchsengasse
+3,Felix Schlögl,Medical University at Konrad-Lorenz-Straße
+3,Felix Schlögl,Supermarket at Langenlebarner Straße
+3,Felix Schlögl,Park at Donaulände
+3,Gabriele Possanner,Apartmentblock at Fuchsengasse
+3,Gabriele Possanner,Medical University at Konrad-Lorenz-Straße
+3,Gabriele Possanner,Library at Wiener Straße
+3,Jakob Adler,House at Frauentorgasse
+3,Jakob Adler,Government Office at Hauptplatz
+3,Jakob Adler,Office at Albrechtsgasse
+3,Johann Burger,House at Vogelweidgasse
+3,Johann Burger,Biotech startup office at Technopark
+3,Johann Burger,Office at Hochäckerstraße
+3,Johann Burger,Medical University at Konrad-Lorenz-Straße
+3,Johann Mendel,House at Gartenfeldstraße
+3,Johann Mendel,Biotech startup office at Technopark
+3,Joseph Ettenreich,Apartmentblock at Siegfried-Ludwig-Straße
+3,Joseph Ettenreich,Slaughterhouse at Hauptplatz
+3,Karl Wlaschek,Apartmentblock at Ignaz-Josef-Pleyel-Straße
+3,Karl Wlaschek,Supermarket at Langenlebarner Straße
+3,Konrad Schwestermüller,House at An der Wehr
+3,Konrad Schwestermüller,Internet Cafe at Raaber-Bahn-Gasse
+3,Konrad Schwestermüller,Supermarket at Königstetter Straße
+3,Mark Felt,House at Freidlgasse
+3,Mark Felt,Doctors Office at Robert-Stolz-Straße
+3,Moritz Speckl,Apartmentblock at Jakob-Schefzik-Gasse
+3,Moritz Speckl,Hospital at Alter Ziegelweg
+3,Moritz Speckl,Sewage plant at Donaulände
+3,Natalie Glaser,House at Gartenfeldstraße
+3,Natalie Glaser,Doctors Office at Robert-Stolz-Straße
+3,Natalie Glaser,Hospital at Alter Ziegelweg
+3,Stephanie Bechter,Apartmentblock at Langenlebarner Straße
+3,Stephanie Bechter,Library at Wiener Straße
+3,Umberto Tavella,Apartmentblock at Bonvicinistraße
+3,Umberto Tavella,Italian restaurant at Minoritenplatz
+3,Umberto Tavella,Apartmentblock at Jakob-Schefzik-Gasse
+3,Umberto Tavella,Office2
+3,Umberto Tavella,Medical University at Konrad-Lorenz-Straße
+3,Umberto Tavella,Apartmentblock at Fuchsengasse
+3,Waltraud Wagner,Apartmentblock at Bonvicinistraße
+3,Waltraud Wagner,Hospital at Alter Ziegelweg
+4,Abel Kellner,Farmhouse at Landstraße
+4,Annabell Kellner,Farmhouse at Landstraße
+4,Clemens Metternich,House at Franz-Josef-Straße
+4,Clemens Metternich,Open air farmers market at Kronauer Straße
+4,Clemens Metternich,Gas Station at Holzhackerstraße
+4,Clemens Metternich,Farmhouse at Landstraße
+4,David Fanto,Apartmentblock at Technopark
+4,David Fanto,Gas Station at Holzhackerstraße
+4,Elisabeth Farkas,Apartmentblock at Rochusgasse
+4,Elisabeth Farkas,Park at Donaulände
+4,Ernst Geiger,Apartmentblock at Jakob-Schefzik-Gasse
+4,Ernst Geiger,House at Bahnhofstraße
+4,Felix Schlögl,Apartmentblock at Fuchsengasse
+4,Felix Schlögl,Medical University at Konrad-Lorenz-Straße
+4,Felix Schlögl,Fitness Studio at Kaplanstraße
+4,Gabriele Possanner,Apartmentblock at Fuchsengasse
+4,Gabriele Possanner,Medical University at Konrad-Lorenz-Straße
+4,Jakob Adler,House at Frauentorgasse
+4,Jakob Adler,Government Office at Hauptplatz
+4,Johann Burger,House at Vogelweidgasse
+4,Johann Burger,Medical University at Konrad-Lorenz-Straße
+4,Johann Mendel,House at Gartenfeldstraße
+4,Johann Mendel,Biotech startup office at Technopark
+4,Joseph Ettenreich,Apartmentblock at Siegfried-Ludwig-Straße
+4,Joseph Ettenreich,Slaughterhouse at Hauptplatz
+4,Joseph Ettenreich,Doctors Office at Robert-Stolz-Straße
+4,Karl Wlaschek,Apartmentblock at Ignaz-Josef-Pleyel-Straße
+4,Konrad Schwestermüller,House at An der Wehr
+4,Konrad Schwestermüller,Medical University at Konrad-Lorenz-Straße
+4,Mark Felt,House at Freidlgasse
+4,Mark Felt,Government Office at Langenlebarner Straße
+4,Moritz Speckl,Apartmentblock at Jakob-Schefzik-Gasse
+4,Moritz Speckl,Sewage plant at Donaulände
+4,Moritz Speckl,Gas Station at Holzhackerstraße
+4,Natalie Glaser,House at Gartenfeldstraße
+4,Natalie Glaser,Doctors Office at Robert-Stolz-Straße
+4,Natalie Glaser,Library at Wiener Straße
+4,Stephanie Bechter,Apartmentblock at Langenlebarner Straße
+4,Stephanie Bechter,Internet Cafe at Raaber-Bahn-Gasse
+4,Stephanie Bechter,Hairdresser salon at Frauenhofner Straße
+4,Umberto Tavella,Apartmentblock at Bonvicinistraße
+4,Umberto Tavella,Office at Albrechtsgasse
+4,Umberto Tavella,Italian restaurant at Minoritenplatz
+4,Umberto Tavella,House at Egon-Schiele-Gasse
+4,Umberto Tavella,Apartmentblock at Siegfried-Ludwig-Straße
+4,Umberto Tavella,Apartmentblock at Frauenhofner Straße
+4,Umberto Tavella,House at Franz-Josef-Straße
+4,Waltraud Wagner,Apartmentblock at Bonvicinistraße
+4,Waltraud Wagner,Hospital at Alter Ziegelweg
+5,Abel Kellner,Farmhouse at Landstraße
+5,Abel Kellner,Slaughterhouse at Hauptplatz
+5,Annabell Kellner,Farmhouse at Landstraße
+5,Clemens Metternich,House at Franz-Josef-Straße
+5,Clemens Metternich,Open air farmers market at Kronauer Straße
+5,Clemens Metternich,Gas Station at Holzhackerstraße
+5,David Fanto,Apartmentblock at Technopark
+5,David Fanto,Hospital at Alter Ziegelweg
+5,Elisabeth Farkas,Apartmentblock at Rochusgasse
+5,Elisabeth Farkas,Hairdresser salon at Frauenhofner Straße
+5,Elisabeth Farkas,Club and bar at Hauptplatz
+5,Ernst Geiger,Apartmentblock at Jakob-Schefzik-Gasse
+5,Ernst Geiger,Fitness Studio at Kaplanstraße
+5,Ernst Geiger,Club and bar at Hauptplatz
+5,Felix Schlögl,Apartmentblock at Fuchsengasse
+5,Felix Schlögl,Medical University at Konrad-Lorenz-Straße
+5,Felix Schlögl,Club and bar at Hauptplatz
+5,Gabriele Possanner,Apartmentblock at Fuchsengasse
+5,Gabriele Possanner,Club and bar at Hauptplatz
+5,Jakob Adler,House at Frauentorgasse
+5,Jakob Adler,Government Office at Hauptplatz
+5,Jakob Adler,Apartmentblock at Rochusgasse
+5,Jakob Adler,Club and bar at Hauptplatz
+5,Johann Burger,House at Vogelweidgasse
+5,Johann Burger,Medical University at Konrad-Lorenz-Straße
+5,Johann Burger,Club and bar at Hauptplatz
+5,Johann Mendel,House at Gartenfeldstraße
+5,Johann Mendel,Biotech startup office at Technopark
+5,Johann Mendel,Park at Donaulände
+5,Joseph Ettenreich,Apartmentblock at Siegfried-Ludwig-Straße
+5,Joseph Ettenreich,Slaughterhouse at Hauptplatz
+5,Joseph Ettenreich,Club and bar at Hauptplatz
+5,Joseph Ettenreich,Apartmentblock at Fuchsengasse
+5,Karl Wlaschek,Apartmentblock at Ignaz-Josef-Pleyel-Straße
+5,Karl Wlaschek,Doctors Office at Robert-Stolz-Straße
+5,Konrad Schwestermüller,House at An der Wehr
+5,Konrad Schwestermüller,Medical University at Konrad-Lorenz-Straße
+5,Konrad Schwestermüller,Club and bar at Hauptplatz
+5,Mark Felt,House at Freidlgasse
+5,Moritz Speckl,Apartmentblock at Jakob-Schefzik-Gasse
+5,Moritz Speckl,Sewage plant at Donaulände
+5,Natalie Glaser,House at Gartenfeldstraße
+5,Natalie Glaser,Park at Donaulände
+5,Stephanie Bechter,Apartmentblock at Langenlebarner Straße
+5,Stephanie Bechter,Club and bar at Hauptplatz
+5,Umberto Tavella,Apartmentblock at Bonvicinistraße
+5,Umberto Tavella,Italian restaurant at Minoritenplatz
+5,Umberto Tavella,Apartmentblock at Ignaz-Josef-Pleyel-Straße
+5,Umberto Tavella,Apartmentblock at Frauenhofner Straße
+5,Umberto Tavella,House at Bahnhofstraße
+5,Umberto Tavella,Office at Hochäckerstraße
+5,Umberto Tavella,Slaughterhouse at Hauptplatz
+5,Waltraud Wagner,Apartmentblock at Bonvicinistraße
+5,Waltraud Wagner,Hospital at Alter Ziegelweg
+5,Waltraud Wagner,Supermarket at Langenlebarner Straße
+6,Abel Kellner,Farmhouse at Landstraße
+6,Abel Kellner,Gas Station at Holzhackerstraße
+6,Annabell Kellner,Farmhouse at Landstraße
+6,Clemens Metternich,House at Franz-Josef-Straße
+6,Clemens Metternich,Apothecary at Staasdorfer Straße
+6,Clemens Metternich,Slaughterhouse at Hauptplatz
+6,David Fanto,Apartmentblock at Technopark
+6,Elisabeth Farkas,Apartmentblock at Rochusgasse
+6,Elisabeth Farkas,Supermarket at Königstetter Straße
+6,Elisabeth Farkas,Farmhouse at Landstraße
+6,Ernst Geiger,Apartmentblock at Jakob-Schefzik-Gasse
+6,Ernst Geiger,Library at Wiener Straße
+6,Felix Schlögl,Apartmentblock at Langenlebarner Straße
+6,Felix Schlögl,Apartmentblock at Fuchsengasse
+6,Gabriele Possanner,Apartmentblock at Fuchsengasse
+6,Gabriele Possanner,Apartmentblock at Frauenhofner Straße
+6,Gabriele Possanner,Supermarket at Königstetter Straße
+6,Gabriele Possanner,Bicycle shop at Bahnhofstraße
+6,Gabriele Possanner,Italian restaurant at Minoritenplatz
+6,Jakob Adler,Apartmentblock at Rochusgasse
+6,Jakob Adler,House at Frauentorgasse
+6,Johann Burger,House at Vogelweidgasse
+6,Johann Burger,Supermarket at Langenlebarner Straße
+6,Johann Mendel,House at Gartenfeldstraße
+6,Johann Mendel,Sewage plant at Donaulände
+6,Joseph Ettenreich,Apartmentblock at Fuchsengasse
+6,Karl Wlaschek,Apartmentblock at Ignaz-Josef-Pleyel-Straße
+6,Konrad Schwestermüller,House at An der Wehr
+6,Mark Felt,House at Freidlgasse
+6,Moritz Speckl,Apartmentblock at Jakob-Schefzik-Gasse
+6,Moritz Speckl,Sewage plant at Donaulände
+6,Moritz Speckl,Doctors Office at Robert-Stolz-Straße
+6,Natalie Glaser,House at Gartenfeldstraße
+6,Stephanie Bechter,Apartmentblock at Langenlebarner Straße
+6,Stephanie Bechter,Internet Cafe at Raaber-Bahn-Gasse
+6,Stephanie Bechter,Biotech startup office at Technopark
+6,Umberto Tavella,Apartmentblock at Bonvicinistraße
+6,Umberto Tavella,Park at Donaulände
+6,Umberto Tavella,Supermarket at Langenlebarner Straße
+6,Umberto Tavella,Club and bar at Hauptplatz
+6,Waltraud Wagner,Apartmentblock at Bonvicinistraße
+6,Waltraud Wagner,Doctors Office at Robert-Stolz-Straße
+7,Abel Kellner,Farmhouse at Landstraße
+7,Abel Kellner,Hospital at Alter Ziegelweg
+7,Annabell Kellner,Farmhouse at Landstraße
+7,Annabell Kellner,Hospital at Alter Ziegelweg
+7,Clemens Metternich,House at Franz-Josef-Straße
+7,Clemens Metternich,Supermarket at Langenlebarner Straße
+7,Clemens Metternich,Hospital at Alter Ziegelweg
+7,David Fanto,Apartmentblock at Technopark
+7,David Fanto,Hospital at Alter Ziegelweg
+7,Elisabeth Farkas,Apartmentblock at Rochusgasse
+7,Elisabeth Farkas,Hospital at Alter Ziegelweg
+7,Ernst Geiger,Apartmentblock at Jakob-Schefzik-Gasse
+7,Ernst Geiger,Hospital at Alter Ziegelweg
+7,Felix Schlögl,Apartmentblock at Fuchsengasse
+7,Felix Schlögl,Hospital at Alter Ziegelweg
+7,Gabriele Possanner,Apartmentblock at Fuchsengasse
+7,Gabriele Possanner,Hospital at Alter Ziegelweg
+7,Jakob Adler,House at Frauentorgasse
+7,Jakob Adler,Hospital at Alter Ziegelweg
+7,Johann Burger,House at Vogelweidgasse
+7,Johann Burger,Hospital at Alter Ziegelweg
+7,Johann Mendel,House at Gartenfeldstraße
+7,Johann Mendel,Hospital at Alter Ziegelweg
+7,Joseph Ettenreich,Apartmentblock at Fuchsengasse
+7,Joseph Ettenreich,Hospital at Alter Ziegelweg
+7,Karl Wlaschek,Apartmentblock at Ignaz-Josef-Pleyel-Straße
+7,Karl Wlaschek,Hospital at Alter Ziegelweg
+7,Konrad Schwestermüller,House at An der Wehr
+7,Konrad Schwestermüller,Hospital at Alter Ziegelweg
+7,Mark Felt,House at Freidlgasse
+7,Mark Felt,Hospital at Alter Ziegelweg
+7,Moritz Speckl,Apartmentblock at Jakob-Schefzik-Gasse
+7,Moritz Speckl,Hospital at Alter Ziegelweg
+7,Natalie Glaser,House at Gartenfeldstraße
+7,Natalie Glaser,Hospital at Alter Ziegelweg
+7,Stephanie Bechter,Apartmentblock at Langenlebarner Straße
+7,Stephanie Bechter,Hospital at Alter Ziegelweg
+7,Umberto Tavella,Apartmentblock at Bonvicinistraße
+7,Umberto Tavella,Hospital at Alter Ziegelweg
+7,Waltraud Wagner,Apartmentblock at Bonvicinistraße
+7,Waltraud Wagner,Hospital at Alter Ziegelweg
