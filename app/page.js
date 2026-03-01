@@ -1221,12 +1221,12 @@ const PatientZeroMission = () => {
 // --- Mission 3.1: Riot Surveillance Logic ---
 const RiotMission = () => {
   const [images] = useState([
-    { filename: "Crowd_0.png", headcount: 23 },
-    { filename: "Crowd_1.png", headcount: 41 },
-    { filename: "Crowd_2.png", headcount: 17 },
-    { filename: "Crowd_3.png", headcount: 58 },
-    { filename: "Crowd_4.png", headcount: 36 },
-    { filename: "Crowd_5.png", headcount: 29 },
+    { filename: "Crowd_116.gif", headcount: 120 },
+    { filename: "Crowd_140.gif", headcount: 82 },
+    { filename: "Crowd_143.gif", headcount: 121 },
+    { filename: "Crowd_152.gif", headcount: 58 },
+    { filename: "Crowd_154.gif", headcount: 36 },
+    { filename: "Crowd_157.gif", headcount: 29 },
   ]);
 
   const total = images.reduce((sum, img) => sum + img.headcount, 0);
@@ -1259,7 +1259,7 @@ const RiotMission = () => {
             className="relative bg-black border border-white/5 rounded-xl overflow-hidden shadow-2xl group"
           >
             <img
-              src={`/data/riot_images/${img.filename}`}
+              src={`ae/crowd_recognition_AME/${img.filename}`}
               alt={img.filename}
               className="w-full h-48 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
             />
