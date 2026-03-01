@@ -1,0 +1,21 @@
+Day,Newly Infected,Infected By,At Location,Becomes Infectious On
+1,Mark Felt (P0),N/A,Patient Zero +1,Day 1 (Start)
+1,Karl Wlaschek,Mark Felt,Supermarket at Langenlebarner Straße,Day 3
+2,David Fanto,Mark Felt,Gas Station at Holzhackerstraße +1,Day 4
+3,Abel Kellner,Karl Wlaschek,Supermarket at Langenlebarner Straße +2,Day 5
+3,Felix Schlögl,Karl Wlaschek,Supermarket at Langenlebarner Straße +2,Day 5
+3,Johann Burger,David Fanto,Biotech startup office at Technopark +2,Day 5
+3,Johann Mendel,David Fanto,Biotech startup office at Technopark +2,Day 5
+4,Clemens Metternich,Mark Felt,Gas Station at Holzhackerstraße +1,Day 6
+4,Moritz Speckl,Mark Felt,Gas Station at Holzhackerstraße +1,Day 6
+4,Stephanie Bechter,Felix Schlögl,Hairdresser salon at Frauenhofner Straße +1,Day 6
+5,Annabell Kellner,Abel Kellner,Farmhouse at Landstraße,Day 7
+5,Elisabeth Farkas,Stephanie Bechter,Hairdresser salon at Frauenhofner Straße,Day 7
+5,Ernst Geiger,Felix Schlögl,Club and bar at Hauptplatz,Day 7
+5,Gabriele Possanner,Felix Schlögl,Club and bar at Hauptplatz,Day 7
+5,Jakob Adler,Felix Schlögl,Club and bar at Hauptplatz,Day 7
+5,Joseph Ettenreich,Felix Schlögl,Club and bar at Hauptplatz,Day 7
+5,Konrad Schwestermüller,Felix Schlögl,Club and bar at Hauptplatz,Day 7
+5,Natalie Glaser,Johann Mendel,Park at Donaulände,Day 7
+5,Umberto Tavella,Joseph Ettenreich,Slaughterhouse at Hauptplatz,Day 7
+5,Waltraud Wagner,David Fanto,Hospital at Alter Ziegelweg +1,Day 7

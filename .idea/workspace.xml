@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0bd113d-e85e-4bc1-9325-cd2aa9746979" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day1/Mission 1 - spokesperson.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day1/Mission 1.1 - Journalist.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day1/bigHealthRecord.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day1/healthyControlGroup.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day1/infectedTestSubject.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day1/municipalityOverview.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day2/ClinicalTrialData.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day2/Mission 2.0 - Government.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day2/Mission 2.1 - Journalist.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day2/Mission 2.2 - Doctor.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day2/patientlist.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day2/visits.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/Mission 3.0 - Doctor.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/Mission 3.1 - General.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/Mission 3.2 - Whistler.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_102.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_105.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_106.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_107.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_108.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_110.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_111.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_112.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_113.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_115.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_117.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_118.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_122.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_124.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_125.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_126.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_127.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_129.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_130.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_131.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_132.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_133.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_134.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_135.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_136.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_137.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_138.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_139.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_140.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_141.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_142.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_146.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_147.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_148.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_149.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_151.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_154.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_155.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_156.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_157.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_158.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_159.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_160.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_161.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_162.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_163.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_164.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_165.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_166.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_167.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_168.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_169.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_170.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_171.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/crowd_images/Crowd_99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day3/shipments_available.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day4/Day4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day4/GeneralDataFile1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day4/GeneralDataFile2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day4/GeneralDataFile3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day4/GeneralDataFile4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day4/GeneralDataFile5.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day4/Mission 4.0 - Doctor.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day4/Mission 4.1 - General.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day4/Mission 4.2 - Whistler.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day4/morsecodes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provided_material/Day4/processingequipment.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_stats/gamestate2.csv" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3AAxdjFV3wN4LtLiGdOjsKej6WH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;datagrid.heatmap.switchedByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/domin&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;debugger.dataViews&quot;
+  }
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0bd113d-e85e-4bc1-9325-cd2aa9746979" name="Changes" comment="" />
+      <created>1772049267947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772049267947</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

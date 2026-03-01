@@ -1,0 +1,206 @@
+shipment_id,companyname,product,litre,duration_in_hours
+1,AlpenBio Labs GmbH,Yeast,1650,2
+2,AlpenBio Labs GmbH,Yeast,1550,2
+3,AlpenHealth Equipment AG,Yeast,200,6
+4,AlpenHealth Equipment AG,Yeast,250,6
+5,AlpenMed Supplies AG,Syringes,1550,4
+6,AlpenMed Supplies AG,Syringes,3250,5
+7,AlpenMed Supplies AG,Syringes,1450,4
+8,AlpenMed Supplies AG,Syringes,3450,5
+9,AlpenMed Supplies AG,Syringes,5000,6
+10,AlpenMed Supplies AG,Syringes,5000,6
+11,Alpine Pharma Equipment AG,Filtration equipment,5000,8
+12,Alpine Pharma Equipment AG,Filtration equipment,5000,8
+13,Alpine Pharma Equipment AG,Filtration equipment,3450,7
+14,Alpine Pharma Equipment AG,Filtration equipment,4800,8
+15,Alpine Pharma Equipment AG,Filtration equipment,4400,8
+16,AlpineLife Sciences KG,Chromatography solution,3450,6
+17,AlpineLife Sciences KG,Chromatography solution,4000,7
+18,AlpineLife Sciences KG,Chromatography solution,200,5
+19,AlpineLife Sciences KG,Chromatography solution,200,5
+20,AlpinePharma GmbH,Syringes,5000,7
+21,AlpinePharma GmbH,Syringes,5000,7
+22,AlpinePharma GmbH,Syringes,4100,7
+23,AlpinePharma GmbH,Syringes,1050,5
+24,AlpinePharma GmbH,Syringes,3650,7
+25,AlpinePharma GmbH,Syringes,3100,6
+26,AlpinePharma GmbH,Syringes,5000,7
+27,Austrian BioTech Innovations GmbH,Yeast,100,3
+28,Austrian HealthTech Solutions KG,Filtration equipment,4300,5
+29,Austrian HealthTech Solutions KG,Filtration equipment,5000,5
+30,Austrian HealthTech Solutions KG,Filtration equipment,5000,5
+31,Austrian Medical Solutions KG,Filtration equipment,2800,4
+32,BioAustroTech GmbH,Culture media,5000,4
+33,BioAustroTech GmbH,Culture media,5000,4
+34,BioAustroTech GmbH,Culture media,4450,4
+35,BioAustroTech GmbH,Culture media,500,2
+36,BioGenix Labs AG,Yeast,300,2
+37,BioMed Resources Klagenfurt KG,Chromatography solution,3700,7
+38,BioMed Resources Klagenfurt KG,Chromatography solution,3000,6
+39,BioMed Resources Klagenfurt KG,Chromatography solution,950,5
+40,BioMed Resources Klagenfurt KG,Chromatography solution,1700,5
+41,BioMed Resources Klagenfurt KG,Chromatography solution,1500,5
+42,BioMed Resources Klagenfurt KG,Chromatography solution,750,5
+43,BioMed Supply Solutions KG,Chromatography solution,1450,2
+44,BioMed Supply Solutions KG,Chromatography solution,3350,3
+45,BioMed Supply Solutions KG,Chromatography solution,200,2
+46,BioMedTech Solutions Austria KG,Culture media,1450,3
+47,BioMedTech Solutions Austria KG,Culture media,2300,4
+48,BioMedTech Solutions Austria KG,Culture media,2100,4
+49,BioMedTech Solutions Austria KG,Culture media,500,3
+50,BioMedTech Solutions Austria KG,Culture media,500,3
+51,BioMedTech Solutions Austria KG,Culture media,2600,4
+52,BioMedTech Solutions Austria KG,Culture media,2100,4
+53,BioMedica Technologies GmbH,Chromatography solution,2500,6
+54,BioMedica Technologies GmbH,Chromatography solution,1350,5
+55,BioMedica Technologies GmbH,Chromatography solution,200,5
+56,BioMedica Technologies GmbH,Chromatography solution,3200,6
+57,BioResource Labs GmbH,Chromatography solution,1800,2
+58,BioResource Labs GmbH,Chromatography solution,4000,4
+59,BioSource Labs Austria AG,Yeast,100,3
+60,BioSource Labs Austria AG,Yeast,700,3
+61,BioSource Labs Austria AG,Yeast,150,3
+62,BioTecAustria Laboratories,Yeast,1000,3
+63,BioTech Solutions Bregenz KG,Culture media,2150,8
+64,BioTech Solutions Bregenz KG,Culture media,3750,9
+65,BioTech Solutions Bregenz KG,Culture media,2850,8
+66,BioTech Solutions Bregenz KG,Culture media,800,7
+67,BioTech Solutions Bregenz KG,Culture media,2800,8
+68,BioTech Solutions Bregenz KG,Culture media,3550,9
+69,BioTech Solutions Bregenz KG,Culture media,2800,8
+70,BioTech Solutions Bregenz KG,Culture media,2000,8
+71,BioTech Solutions Bregenz KG,Culture media,1900,7
+72,Graz Medical Equipment AG,Yeast,150,4
+73,HealthEquip Solutions AG,Culture media,500,3
+74,HealthEquip Solutions AG,Culture media,4200,5
+75,HealthEquip Solutions AG,Culture media,3600,5
+76,HealthEquip Solutions AG,Culture media,4750,5
+77,HealthSource Supplies AG,Culture media,4900,5
+78,HealthSource Supplies AG,Culture media,4350,5
+79,HealthSource Supplies AG,Culture media,5000,5
+80,HealthSource Supplies AG,Culture media,5000,5
+81,HealthSource Supplies AG,Culture media,3350,4
+82,HealthTech Supplies Austria,Syringes,4950,6
+83,HealthTech Supplies Austria,Syringes,3700,6
+84,HealthTech Supplies Austria,Syringes,4750,6
+85,HealthTech Supplies Austria,Syringes,5000,6
+86,HealthTech Supplies Austria,Syringes,4150,6
+87,HealthTech Supplies Austria,Syringes,3500,5
+88,HealthTech Supplies Austria,Syringes,4850,6
+89,HealthTech Supplies Austria,Syringes,5000,6
+90,InnoMed Supplies GmbH,Culture media,2300,6
+91,InnoMed Supplies GmbH,Culture media,5000,7
+92,InnoMed Supplies GmbH,Culture media,650,5
+93,InnoMed Supplies GmbH,Culture media,1600,5
+94,InnoMed Supplies GmbH,Culture media,1750,5
+95,Innsbruck Pharma GmbH,Syringes,5000,8
+96,Innsbruck Pharma GmbH,Syringes,5000,8
+97,Innsbruck Pharma GmbH,Syringes,5000,8
+98,Innsbruck Pharma GmbH,Syringes,4800,8
+99,Innsbruck Pharma GmbH,Syringes,5000,8
+100,LifeTech Österreich GmbH,Syringes,4900,7
+101,LifeTech Österreich GmbH,Syringes,5000,7
+102,LifeTech Österreich GmbH,Syringes,4850,7
+103,LifeTech Österreich GmbH,Syringes,4150,7
+104,LifeTech Österreich GmbH,Syringes,1900,5
+105,LifeTech Österreich GmbH,Syringes,1150,5
+106,LifeTech Österreich GmbH,Syringes,3850,7
+107,LifeTech Österreich GmbH,Syringes,4750,7
+108,LifeTech Österreich GmbH,Syringes,5000,7
+109,LifeTech Österreich GmbH,Syringes,5000,7
+110,LifeTech Österreich GmbH,Syringes,3350,6
+111,LifeTech Österreich GmbH,Syringes,4150,7
+112,Linz BioTech Innovations KG,Culture media,3800,5
+113,Linz BioTech Innovations KG,Culture media,3450,4
+114,Linz BioTech Innovations KG,Culture media,3450,4
+115,Linz BioTech Innovations KG,Culture media,2500,4
+116,Linz BioTech Innovations KG,Culture media,2850,4
+117,LinzLife Sciences AG,Culture media,5000,6
+118,LinzLife Sciences AG,Culture media,2000,5
+119,LinzLife Sciences AG,Culture media,2850,5
+120,LinzLife Sciences AG,Culture media,500,4
+121,LinzLife Sciences AG,Culture media,4950,6
+122,LinzLife Sciences AG,Culture media,5000,6
+123,LinzLife Sciences AG,Culture media,2400,5
+124,LinzLife Sciences AG,Culture media,500,4
+125,LinzLife Sciences AG,Culture media,3650,6
+126,LinzLife Sciences AG,Culture media,1450,4
+127,MedAdvantage Österreich GmbH,Filtration equipment,5000,5
+128,MedAdvantage Österreich GmbH,Filtration equipment,3750,5
+129,MedAdvantage Österreich GmbH,Filtration equipment,4650,5
+130,MedAdvantage Österreich GmbH,Filtration equipment,5000,5
+131,MedAdvantage Österreich GmbH,Filtration equipment,2100,4
+132,MedEquip Vienna GmbH,Filtration equipment,5000,5
+133,MedSolutions Austria,Filtration equipment,5000,4
+134,MedSolutions Austria,Filtration equipment,4950,4
+135,MedSolutions Austria,Filtration equipment,5000,4
+136,MedSolutions Austria,Filtration equipment,4950,4
+137,MedSolutions Austria,Filtration equipment,5000,4
+138,MedTech Austria AG,Filtration equipment,2100,4
+139,MedTech Austria AG,Filtration equipment,5000,5
+140,MedTech Austria AG,Filtration equipment,5000,5
+141,MedTech Austria AG,Filtration equipment,5000,5
+142,MedTech Innovations Vienna GmbH,Chromatography solution,200,3
+143,MedTech Innovations Vienna GmbH,Chromatography solution,4000,5
+144,MedTech Innovations Vienna GmbH,Chromatography solution,2950,4
+145,MedTech Supplies Graz,Culture media,3000,5
+146,MedTech Supplies Graz,Culture media,4000,6
+147,MedTech Supplies Graz,Culture media,5000,6
+148,MedTech Supplies Graz,Culture media,2500,5
+149,MedTech Supplies Graz,Culture media,3100,5
+150,MedTech Supplies Graz,Culture media,3150,5
+151,Medica Innovations Austria KG,Filtration equipment,4600,4
+152,Medica Innovations Austria KG,Filtration equipment,5000,4
+153,Medica Innovations Austria KG,Filtration equipment,3550,4
+154,Medica Innovations Austria KG,Filtration equipment,5000,4
+155,Medica Innovations Austria KG,Filtration equipment,5000,4
+156,MedicaSupply Austria AG,Filtration equipment,5000,5
+157,MedicaSupply Austria AG,Filtration equipment,5000,5
+158,MedicaSupply Austria AG,Filtration equipment,5000,5
+159,Medical Innovations Austria GmbH,Syringes,5000,6
+160,Medical Innovations Austria GmbH,Syringes,5000,6
+161,Medical Innovations Austria GmbH,Syringes,3350,5
+162,Medical Innovations Austria GmbH,Syringes,5000,6
+163,Medical Innovations Austria GmbH,Syringes,5000,6
+164,Medical Innovations Austria GmbH,Syringes,5000,6
+165,OptiMed Technologies Austria,Yeast,1000,3
+166,OptiMed Technologies Austria,Yeast,300,3
+167,OptiMed Technologies Austria,Yeast,1150,3
+168,PharmaLife Österreich AG,Filtration equipment,2500,4
+169,PharmaLife Österreich AG,Filtration equipment,5000,5
+170,PharmaLife Österreich AG,Filtration equipment,4000,5
+171,PharmaPro Austria GmbH,Chromatography solution,2250,5
+172,PharmaPro Austria GmbH,Chromatography solution,1600,4
+173,PharmaPro Austria GmbH,Chromatography solution,200,4
+174,PharmaPro Austria GmbH,Chromatography solution,4000,6
+175,PharmaSource Österreich GmbH,Culture media,4700,5
+176,PharmaSource Österreich GmbH,Culture media,3300,4
+177,PharmaSource Österreich GmbH,Culture media,2000,4
+178,Pioneering Pharma Solutions AG,Culture media,1250,2
+179,Pioneering Pharma Solutions AG,Culture media,4650,4
+180,ProMed Supplies Vienna,Chromatography solution,200,5
+181,ProMed Supplies Vienna,Chromatography solution,300,5
+182,PureMed Technologies KG,Chromatography solution,1450,2
+183,Salzburg Biotech Supplies KG,Yeast,50,4
+184,Salzburg Biotech Supplies KG,Yeast,250,4
+185,Salzburg Pharma Solutions KG,Chromatography solution,1200,5
+186,Salzburg Pharma Solutions KG,Chromatography solution,200,5
+187,Salzburg Pharma Solutions KG,Chromatography solution,2500,6
+188,Salzburg Pharma Solutions KG,Chromatography solution,4000,7
+189,Salzburg Pharma Solutions KG,Chromatography solution,200,5
+190,Salzburg Pharma Solutions KG,Chromatography solution,2250,6
+191,Vienna Life Sciences AG,Syringes,3300,5
+192,Vienna Life Sciences AG,Syringes,5000,6
+193,Vienna Life Sciences AG,Syringes,3950,6
+194,Vienna Life Sciences AG,Syringes,5000,6
+195,Vienna Life Sciences AG,Syringes,5000,6
+196,Vienna Life Sciences AG,Syringes,4450,6
+197,Vienna MedEquip AG,Chromatography solution,1600,4
+198,Vienna MedEquip AG,Chromatography solution,4000,6
+199,Vienna MedEquip AG,Chromatography solution,1000,4
+200,Vienna MedEquip AG,Chromatography solution,1950,4
+201,Vienna MedEquip AG,Chromatography solution,1450,4
+202,ViennaBio Innovations KG,Yeast,2000,4
+203,ViennaBio Innovations KG,Yeast,1500,3
+204,ViennaBio Innovations KG,Yeast,350,3
+205,ViennaBio Innovations KG,Yeast,300,3
