@@ -378,23 +378,9 @@ const GovernmentMission = () => {
     loadData();
   }, []);
 
-  const pythonCode = `# MISSION 1 SOLUTION
-import pandas as pd
+  const pythonCode = `# MISSION 1.0 SOLUTION
 
-# 1. Load data streams
-df = pd.read_csv('BigHealthRecord.csv')
-
-# 2. Aggregation: Calculate infection mean per municipality
-results = df.groupby('municipalityname').agg({
-    'is_infected': 'mean' 
-}).reset_index()
-
-# 3. Join with Municipality Overview (Inhabitants) and Sort
-# inhabitants = pd.read_csv('Municipality Overview.csv')
-# results = results.merge(inhabitants, on='municipalityname').sort_values('inhabitants', ascending=False)
-
-# 4. Export Final Solution
-results.to_csv('municipality_infections.csv', index=False)`;
+paste_code_here`;
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -420,7 +406,8 @@ results.to_csv('municipality_infections.csv', index=False)`;
               </div>
               <div>
                 <h2 className="text-2xl font-black uppercase tracking-tight text-white leading-none">
-                  First 30 Municipalities (A-z)
+                  First 30 Municipalities <br />
+                  (population desc.)
                 </h2>
                 <span
                   className="text-[10px] font-mono font-black tracking-widest mt-2 block"
@@ -530,19 +517,19 @@ results.to_csv('municipality_infections.csv', index=False)`;
             )}
           </div>
 
-          <div className="mt-8 text-left">
-            <div className="flex items-center gap-2 mb-3 text-zinc-500">
-              <Copy size={14} />{" "}
-              <span className="text-[10px] font-black uppercase tracking-widest">
-                Solution Logic (Python/Pandas)
-              </span>
+          <div className="mt-12 text-left">
+            <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+              <Code size={14} /> <span>Municipality_Infection_Rate.py</span>
             </div>
-            <pre
-              className="p-6 bg-zinc-950 rounded-xl border text-[11px] font-mono overflow-x-auto"
+            <div
+              className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
               style={{ borderColor: COLORS.border, color: COLORS.emerald }}
             >
-              <code>{pythonCode}</code>
-            </pre>
+              <pre>{pythonCode}</pre>
+              <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+                <Copy size={14} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -639,13 +626,7 @@ const JournalistMission = () => {
   }, []);
 
   const pythonCode = `# MISSION 1.1 SOLUTION: ORIGIN DETECTION
-import pandas as pd
-
-df = pd.read_csv('BigHealthRecord.csv')
-earliest_day = df[df['is_infected'] == 1]['collection_date'].min()
-likely_origins = df[(df['collection_date'] == earliest_day) & (df['is_infected'] == 1)]['municipalityname'].unique()
-
-pd.Series(likely_origins[:5]).to_csv('origin_municipalities.csv', index=False, header=False)`;
+paste_code_here`;
 
   return (
     <div
@@ -657,13 +638,13 @@ pd.Series(likely_origins[:5]).to_csv('origin_municipalities.csv', index=False, h
           className="border rounded-3xl p-10 shadow-2xl relative"
           style={{ backgroundColor: COLORS.card, borderColor: COLORS.border }}
         >
+          {/* Head */}
           <div
             className="absolute top-0 left-0 w-full h-1"
             style={{
               background: `linear-gradient(90deg, ${COLORS.amber}, transparent)`,
             }}
           />
-
           <div
             className="flex items-center gap-5 mb-10 border-b pb-8"
             style={{ borderColor: "rgba(255,255,255,0.05)" }}
@@ -690,7 +671,7 @@ pd.Series(likely_origins[:5]).to_csv('origin_municipalities.csv', index=False, h
               </span>
             </div>
           </div>
-
+          {/* Content */}
           <div
             className="bg-black border rounded-2xl p-12 min-h-[400px] flex flex-col items-center justify-center relative shadow-inner overflow-hidden"
             style={{ borderColor: "rgba(255,255,255,0.05)" }}
@@ -750,7 +731,7 @@ pd.Series(likely_origins[:5]).to_csv('origin_municipalities.csv', index=False, h
               </div>
             )}
           </div>
-
+          {/* Python Code */}
           <div className="mt-12 text-left">
             <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
               <Code size={14} /> <span>Origin_Detection_Algorithm.py</span>
@@ -767,7 +748,7 @@ pd.Series(likely_origins[:5]).to_csv('origin_municipalities.csv', index=False, h
           </div>
         </div>
       </div>
-
+      {/* Mission Intel */}
       <div className="lg:col-span-4 space-y-6">
         <div
           className="border p-6 rounded-2xl border-l-4 shadow-xl"
@@ -1086,6 +1067,10 @@ const PatientZeroMission = () => {
     });
   }, []);
 
+  const pythonCode = `# MISSION 2.1 SOLUTION
+
+paste_code_here`;
+
   if (loading) {
     return (
       <div className="p-20 text-center flex flex-col items-center gap-4">
@@ -1212,6 +1197,21 @@ const PatientZeroMission = () => {
               </div>
             </div>
           </div>
+          {/* Python Code */}
+          <div className="mt-12 text-left">
+            <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+              <Code size={14} /> <span>Patient_Zero_Tracing.py</span>
+            </div>
+            <div
+              className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
+              style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+            >
+              <pre>{pythonCode}</pre>
+              <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+                <Copy size={14} />
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
@@ -1243,9 +1243,7 @@ const RiotMission = () => {
           </p>
         </div>
         <div className="text-right">
-          <div className="text-3xl font-black text-red-500">
-            {total}
-          </div>
+          <div className="text-3xl font-black text-red-500">{total}</div>
           <span className="text-[9px] uppercase text-zinc-600 tracking-widest font-black">
             TOTAL_HEADCOUNT
           </span>
@@ -1301,9 +1299,12 @@ const RiotMission = () => {
           </div>
         </div>
         <div className="mt-4 text-xs text-zinc-400 font-mono">
-          Model: YOLOv8n<br />
-          Classes: person<br />
-          Confidence Threshold: 0.45<br />
+          Model: YOLOv8n
+          <br />
+          Classes: person
+          <br />
+          Confidence Threshold: 0.45
+          <br />
           Non-Max Suppression: Enabled
         </div>
       </div>
