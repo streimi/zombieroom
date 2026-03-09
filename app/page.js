@@ -386,215 +386,204 @@ const GovernmentMission = () => {
 paste_code_here`;
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-      <div className="lg:col-span-8 space-y-6">
-        <div
-          className="border rounded-3xl p-10 shadow-2xl relative"
-          style={{ backgroundColor: COLORS.card, borderColor: COLORS.border }}
-        >
-          <div
-            className="flex items-center justify-between mb-10 border-b pb-8"
-            style={{ borderColor: "rgba(255,255,255,0.05)" }}
+    <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Main Data Console */}
+        <div className="lg:col-span-8">
+          <Card
+            title="First 30 Municipalities"
+            icon={BarChart3}
+            themeColor="blue"
           >
-            <div className="flex items-center gap-5">
-              <div
-                className="p-3 rounded-xl border"
-                style={{
-                  backgroundColor: "rgba(37, 99, 235, 0.1)",
-                  color: COLORS.blue,
-                  borderColor: "rgba(37, 99, 235, 0.2)",
-                }}
-              >
-                <BarChart3 size={28} />
-              </div>
-              <div>
-                <h2 className="text-2xl font-black uppercase tracking-tight text-white leading-none">
-                  First 30 Municipalities <br />
-                  (population desc.)
-                </h2>
+            <div className="flex flex-col gap-6">
+              <div className="flex justify-between items-center">
                 <span
-                  className="text-[10px] font-mono font-black tracking-widest mt-2 block"
+                  className="text-[10px] font-mono font-black tracking-widest block"
                   style={{ color: COLORS.blue }}
                 >
                   EVALUATION_SET: ALPHA_SORTED // SOURCE: SOLUTIONS_V1
                 </span>
+                <button
+                  onClick={loadData}
+                  className="flex items-center gap-2 px-4 py-2 bg-zinc-900 border border-zinc-800 rounded-lg text-[10px] font-black text-zinc-400 hover:text-white hover:border-zinc-600 transition-all uppercase tracking-widest"
+                >
+                  <RefreshCw
+                    size={12}
+                    className={loading ? "animate-spin" : ""}
+                  />
+                  Reload Solution
+                </button>
+              </div>
+
+              <div
+                className="bg-black border rounded-2xl p-8 min-h-[500px] flex flex-col relative shadow-inner"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                {loading ? (
+                  <div className="flex-1 flex flex-col items-center justify-center text-zinc-600 font-mono">
+                    <RefreshCw
+                      size={48}
+                      className="animate-spin mb-4 opacity-20"
+                    />
+                    <span className="animate-pulse tracking-widest uppercase text-[10px]">
+                      Processing Evaluation Data...
+                    </span>
+                  </div>
+                ) : error ? (
+                  <div className="flex-1 flex flex-col items-center justify-center text-red-500 font-mono text-center gap-4">
+                    <AlertTriangle size={48} className="opacity-50" />
+                    <div className="space-y-1">
+                      <div className="font-black uppercase tracking-tighter text-xl">
+                        {error}
+                      </div>
+                      <div className="text-[10px] text-zinc-500 italic max-w-xs uppercase">
+                        Target: municipality_infections.csv
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="space-y-4">
+                    <div
+                      className="grid grid-cols-12 text-[10px] font-black uppercase text-zinc-500 tracking-widest border-b pb-2 px-2"
+                      style={{ borderColor: COLORS.border }}
+                    >
+                      <div className="col-span-6">
+                        Municipality (Evaluation Set)
+                      </div>
+                      <div className="col-span-6 text-right">
+                        Infection Rate (%)
+                      </div>
+                    </div>
+                    <div className="space-y-2 pr-2 custom-scroll max-h-[500px] overflow-y-auto">
+                      {data.length === 0 ? (
+                        <div className="py-20 text-center text-zinc-700 font-mono text-xs uppercase tracking-widest">
+                          Awaiting ingestion of solution file...
+                        </div>
+                      ) : (
+                        data.map((item, idx) => (
+                          <div
+                            key={idx}
+                            className="grid grid-cols-12 text-xs font-mono items-center py-2.5 px-3 rounded hover:bg-white/5 transition-colors"
+                          >
+                            <div className="col-span-6 text-zinc-300 font-bold uppercase tracking-tighter">
+                              {item.name}
+                            </div>
+                            <div className="col-span-6 flex items-center justify-end gap-3">
+                              <div className="w-40 h-1.5 bg-zinc-900 rounded-full overflow-hidden hidden sm:block shadow-inner">
+                                <div
+                                  className="h-full transition-all duration-1000"
+                                  style={{
+                                    width: `${item.rate * 100}%`,
+                                    backgroundColor:
+                                      item.rate > 0.6
+                                        ? COLORS.red
+                                        : item.rate > 0.3
+                                          ? "#f59e0b"
+                                          : COLORS.blue,
+                                    boxShadow:
+                                      item.rate > 0.6
+                                        ? `0 0 10px ${COLORS.redGlow}`
+                                        : "none",
+                                  }}
+                                />
+                              </div>
+                              <span
+                                className="min-w-[60px] text-right font-black"
+                                style={{
+                                  color:
+                                    item.rate > 0.6
+                                      ? COLORS.red
+                                      : item.rate > 0.3
+                                        ? "#f59e0b"
+                                        : "inherit",
+                                }}
+                              >
+                                {(item.rate * 100).toFixed(2)}%
+                              </span>
+                            </div>
+                          </div>
+                        ))
+                      )}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
-            <button
-              onClick={loadData}
-              className="flex items-center gap-2 px-4 py-2 bg-zinc-900 border border-zinc-800 rounded-lg text-[10px] font-black text-zinc-400 hover:text-white hover:border-zinc-600 transition-all uppercase tracking-widest"
-            >
-              <RefreshCw size={12} className={loading ? "animate-spin" : ""} />
-              Reload Solution
-            </button>
+          </Card>
+        </div>
+
+        {/* Side Panel: Mission Context & Metrics */}
+        <div className="lg:col-span-4 space-y-6">
+          <div
+            className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950"
+            style={{ borderColor: COLORS.border, borderLeftColor: COLORS.blue }}
+          >
+            <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-blue-500 flex items-center gap-2">
+              <ShieldAlert size={16} /> Spokesperson Directive
+            </h3>
+            <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
+              "We have gathered personal medical data from the last 30 days. Your
+              goal is to provide an infection rate estimate for each municipality.
+              Evaluation is based on the Top 30 records by inhabitants."
+            </p>
           </div>
 
-          <div
-            className="bg-black border rounded-2xl p-8 min-h-[500px] flex flex-col"
-            style={{ borderColor: "rgba(255,255,255,0.05)" }}
-          >
-            {loading ? (
-              <div className="flex-1 flex flex-col items-center justify-center text-zinc-600 font-mono">
-                <RefreshCw size={48} className="animate-spin mb-4 opacity-20" />
-                <span className="animate-pulse tracking-widest uppercase text-[10px]">
-                  Processing Evaluation Data...
+          <Card title="Sector Metrics" icon={Activity} themeColor="blue">
+            <div className="space-y-4 pt-2">
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Cities Processed
+                </span>
+                <span className="text-sm font-black text-blue-400">2354</span>
+              </div>
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Peak Detected
+                </span>
+                <span className="text-sm font-black text-red-500">80.0%+</span>
+              </div>
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Control Subjects
+                </span>
+                <span className="text-sm font-black text-emerald-500">
+                  100 / Healthy
                 </span>
               </div>
-            ) : error ? (
-              <div className="flex-1 flex flex-col items-center justify-center text-red-500 font-mono text-center gap-4">
-                <AlertTriangle size={48} className="opacity-50" />
-                <div className="space-y-1">
-                  <div className="font-black uppercase tracking-tighter text-xl">
-                    {error}
-                  </div>
-                  <div className="text-[10px] text-zinc-500 italic max-w-xs uppercase">
-                    Target: municipality_infections.csv
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <div className="space-y-4">
-                <div
-                  className="grid grid-cols-12 text-[10px] font-black uppercase text-zinc-500 tracking-widest border-b pb-2 px-2"
-                  style={{ borderColor: COLORS.border }}
-                >
-                  <div className="col-span-6">
-                    Municipality (Evaluation Set)
-                  </div>
-                  <div className="col-span-6 text-right">
-                    Infection Rate (%)
-                  </div>
-                </div>
-                <div className="space-y-2 pr-2 custom-scroll max-h-[500px] overflow-y-auto">
-                  {data.length === 0 ? (
-                    <div className="py-20 text-center text-zinc-700 font-mono text-xs uppercase tracking-widest">
-                      Awaiting ingestion of solution file...
-                    </div>
-                  ) : (
-                    data.map((item, idx) => (
-                      <div
-                        key={idx}
-                        className="grid grid-cols-12 text-xs font-mono items-center py-2.5 px-3 rounded hover:bg-white/5 transition-colors"
-                      >
-                        <div className="col-span-6 text-zinc-300 font-bold uppercase tracking-tighter">
-                          {item.name}
-                        </div>
-                        <div className="col-span-6 flex items-center justify-end gap-3">
-                          <div className="w-40 h-1.5 bg-zinc-900 rounded-full overflow-hidden hidden sm:block shadow-inner">
-                            <div
-                              className="h-full transition-all duration-1000"
-                              style={{
-                                width: `${item.rate * 100}%`,
-                                backgroundColor:
-                                  item.rate > 0.6
-                                    ? COLORS.red
-                                    : item.rate > 0.3
-                                      ? "#f59e0b"
-                                      : COLORS.blue,
-                                boxShadow:
-                                  item.rate > 0.6
-                                    ? `0 0 10px ${COLORS.redGlow}`
-                                    : "none",
-                              }}
-                            />
-                          </div>
-                          <span
-                            className="min-w-[60px] text-right font-black"
-                            style={{
-                              color:
-                                item.rate > 0.6
-                                  ? COLORS.red
-                                  : item.rate > 0.3
-                                    ? "#f59e0b"
-                                    : "inherit",
-                            }}
-                          >
-                            {(item.rate * 100).toFixed(2)}%
-                          </span>
-                        </div>
-                      </div>
-                    ))
-                  )}
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-        {/* Python Code */}
-        <div className="mt-12 text-left">
-          <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
-            <Code size={14} /> <span>Municipality_Infection_Rate.py</span>
-          </div>
-          <div
-            className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
-            style={{ borderColor: COLORS.border, color: COLORS.emerald }}
-          >
-            <pre>{pythonCode}</pre>
-            <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
-              <Copy size={14} />
             </div>
-          </div>
+          </Card>
         </div>
       </div>
 
-      <div className="lg:col-span-4 space-y-6">
-        <div
-          className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950"
-          style={{ borderColor: COLORS.border, borderLeftColor: COLORS.blue }}
-        >
-          <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-blue-500 flex items-center gap-2">
-            <ShieldAlert size={16} /> Spokesperson Directive
-          </h3>
-          <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
-            "We have gathered personal medical data from the last 30 days. Your
-            goal is to provide an infection rate estimate for each municipality.
-            Evaluation is based on the Top 30 records by inhabitants."
-          </p>
+      {/* Python Code */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Municipality_Infection_Rate.py</span>
         </div>
-
         <div
-          className="bg-zinc-900/50 border p-6 rounded-2xl shadow-xl"
-          style={{ borderColor: COLORS.border }}
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
+          style={{ borderColor: COLORS.border, color: COLORS.emerald }}
         >
-          <h4 className="text-[10px] uppercase font-black text-zinc-600 mb-6 tracking-widest">
-            Sector Metrics
-          </h4>
-          <div className="space-y-4">
-            <div
-              className="flex justify-between border-b py-2"
-              style={{ borderColor: "rgba(255,255,255,0.05)" }}
-            >
-              <span className="text-[10px] text-zinc-500 font-bold uppercase">
-                Cities Processed
-              </span>
-              <span className="text-sm font-black text-blue-400">2354</span>
-            </div>
-            <div
-              className="flex justify-between border-b py-2"
-              style={{ borderColor: "rgba(255,255,255,0.05)" }}
-            >
-              <span className="text-[10px] text-zinc-500 font-bold uppercase">
-                Peak Detected
-              </span>
-              <span className="text-sm font-black text-red-500">80.0%+</span>
-            </div>
-            <div
-              className="flex justify-between border-b py-2"
-              style={{ borderColor: "rgba(255,255,255,0.05)" }}
-            >
-              <span className="text-[10px] text-zinc-500 font-bold uppercase">
-                Control Subjects
-              </span>
-              <span className="text-sm font-black text-emerald-500">
-                100 / Healthy
-              </span>
-            </div>
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+            <Copy size={14} />
           </div>
         </div>
       </div>
     </div>
   );
 };
+
+// --- Journalist Branch Logic (Mission 1.1) ---
 
 // --- Journalist Branch Logic (Mission 1.1) ---
 
@@ -628,142 +617,296 @@ const JournalistMission = () => {
 paste_code_here`;
 
   return (
-    <div
-      className="grid grid-cols-1 lg:grid-cols-12 gap-8"
-      style={{ animation: "fadeIn 0.8s ease-out forwards" }}
-    >
-      <div className="lg:col-span-8 space-y-6">
-        <div
-          className="border rounded-3xl p-10 shadow-2xl relative"
-          style={{ backgroundColor: COLORS.card, borderColor: COLORS.border }}
-        >
-          {/* Head */}
-          <div
-            className="absolute top-0 left-0 w-full h-1"
-            style={{
-              background: `linear-gradient(90deg, ${COLORS.amber}, transparent)`,
-            }}
-          />
-          <div
-            className="flex items-center gap-5 mb-10 border-b pb-8"
-            style={{ borderColor: "rgba(255,255,255,0.05)" }}
+    <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Main Data Console */}
+        <div className="lg:col-span-8">
+          <Card
+            title="Virus Origin Detection"
+            icon={Radio}
+            themeColor="amber"
           >
-            <div
-              className="p-3 rounded-xl border"
-              style={{
-                backgroundColor: "rgba(245, 158, 11, 0.1)",
-                color: COLORS.amber,
-                borderColor: "rgba(245, 158, 11, 0.2)",
-              }}
-            >
-              <Radio size={28} className="animate-pulse" />
-            </div>
-            <div>
-              <h2 className="text-2xl font-black uppercase tracking-tight text-white leading-none">
-                Virus Origin Detection
-              </h2>
-              <span
-                className="text-[10px] font-mono font-black tracking-widest mt-2 block uppercase"
-                style={{ color: COLORS.amber }}
+            <div className="flex flex-col gap-6">
+              <div className="flex justify-between items-center">
+                <span
+                  className="text-[10px] font-mono font-black tracking-widest block uppercase"
+                  style={{ color: COLORS.amber }}
+                >
+                  Public Informational Broadcast // Mission 1.1
+                </span>
+                <button
+                  onClick={loadOrigins}
+                  className="flex items-center gap-2 px-4 py-2 bg-zinc-900 border border-zinc-800 rounded-lg text-[10px] font-black text-zinc-400 hover:text-white hover:border-zinc-600 transition-all uppercase tracking-widest"
+                >
+                  <RefreshCw
+                    size={12}
+                    className={loading ? "animate-spin" : ""}
+                  />
+                  Refresh Signal
+                </button>
+              </div>
+
+              <div
+                className="bg-black border rounded-2xl p-12 min-h-[400px] flex flex-col items-center justify-center relative shadow-inner overflow-hidden"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
               >
-                Public Informational Broadcast // Mission 1.1
-              </span>
-            </div>
-          </div>
-          {/* Content */}
-          <div
-            className="bg-black border rounded-2xl p-12 min-h-[400px] flex flex-col items-center justify-center relative shadow-inner overflow-hidden"
-            style={{ borderColor: "rgba(255,255,255,0.05)" }}
-          >
-            <div
-              className="absolute inset-0 opacity-10 pointer-events-none"
-              style={{
-                backgroundImage:
-                  "radial-gradient(circle at center, #f59e0b 0%, transparent 70%)",
-              }}
-            />
+                <div
+                  className="absolute inset-0 opacity-10 pointer-events-none"
+                  style={{
+                    backgroundImage:
+                      "radial-gradient(circle at center, #f59e0b 0%, transparent 70%)",
+                  }}
+                />
 
-            {loading ? (
-              <div className="text-zinc-600 font-mono animate-pulse uppercase text-[10px]">
-                Scanning Geospatial Records...
-              </div>
-            ) : error ? (
-              <div className="text-red-500 font-mono text-center">
-                <AlertTriangle size={48} className="mx-auto mb-4 opacity-30" />
-                <div className="font-black uppercase">{error}</div>
-              </div>
-            ) : (
-              <div className="w-full max-w-md space-y-6 relative z-10">
-                <div className="text-center mb-8">
-                  <div className="text-[10px] font-black text-amber-500/80 uppercase tracking-[0.4em] mb-2 italic">
-                    Breaking: Patient Zero Vectors Identified
+                {loading ? (
+                  <div className="text-zinc-600 font-mono animate-pulse uppercase text-[10px]">
+                    Scanning Geospatial Records...
                   </div>
-                  <h3 className="text-white text-lg font-black uppercase border-y py-2 border-white/5 tracking-tighter">
-                    Primary Origins
-                  </h3>
-                </div>
-
-                <div className="grid gap-3">
-                  {origins.map((city, i) => (
-                    <div
-                      key={i}
-                      className="flex items-center gap-4 bg-zinc-900/50 p-4 border rounded-xl border-white/5 hover:border-amber-500/30 transition-all group"
-                    >
-                      <div className="w-8 h-8 rounded-lg bg-black border border-amber-500/20 flex items-center justify-center text-amber-500 font-black text-xs">
-                        0{i + 1}
+                ) : error ? (
+                  <div className="text-red-500 font-mono text-center">
+                    <AlertTriangle size={48} className="mx-auto mb-4 opacity-30" />
+                    <div className="font-black uppercase">{error}</div>
+                  </div>
+                ) : (
+                  <div className="w-full max-w-md space-y-6 relative z-10">
+                    <div className="text-center mb-8">
+                      <div className="text-[10px] font-black text-amber-500/80 uppercase tracking-[0.4em] mb-2 italic">
+                        Breaking: Patient Zero Vectors Identified
                       </div>
-                      <div className="flex-1">
-                        <div className="text-xs font-black text-zinc-100 uppercase tracking-widest group-hover:text-amber-400 transition-colors">
-                          {city}
-                        </div>
-                        <div className="text-[9px] text-zinc-600 font-mono uppercase font-black">
-                          Emergence Point Alpha
-                        </div>
-                      </div>
-                      <MapPin
-                        size={16}
-                        className="text-zinc-700 group-hover:text-red-500 transition-colors"
-                      />
+                      <h3 className="text-white text-lg font-black uppercase border-y py-2 border-white/5 tracking-tighter">
+                        Primary Origins
+                      </h3>
                     </div>
-                  ))}
-                </div>
+
+                    <div className="grid gap-3">
+                      {origins.length === 0 ? (
+                         <div className="text-center text-zinc-600 font-mono text-xs uppercase tracking-widest py-8">
+                           No vectors detected...
+                         </div>
+                      ) : (
+                        origins.map((city, i) => (
+                          <div
+                            key={i}
+                            className="flex items-center gap-4 bg-zinc-900/50 p-4 border rounded-xl border-white/5 hover:border-amber-500/30 transition-all group"
+                          >
+                            <div className="w-8 h-8 rounded-lg bg-black border border-amber-500/20 flex items-center justify-center text-amber-500 font-black text-xs">
+                              0{i + 1}
+                            </div>
+                            <div className="flex-1">
+                              <div className="text-xs font-black text-zinc-100 uppercase tracking-widest group-hover:text-amber-400 transition-colors">
+                                {city}
+                              </div>
+                              <div className="text-[9px] text-zinc-600 font-mono uppercase font-black">
+                                Emergence Point Alpha
+                              </div>
+                            </div>
+                            <MapPin
+                              size={16}
+                              className="text-zinc-700 group-hover:text-red-500 transition-colors"
+                            />
+                          </div>
+                        ))
+                      )}
+                    </div>
+                  </div>
+                )}
               </div>
-            )}
-          </div>
-        </div>
-        {/* Python Code */}
-        <div className="mt-12 text-left">
-          <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
-            <Code size={14} /> <span>Origin_Detection_Algorithm.py</span>
-          </div>
-          <div
-            className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
-            style={{ borderColor: COLORS.border, color: COLORS.emerald }}
-          >
-            <pre>{pythonCode}</pre>
-            <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
-              <Copy size={14} />
             </div>
+          </Card>
+        </div>
+
+        {/* Side Panel: Mission Context */}
+        <div className="lg:col-span-4 space-y-6">
+          <div
+            className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950"
+            style={{ borderColor: COLORS.border, borderLeftColor: COLORS.amber }}
+          >
+            <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-amber-500 flex items-center gap-2">
+              <Newspaper size={16} /> Journalist Directive
+            </h3>
+            <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
+              "Provide the public with the 5 most likely municipalities where the
+              virus originated. They need to know where it started."
+            </p>
+          </div>
+
+           <Card title="Signal Intercepts" icon={Activity} themeColor="amber">
+            <div className="bg-black p-4 rounded-xl border border-white/5 font-mono text-[10px] overflow-hidden h-40 relative">
+              <div className="text-amber-500 mb-3 border-b border-white/5 pb-2">{`>> [LOCAL NODE SCAN]`}</div>
+              <div className="text-zinc-600 space-y-2 opacity-50">
+                <div className="truncate">PING: NODE_1A_ACTIVE</div>
+                <div className="truncate text-amber-900">
+                  GEOLOCATING_ORIGIN_SIGNATURES
+                </div>
+                <div className="truncate">CROSS_REFERENCING_RECORDS</div>
+                <div className="truncate">MATCH_CONFIDENCE: 94.2%</div>
+                <div className="truncate">...</div>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none" />
+            </div>
+          </Card>
+        </div>
+      </div>
+
+      {/* Python Code */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Origin_Detection_Algorithm.py</span>
+        </div>
+        <div
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
+          style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+        >
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+            <Copy size={14} />
           </div>
         </div>
       </div>
-      {/* Mission Intel */}
-      <div className="lg:col-span-4 space-y-6">
+    </div>
+  );
+};
+
+// --- Mission 2.0: Cure and Quarantine ---
+const GovernmentMission2 = () => {
+  const [threshold, setThreshold] = useState(null);
+  const [quarantined, setQuarantined] = useState([]);
+
+  const pythonCode = `# MISSION 2.0 SOLUTION
+
+paste_code_here`;
+
+  useEffect(() => {
+    // Fetch Temperature Threshold
+    fetch("/data/solutions/WasWird 1/temperaturethreshold.csv")
+      .then((res) => res.text())
+      .then((text) => {
+        setThreshold(text.trim());
+      })
+      .catch((err) =>
+        console.error("Failed to load temperature threshold", err),
+      );
+
+    // Fetch Quarantine List
+    fetch("/data/solutions/WasWird 1/quarantine.csv")
+      .then((res) => res.text())
+      .then((text) => {
+        // Split by newline, trim whitespace, and filter out any empty lines
+        const lines = text
+          .split("\n")
+          .map((line) => line.trim())
+          .filter((line) => line.length > 0);
+        setQuarantined(lines);
+      })
+      .catch((err) => console.error("Failed to load quarantine list", err));
+  }, []);
+
+  return (
+    <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        {/* Main Data Console - Now only contains the Threshold */}
+        <div className="lg:col-span-8">
+          <Card
+            title="Threshold Protocol"
+            icon={ShieldAlert}
+            themeColor="blue"
+          >
+            <div className="flex flex-col gap-6">
+              <div className="flex justify-between items-center">
+                <span
+                  className="text-[10px] font-mono font-black tracking-widest block uppercase"
+                  style={{ color: COLORS.blue }}
+                >
+                  EVALUATION_SET: ACTIVE // SOURCE: SOLUTIONS_V2
+                </span>
+              </div>
+
+              {/* Temperature Threshold Internal Card */}
+              <div
+                className="rounded-lg border bg-black p-12 flex flex-col items-center justify-center space-y-6 shadow-inner relative overflow-hidden min-h-[350px]"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <div
+                  className="absolute inset-0 opacity-5 pointer-events-none"
+                  style={{
+                    backgroundImage:
+                      "radial-gradient(circle at center, #2563eb 0%, transparent 70%)",
+                  }}
+                />
+                <Thermometer className="w-16 h-16 text-red-500 relative z-10" />
+                <h3 className="text-lg font-black text-white uppercase tracking-widest relative z-10 text-center">
+                  Temperature Threshold
+                </h3>
+                <div className="text-7xl font-mono font-bold text-red-500 drop-shadow-md relative z-10 py-4">
+                  {threshold ? `${threshold}°C` : "LOADING..."}
+                </div>
+                <p className="text-xs font-mono text-zinc-500 text-center mt-4 max-w-md uppercase relative z-10">
+                  Individuals above this body temperature will be denied entry to critical locations to mitigate viral spread.
+                </p>
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Side Panel: Mission Context & Quarantine Table */}
+        <div className="lg:col-span-4 space-y-6">
+          {/* Intel Widget */}
+          <div
+            className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950"
+            style={{ borderColor: COLORS.border, borderLeftColor: COLORS.blue }}
+          >
+            <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-blue-500 flex items-center gap-2">
+              <ShieldAlert size={16} /> Government Directive
+            </h3>
+            <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
+              "Establish a precise body temperature threshold to secure critical infrastructure without inciting public unrest. 
+              Additionally, identify up to 20 optimal municipalities for immediate military quarantine, balancing infection containment against our military's maximum operational capacity."
+            </p>
+          </div>
+
+          {/* Quarantine Table Widget */}
+          <Card title="Quarantine Targets" icon={List} themeColor="blue">
+            <div className="flex-1 overflow-y-auto max-h-[300px] pr-2 mt-2 custom-scrollbar">
+              {quarantined.length > 0 ? (
+                <ul className="space-y-2">
+                  {quarantined.map((municipality, idx) => (
+                    <li
+                      key={idx}
+                      className="flex items-center gap-3 font-mono text-xs bg-zinc-900 px-3 py-2.5 rounded border border-white/5 hover:border-emerald-500/30 transition-colors"
+                    >
+                      <span className="text-zinc-600 w-6 text-right font-black">
+                        {idx + 1}.
+                      </span>
+                      <span className="text-emerald-400 font-bold uppercase tracking-tighter">
+                        {municipality}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <div className="text-zinc-500 font-mono text-xs text-center py-10 animate-pulse uppercase tracking-widest">
+                  Awaiting Targeting Data...
+                </div>
+              )}
+            </div>
+          </Card>
+        </div>
+      </div>
+
+      {/* Python Code */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Quarantine_Protocol.py</span>
+        </div>
         <div
-          className="border p-6 rounded-2xl border-l-4 shadow-xl"
-          style={{
-            backgroundColor: COLORS.card,
-            borderColor: COLORS.border,
-            borderLeftColor: COLORS.amber,
-          }}
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
+          style={{ borderColor: COLORS.border, color: COLORS.emerald }}
         >
-          <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-white">
-            Journalist Directive
-          </h3>
-          <p className="text-sm text-zinc-400 leading-relaxed italic">
-            "Provide the public with the 5 most likely municipalities where the
-            virus originated. They need to know where it started."
-          </p>
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+            <Copy size={14} />
+          </div>
         </div>
       </div>
     </div>
@@ -964,134 +1107,6 @@ const VectorNet = ({ visits, simulations, patientZero, onDayChange }) => {
           }
         }
       `}</style>
-    </div>
-  );
-};
-
-// --- Mission 2.0: Cure and Quarantine ---
-const GovernmentMission2 = () => {
-  const [threshold, setThreshold] = useState(null);
-  const [quarantined, setQuarantined] = useState([]);
-
-  const pythonCode = `# MISSION 2.0 SOLUTION
-
-paste_code_here`;
-
-  useEffect(() => {
-    // Fetch Temperature Threshold
-    fetch("/data/solutions/WasWird 1/temperaturethreshold.csv")
-      .then((res) => res.text())
-      .then((text) => {
-        setThreshold(text.trim());
-      })
-      .catch((err) =>
-        console.error("Failed to load temperature threshold", err),
-      );
-
-    // Fetch Quarantine List
-    fetch("/data/solutions/WasWird 1//quarantine.csv")
-      .then((res) => res.text())
-      .then((text) => {
-        // Split by newline, trim whitespace, and filter out any empty lines
-        const lines = text
-          .split("\n")
-          .map((line) => line.trim())
-          .filter((line) => line.length > 0);
-        setQuarantined(lines);
-      })
-      .catch((err) => console.error("Failed to load quarantine list", err));
-  }, []);
-
-  return (
-    <div className="space-y-6">
-      {/* Mission Header */}
-      <div
-        className="flex items-center gap-3 mb-8 border-b pb-4"
-        style={{ borderColor: COLORS.border }}
-      >
-        <Shield className="w-8 h-8 text-blue-500" />
-        <div>
-          <h2 className="text-2xl font-mono font-bold text-white tracking-wider">
-            MISSION 2.0: GOVERNMENT
-          </h2>
-          <p className="text-sm font-mono text-zinc-400">
-            Quarantine Protocol & Temperature Threshold
-          </p>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Temperature Threshold Card */}
-        <div
-          className="rounded-lg border bg-zinc-950 p-6 flex flex-col items-center justify-center space-y-4"
-          style={{ borderColor: COLORS.border }}
-        >
-          <Thermometer className="w-12 h-12 text-red-500" />
-          <h3 className="text-lg font-mono text-white uppercase tracking-widest">
-            Temperature Threshold
-          </h3>
-          <div className="text-5xl font-mono font-bold text-red-500 drop-shadow-md">
-            {threshold ? `${threshold}°C` : "LOADING..."}
-          </div>
-          <p className="text-xs font-mono text-zinc-500 text-center mt-4 max-w-xs">
-            Individuals above this threshold will be denied entry to critical
-            locations.
-          </p>
-        </div>
-
-        {/* Quarantined Municipalities Card */}
-        <div
-          className="rounded-lg border bg-zinc-950 p-6 flex flex-col space-y-4"
-          style={{ borderColor: COLORS.border }}
-        >
-          <div
-            className="flex items-center gap-2 border-b pb-2"
-            style={{ borderColor: COLORS.border }}
-          >
-            <List className="w-5 h-5 text-emerald-500" />
-            <h3 className="text-lg font-mono text-white uppercase tracking-widest">
-              Quarantine Targets
-            </h3>
-          </div>
-
-          <div className="flex-1 overflow-y-auto max-h-[300px] pr-2 custom-scrollbar">
-            {quarantined.length > 0 ? (
-              <ul className="space-y-2">
-                {quarantined.map((municipality, idx) => (
-                  <li
-                    key={idx}
-                    className="flex items-center gap-3 font-mono text-sm bg-zinc-900 px-3 py-2 rounded border border-white/5 hover:border-emerald-500/30 transition-colors"
-                  >
-                    <span className="text-zinc-600 w-6 text-right">
-                      {idx + 1}.
-                    </span>
-                    <span className="text-emerald-400">{municipality}</span>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <div className="text-zinc-500 font-mono text-sm text-center py-8 animate-pulse">
-                DECRYPTING PROTOCOL...
-              </div>
-            )}
-          </div>
-        </div>
-        {/* Python Code */}
-        <div className="mt-12 text-left">
-          <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
-            <Code size={14} /> <span>Quarantine.py</span>
-          </div>
-          <div
-            className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
-            style={{ borderColor: COLORS.border, color: COLORS.emerald }}
-          >
-            <pre>{pythonCode}</pre>
-            <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
-              <Copy size={14} />
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
@@ -1364,81 +1379,90 @@ paste_code_here`;
 
   return (
     <div className="space-y-8 animate-in fade-in duration-700">
-      <div className="flex justify-between items-center border-b border-white/5 pb-6">
-        <div>
-          <h2 className="text-2xl font-black uppercase tracking-tighter text-white">
-            Riot Surveillance Grid
-          </h2>
-          <p className="text-[10px] font-mono text-red-500 tracking-widest uppercase mt-2">
-            Ultralytics YOLOv8 // Person Detection Active
-          </p>
-        </div>
-        <div className="text-right">
-          <div className="text-3xl font-black text-red-500">{total}</div>
-          <span className="text-[9px] uppercase text-zinc-600 tracking-widest font-black">
-            TOTAL_HEADCOUNT
-          </span>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
-        {images.map((img, idx) => (
-          <div
-            key={idx}
-            className="relative bg-black border border-white/5 rounded-xl overflow-hidden shadow-2xl group"
-          >
-            <img
-              src={`ae/crowd_recognition_AME/${img.filename}`}
-              alt={img.filename}
-              className="w-full h-48 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-            />
-
-            {/* CCTV overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
-
-            {/* Scanlines */}
-            <div
-              className="absolute inset-0 pointer-events-none opacity-10"
-              style={{
-                backgroundImage:
-                  "repeating-linear-gradient(0deg, transparent, transparent 2px, #ffffff 2px, #ffffff 3px)",
-              }}
-            />
-
-            {/* Bounding box aesthetic */}
-            <div className="absolute top-4 left-4 border border-red-500 w-16 h-20 opacity-50" />
-
-            <div className="absolute bottom-4 left-4 text-white">
-              <div className="text-xs font-mono uppercase tracking-widest">
-                {img.filename}
-              </div>
-              <div className="text-lg font-black text-red-500">
-                {img.headcount} People
-              </div>
+      
+      {/* Wrapped in Card to fix gradient border and styling */}
+      <Card
+        title="Riot Surveillance Grid"
+        icon={Activity}
+        themeColor="red"
+      >
+        <div className="flex flex-col gap-6">
+          <div className="flex justify-between items-center">
+            <span
+              className="text-[10px] font-mono font-black tracking-widest block uppercase"
+              style={{ color: COLORS.red }}
+            >
+              Ultralytics YOLOv8 // Person Detection Active
+            </span>
+            <div className="text-right">
+              <div className="text-3xl font-black text-red-500 leading-none mb-1">{total}</div>
+              <span className="text-[9px] uppercase text-zinc-500 tracking-widest font-black">
+                TOTAL_HEADCOUNT
+              </span>
             </div>
           </div>
-        ))}
-      </div>
 
-      <div className="border border-white/5 bg-zinc-950 rounded-2xl p-6 mt-8">
-        <div className="flex justify-between items-center">
-          <div className="text-[10px] font-black uppercase tracking-widest text-zinc-600">
-            Detection Engine
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
+            {images.map((img, idx) => (
+              <div
+                key={idx}
+                className="relative bg-black border border-white/5 rounded-xl overflow-hidden shadow-2xl group"
+              >
+                <img
+                  src={`ae/crowd_recognition_AME/${img.filename}`}
+                  alt={img.filename}
+                  className="w-full h-48 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                />
+
+                {/* CCTV overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
+
+                {/* Scanlines */}
+                <div
+                  className="absolute inset-0 pointer-events-none opacity-10"
+                  style={{
+                    backgroundImage:
+                      "repeating-linear-gradient(0deg, transparent, transparent 2px, #ffffff 2px, #ffffff 3px)",
+                  }}
+                />
+
+                {/* Bounding box aesthetic */}
+                <div className="absolute top-4 left-4 border border-red-500 w-16 h-20 opacity-50" />
+
+                <div className="absolute bottom-4 left-4 text-white">
+                  <div className="text-xs font-mono uppercase tracking-widest">
+                    {img.filename}
+                  </div>
+                  <div className="text-lg font-black text-red-500">
+                    {img.headcount} People
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-          <div className="text-[10px] font-mono text-emerald-500 uppercase">
-            Status: Operational
+
+          <div className="border border-white/5 bg-zinc-950 rounded-2xl p-6 mt-4">
+            <div className="flex justify-between items-center">
+              <div className="text-[10px] font-black uppercase tracking-widest text-zinc-600">
+                Detection Engine
+              </div>
+              <div className="text-[10px] font-mono text-emerald-500 uppercase font-black tracking-widest">
+                Status: Operational
+              </div>
+            </div>
+            <div className="mt-4 text-xs text-zinc-400 font-mono">
+              Model: YOLOv8x
+              <br />
+              Classes: person
+              <br />
+              Confidence Threshold: 0.45
+              <br />
+              Non-Max Suppression: Enabled
+            </div>
           </div>
         </div>
-        <div className="mt-4 text-xs text-zinc-400 font-mono">
-          Model: YOLOv8x
-          <br />
-          Classes: person
-          <br />
-          Confidence Threshold: 0.45
-          <br />
-          Non-Max Suppression: Enabled
-        </div>
-      </div>
+      </Card>
+      
       {/* Python Code */}
       <div className="mt-12 text-left">
         <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
