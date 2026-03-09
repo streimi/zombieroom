@@ -25,6 +25,9 @@ import {
   Code,
   UserSearch,
   Terminal,
+  Thermometer,
+  Shield,
+  List,
 } from "lucide-react";
 
 /**
@@ -516,19 +519,19 @@ paste_code_here`;
               </div>
             )}
           </div>
-
-          <div className="mt-12 text-left">
-            <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
-              <Code size={14} /> <span>Municipality_Infection_Rate.py</span>
-            </div>
-            <div
-              className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
-              style={{ borderColor: COLORS.border, color: COLORS.emerald }}
-            >
-              <pre>{pythonCode}</pre>
-              <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
-                <Copy size={14} />
-              </div>
+        </div>
+        {/* Python Code */}
+        <div className="mt-12 text-left">
+          <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+            <Code size={14} /> <span>Municipality_Infection_Rate.py</span>
+          </div>
+          <div
+            className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
+            style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+          >
+            <pre>{pythonCode}</pre>
+            <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+              <Copy size={14} />
             </div>
           </div>
         </div>
@@ -536,17 +539,13 @@ paste_code_here`;
 
       <div className="lg:col-span-4 space-y-6">
         <div
-          className="border p-6 rounded-2xl border-l-4 shadow-xl"
-          style={{
-            backgroundColor: COLORS.card,
-            borderColor: COLORS.border,
-            borderLeftColor: COLORS.blue,
-          }}
+          className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950"
+          style={{ borderColor: COLORS.border, borderLeftColor: COLORS.blue }}
         >
-          <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-white">
-            Directive: Mission 1
+          <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-blue-500 flex items-center gap-2">
+            <ShieldAlert size={16} /> Spokesperson Directive
           </h3>
-          <p className="text-sm text-zinc-400 leading-relaxed italic">
+          <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
             "We have gathered personal medical data from the last 30 days. Your
             goal is to provide an infection rate estimate for each municipality.
             Evaluation is based on the Top 30 records by inhabitants."
@@ -731,19 +730,19 @@ paste_code_here`;
               </div>
             )}
           </div>
-          {/* Python Code */}
-          <div className="mt-12 text-left">
-            <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
-              <Code size={14} /> <span>Origin_Detection_Algorithm.py</span>
-            </div>
-            <div
-              className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
-              style={{ borderColor: COLORS.border, color: COLORS.emerald }}
-            >
-              <pre>{pythonCode}</pre>
-              <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
-                <Copy size={14} />
-              </div>
+        </div>
+        {/* Python Code */}
+        <div className="mt-12 text-left">
+          <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+            <Code size={14} /> <span>Origin_Detection_Algorithm.py</span>
+          </div>
+          <div
+            className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
+            style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+          >
+            <pre>{pythonCode}</pre>
+            <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+              <Copy size={14} />
             </div>
           </div>
         </div>
@@ -965,6 +964,134 @@ const VectorNet = ({ visits, simulations, patientZero, onDayChange }) => {
           }
         }
       `}</style>
+    </div>
+  );
+};
+
+// --- Mission 2.0: Cure and Quarantine ---
+const GovernmentMission2 = () => {
+  const [threshold, setThreshold] = useState(null);
+  const [quarantined, setQuarantined] = useState([]);
+
+  const pythonCode = `# MISSION 2.0 SOLUTION
+
+paste_code_here`;
+
+  useEffect(() => {
+    // Fetch Temperature Threshold
+    fetch("/data/solutions/WasWird 1/temperaturethreshold.csv")
+      .then((res) => res.text())
+      .then((text) => {
+        setThreshold(text.trim());
+      })
+      .catch((err) =>
+        console.error("Failed to load temperature threshold", err),
+      );
+
+    // Fetch Quarantine List
+    fetch("/data/solutions/WasWird 1//quarantine.csv")
+      .then((res) => res.text())
+      .then((text) => {
+        // Split by newline, trim whitespace, and filter out any empty lines
+        const lines = text
+          .split("\n")
+          .map((line) => line.trim())
+          .filter((line) => line.length > 0);
+        setQuarantined(lines);
+      })
+      .catch((err) => console.error("Failed to load quarantine list", err));
+  }, []);
+
+  return (
+    <div className="space-y-6">
+      {/* Mission Header */}
+      <div
+        className="flex items-center gap-3 mb-8 border-b pb-4"
+        style={{ borderColor: COLORS.border }}
+      >
+        <Shield className="w-8 h-8 text-blue-500" />
+        <div>
+          <h2 className="text-2xl font-mono font-bold text-white tracking-wider">
+            MISSION 2.0: GOVERNMENT
+          </h2>
+          <p className="text-sm font-mono text-zinc-400">
+            Quarantine Protocol & Temperature Threshold
+          </p>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Temperature Threshold Card */}
+        <div
+          className="rounded-lg border bg-zinc-950 p-6 flex flex-col items-center justify-center space-y-4"
+          style={{ borderColor: COLORS.border }}
+        >
+          <Thermometer className="w-12 h-12 text-red-500" />
+          <h3 className="text-lg font-mono text-white uppercase tracking-widest">
+            Temperature Threshold
+          </h3>
+          <div className="text-5xl font-mono font-bold text-red-500 drop-shadow-md">
+            {threshold ? `${threshold}°C` : "LOADING..."}
+          </div>
+          <p className="text-xs font-mono text-zinc-500 text-center mt-4 max-w-xs">
+            Individuals above this threshold will be denied entry to critical
+            locations.
+          </p>
+        </div>
+
+        {/* Quarantined Municipalities Card */}
+        <div
+          className="rounded-lg border bg-zinc-950 p-6 flex flex-col space-y-4"
+          style={{ borderColor: COLORS.border }}
+        >
+          <div
+            className="flex items-center gap-2 border-b pb-2"
+            style={{ borderColor: COLORS.border }}
+          >
+            <List className="w-5 h-5 text-emerald-500" />
+            <h3 className="text-lg font-mono text-white uppercase tracking-widest">
+              Quarantine Targets
+            </h3>
+          </div>
+
+          <div className="flex-1 overflow-y-auto max-h-[300px] pr-2 custom-scrollbar">
+            {quarantined.length > 0 ? (
+              <ul className="space-y-2">
+                {quarantined.map((municipality, idx) => (
+                  <li
+                    key={idx}
+                    className="flex items-center gap-3 font-mono text-sm bg-zinc-900 px-3 py-2 rounded border border-white/5 hover:border-emerald-500/30 transition-colors"
+                  >
+                    <span className="text-zinc-600 w-6 text-right">
+                      {idx + 1}.
+                    </span>
+                    <span className="text-emerald-400">{municipality}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <div className="text-zinc-500 font-mono text-sm text-center py-8 animate-pulse">
+                DECRYPTING PROTOCOL...
+              </div>
+            )}
+          </div>
+        </div>
+        {/* Python Code */}
+        <div className="mt-12 text-left">
+          <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+            <Code size={14} /> <span>Quarantine.py</span>
+          </div>
+          <div
+            className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
+            style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+          >
+            <pre>{pythonCode}</pre>
+            <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+              <Copy size={14} />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
@@ -1197,19 +1324,19 @@ paste_code_here`;
               </div>
             </div>
           </div>
-          {/* Python Code */}
-          <div className="mt-12 text-left">
-            <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
-              <Code size={14} /> <span>Patient_Zero_Tracing.py</span>
-            </div>
-            <div
-              className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
-              style={{ borderColor: COLORS.border, color: COLORS.emerald }}
-            >
-              <pre>{pythonCode}</pre>
-              <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
-                <Copy size={14} />
-              </div>
+        </div>
+        {/* Python Code */}
+        <div className="mt-12 text-left">
+          <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+            <Code size={14} /> <span>Patient_Zero_Tracing.py</span>
+          </div>
+          <div
+            className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
+            style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+          >
+            <pre>{pythonCode}</pre>
+            <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+              <Copy size={14} />
             </div>
           </div>
         </div>
@@ -1221,15 +1348,19 @@ paste_code_here`;
 // --- Mission 3.1: Riot Surveillance Logic ---
 const RiotMission = () => {
   const [images] = useState([
-    { filename: "Crowd_116.gif", headcount: 120 },
-    { filename: "Crowd_140.gif", headcount: 82 },
-    { filename: "Crowd_143.gif", headcount: 121 },
-    { filename: "Crowd_152.gif", headcount: 58 },
-    { filename: "Crowd_154.gif", headcount: 36 },
-    { filename: "Crowd_157.gif", headcount: 29 },
+    { filename: "Crowd_116.gif", headcount: 56 },
+    { filename: "Crowd_140.gif", headcount: 57 },
+    { filename: "Crowd_143.gif", headcount: 102 },
+    { filename: "Crowd_152.gif", headcount: 57 },
+    { filename: "Crowd_154.gif", headcount: 62 },
+    { filename: "Crowd_157.gif", headcount: 36 },
   ]);
 
   const total = images.reduce((sum, img) => sum + img.headcount, 0);
+
+  const pythonCode = `# MISSION 3.1 SOLUTION
+
+paste_code_here`;
 
   return (
     <div className="space-y-8 animate-in fade-in duration-700">
@@ -1299,13 +1430,28 @@ const RiotMission = () => {
           </div>
         </div>
         <div className="mt-4 text-xs text-zinc-400 font-mono">
-          Model: YOLOv8n
+          Model: YOLOv8x
           <br />
           Classes: person
           <br />
           Confidence Threshold: 0.45
           <br />
           Non-Max Suppression: Enabled
+        </div>
+      </div>
+      {/* Python Code */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Human_Detection_Engine.py</span>
+        </div>
+        <div
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
+          style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+        >
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+            <Copy size={14} />
+          </div>
         </div>
       </div>
     </div>
@@ -1360,6 +1506,10 @@ const WhistleblowerMission = () => {
       });
     }, 50); // Speed of decryption
   };
+
+  const pythonCode = `# MISSION 3.2 SOLUTION
+
+paste_code_here`;
 
   return (
     <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
@@ -1487,6 +1637,21 @@ const WhistleblowerMission = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none" />
             </div>
           </Card>
+        </div>
+      </div>
+      {/* Python Code */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Decryption_Cipher.py</span>
+        </div>
+        <div
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
+          style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+        >
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+            <Copy size={14} />
+          </div>
         </div>
       </div>
     </div>
@@ -1622,6 +1787,14 @@ export default function App() {
               #1.1 - origin_detection.csv
             </button>
 
+            {/* NEW TAB FOR MISSION 2.0 */}
+            <button
+              onClick={() => setActiveTab("government2")}
+              className={`w-full text-left px-8 py-3 text-[10px] font-black tracking-widest uppercase transition-colors ${activeTab === "government2" ? "text-white bg-zinc-900 border-l-2 border-blue-500" : "text-zinc-600 hover:bg-zinc-900"}`}
+            >
+              #2.0 - quarantine.json
+            </button>
+
             {/* NEW TAB FOR MISSION 2.1 */}
             <button
               onClick={() => setActiveTab("patientzero")}
@@ -1673,6 +1846,7 @@ export default function App() {
             {activeTab === "dashboard" && <Dashboard stats={stats} />}
             {activeTab === "government" && <GovernmentMission />}
             {activeTab === "journalist" && <JournalistMission />}
+            {activeTab === "government2" && <GovernmentMission2 />}
             {activeTab === "patientzero" && <PatientZeroMission />}
             {activeTab === "whistleblower" && <WhistleblowerMission />}
             {activeTab === "riotintel" && <RiotMission />}
