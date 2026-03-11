@@ -1,0 +1,704 @@
+location1,location2,traveltime
+Linz Castle,Melk Abbey Sanctuary Zone,69
+Linz Castle,Hallstatt Village Perimeter,65
+Wachau Valley Green Zone,Melk Abbey Sanctuary Zone,12
+Wachau Valley Green Zone,Linz Castle,77
+FH St Poelten Campus Data Zone,Melk Abbey Sanctuary Zone,19
+FH St Poelten Campus Data Zone,Linz Castle,88
+FH St Poelten Campus Data Zone,Wachau Valley Green Zone,15
+Salzkammergut Lake District,Hallstatt Village Perimeter,16
+Salzkammergut Lake District,Linz Castle,61
+Hall in Tirol Medical Center,Innsbruck Old Town,8
+Zell am See Valley of Serenity,Hallstatt Village Perimeter,59
+Zell am See Valley of Serenity,Salzkammergut Lake District,58
+Zell am See Valley of Serenity,Hall in Tirol Medical Center,86
+St Anton am Arlberg,Innsbruck Old Town,75
+St Anton am Arlberg,Bregenz Waterfront Enclave,43
+St Anton am Arlberg,Hall in Tirol Medical Center,82
+Klagenfurt Cathedral Zone,Hallstatt Village Perimeter,76
+Hohensalzburg Castle,Hallstatt Village Perimeter,43
+Hohensalzburg Castle,Linz Castle,89
+Hohensalzburg Castle,Salzkammergut Lake District,33
+Hohensalzburg Castle,Zell am See Valley of Serenity,36
+Kufstein Fortress,Innsbruck Old Town,55
+Kufstein Fortress,Hall in Tirol Medical Center,49
+Kufstein Fortress,Zell am See Valley of Serenity,46
+Kufstein Fortress,Hohensalzburg Castle,60
+Durnstein Village Survivers Area,Melk Abbey Sanctuary Zone,18
+Durnstein Village Survivers Area,Linz Castle,82
+Durnstein Village Survivers Area,Wachau Valley Green Zone,6
+Durnstein Village Survivers Area,FH St Poelten Campus Data Zone,15
+Mondsee Waterfront Perimeter,Hallstatt Village Perimeter,28
+Mondsee Waterfront Perimeter,Linz Castle,69
+Mondsee Waterfront Perimeter,Salzkammergut Lake District,15
+Mondsee Waterfront Perimeter,Zell am See Valley of Serenity,51
+Mondsee Waterfront Perimeter,Hohensalzburg Castle,21
+Mondsee Waterfront Perimeter,Kufstein Fortress,81
+Eisriesenwelt Ice Cave,Hallstatt Village Perimeter,25
+Eisriesenwelt Ice Cave,Linz Castle,83
+Eisriesenwelt Ice Cave,Salzkammergut Lake District,23
+Eisriesenwelt Ice Cave,Zell am See Valley of Serenity,36
+Eisriesenwelt Ice Cave,Hohensalzburg Castle,22
+Eisriesenwelt Ice Cave,Kufstein Fortress,74
+Eisriesenwelt Ice Cave,Mondsee Waterfront Perimeter,20
+Styrian Armoury,Melk Abbey Sanctuary Zone,77
+Styrian Armoury,Wachau Valley Green Zone,85
+Styrian Armoury,FH St Poelten Campus Data Zone,76
+Styrian Armoury,Klagenfurt Cathedral Zone,81
+Styrian Armoury,Durnstein Village Survivers Area,89
+Seefeld in Tirol,Innsbruck Old Town,15
+Seefeld in Tirol,Hall in Tirol Medical Center,21
+Seefeld in Tirol,St Anton am Arlberg,63
+Seefeld in Tirol,Kufstein Fortress,67
+Stiftsbibliothek Admont Preservation,Melk Abbey Sanctuary Zone,74
+Stiftsbibliothek Admont Preservation,Hallstatt Village Perimeter,52
+Stiftsbibliothek Admont Preservation,Linz Castle,50
+Stiftsbibliothek Admont Preservation,Wachau Valley Green Zone,85
+Stiftsbibliothek Admont Preservation,FH St Poelten Campus Data Zone,89
+Stiftsbibliothek Admont Preservation,Salzkammergut Lake District,61
+Stiftsbibliothek Admont Preservation,Klagenfurt Cathedral Zone,63
+Stiftsbibliothek Admont Preservation,Mondsee Waterfront Perimeter,75
+Stiftsbibliothek Admont Preservation,Eisriesenwelt Ice Cave,77
+Stiftsbibliothek Admont Preservation,Styrian Armoury,75
+Salzburg Cathedral,Hallstatt Village Perimeter,43
+Salzburg Cathedral,Linz Castle,89
+Salzburg Cathedral,Salzkammergut Lake District,34
+Salzburg Cathedral,Zell am See Valley of Serenity,36
+Salzburg Cathedral,Hohensalzburg Castle,5
+Salzburg Cathedral,Kufstein Fortress,60
+Salzburg Cathedral,Mondsee Waterfront Perimeter,21
+Salzburg Cathedral,Eisriesenwelt Ice Cave,22
+Esterhazy Palace,Melk Abbey Sanctuary Zone,84
+Esterhazy Palace,Wachau Valley Green Zone,79
+Esterhazy Palace,FH St Poelten Campus Data Zone,65
+Esterhazy Palace,Durnstein Village Survivers Area,77
+Esterhazy Palace,Styrian Armoury,89
+Hallein Salt Mine,Hallstatt Village Perimeter,37
+Hallein Salt Mine,Linz Castle,89
+Hallein Salt Mine,Salzkammergut Lake District,30
+Hallein Salt Mine,Zell am See Valley of Serenity,31
+Hallein Salt Mine,Hohensalzburg Castle,9
+Hallein Salt Mine,Kufstein Fortress,63
+Hallein Salt Mine,Mondsee Waterfront Perimeter,20
+Hallein Salt Mine,Eisriesenwelt Ice Cave,14
+Hallein Salt Mine,Stiftsbibliothek Admont Preservation,88
+Hallein Salt Mine,Salzburg Cathedral,9
+Alpbach Village Towers,Innsbruck Old Town,38
+Alpbach Village Towers,Hall in Tirol Medical Center,31
+Alpbach Village Towers,Zell am See Valley of Serenity,57
+Alpbach Village Towers,Hohensalzburg Castle,78
+Alpbach Village Towers,Kufstein Fortress,19
+Alpbach Village Towers,Eisriesenwelt Ice Cave,89
+Alpbach Village Towers,Seefeld in Tirol,51
+Alpbach Village Towers,Salzburg Cathedral,78
+Alpbach Village Towers,Hallein Salt Mine,79
+Werfen Ice Caves,Hallstatt Village Perimeter,32
+Werfen Ice Caves,Salzkammergut Lake District,31
+Werfen Ice Caves,Zell am See Valley of Serenity,28
+Werfen Ice Caves,Hohensalzburg Castle,23
+Werfen Ice Caves,Kufstein Fortress,68
+Werfen Ice Caves,Mondsee Waterfront Perimeter,28
+Werfen Ice Caves,Eisriesenwelt Ice Cave,9
+Werfen Ice Caves,Stiftsbibliothek Admont Preservation,83
+Werfen Ice Caves,Salzburg Cathedral,24
+Werfen Ice Caves,Hallein Salt Mine,15
+Werfen Ice Caves,Alpbach Village Towers,82
+Kitzbuhel Town,Innsbruck Old Town,68
+Kitzbuhel Town,Hallstatt Village Perimeter,84
+Kitzbuhel Town,Salzkammergut Lake District,79
+Kitzbuhel Town,Hall in Tirol Medical Center,60
+Kitzbuhel Town,Zell am See Valley of Serenity,28
+Kitzbuhel Town,Hohensalzburg Castle,49
+Kitzbuhel Town,Kufstein Fortress,18
+Kitzbuhel Town,Mondsee Waterfront Perimeter,69
+Kitzbuhel Town,Eisriesenwelt Ice Cave,59
+Kitzbuhel Town,Seefeld in Tirol,80
+Kitzbuhel Town,Salzburg Cathedral,49
+Kitzbuhel Town,Hallein Salt Mine,50
+Kitzbuhel Town,Alpbach Village Towers,30
+Kitzbuhel Town,Werfen Ice Caves,53
+Seefeld Castle,Innsbruck Old Town,15
+Seefeld Castle,Hall in Tirol Medical Center,21
+Seefeld Castle,St Anton am Arlberg,63
+Seefeld Castle,Kufstein Fortress,67
+Seefeld Castle,Seefeld in Tirol,5
+Seefeld Castle,Alpbach Village Towers,51
+Seefeld Castle,Kitzbuhel Town,80
+Piber Stud Farm Zone,Melk Abbey Sanctuary Zone,81
+Piber Stud Farm Zone,FH St Poelten Campus Data Zone,85
+Piber Stud Farm Zone,Klagenfurt Cathedral Zone,62
+Piber Stud Farm Zone,Styrian Armoury,20
+Piber Stud Farm Zone,Stiftsbibliothek Admont Preservation,60
+Hochosterwitz Castle,Hallstatt Village Perimeter,82
+Hochosterwitz Castle,Klagenfurt Cathedral Zone,21
+Hochosterwitz Castle,Styrian Armoury,60
+Hochosterwitz Castle,Stiftsbibliothek Admont Preservation,54
+Hochosterwitz Castle,Piber Stud Farm Zone,41
+Hinterglemm Village,Innsbruck Old Town,79
+Hinterglemm Village,Hallstatt Village Perimeter,72
+Hinterglemm Village,Salzkammergut Lake District,69
+Hinterglemm Village,Hall in Tirol Medical Center,72
+Hinterglemm Village,Zell am See Valley of Serenity,16
+Hinterglemm Village,Hohensalzburg Castle,42
+Hinterglemm Village,Kufstein Fortress,30
+Hinterglemm Village,Mondsee Waterfront Perimeter,60
+Hinterglemm Village,Eisriesenwelt Ice Cave,49
+Hinterglemm Village,Salzburg Cathedral,42
+Hinterglemm Village,Hallein Salt Mine,41
+Hinterglemm Village,Alpbach Village Towers,42
+Hinterglemm Village,Werfen Ice Caves,41
+Hinterglemm Village,Kitzbuhel Town,13
+Waidhofen an der Ybbs,Melk Abbey Sanctuary Zone,41
+Waidhofen an der Ybbs,Hallstatt Village Perimeter,80
+Waidhofen an der Ybbs,Linz Castle,39
+Waidhofen an der Ybbs,Wachau Valley Green Zone,52
+Waidhofen an der Ybbs,FH St Poelten Campus Data Zone,58
+Waidhofen an der Ybbs,Salzkammergut Lake District,83
+Waidhofen an der Ybbs,Durnstein Village Survivers Area,58
+Waidhofen an der Ybbs,Styrian Armoury,74
+Waidhofen an der Ybbs,Stiftsbibliothek Admont Preservation,36
+Waidhofen an der Ybbs,Piber Stud Farm Zone,68
+Waidhofen an der Ybbs,Hochosterwitz Castle,81
+Fuschl am See,Hallstatt Village Perimeter,27
+Fuschl am See,Linz Castle,72
+Fuschl am See,Salzkammergut Lake District,15
+Fuschl am See,Zell am See Valley of Serenity,48
+Fuschl am See,Hohensalzburg Castle,19
+Fuschl am See,Kufstein Fortress,79
+Fuschl am See,Mondsee Waterfront Perimeter,5
+Fuschl am See,Eisriesenwelt Ice Cave,17
+Fuschl am See,Stiftsbibliothek Admont Preservation,75
+Fuschl am See,Salzburg Cathedral,19
+Fuschl am See,Hallein Salt Mine,18
+Fuschl am See,Werfen Ice Caves,24
+Fuschl am See,Kitzbuhel Town,67
+Fuschl am See,Hinterglemm Village,58
+Ellmau Village Quarantaine Area,Innsbruck Old Town,64
+Ellmau Village Quarantaine Area,Hallstatt Village Perimeter,88
+Ellmau Village Quarantaine Area,Salzkammergut Lake District,83
+Ellmau Village Quarantaine Area,Hall in Tirol Medical Center,57
+Ellmau Village Quarantaine Area,Zell am See Valley of Serenity,35
+Ellmau Village Quarantaine Area,Hohensalzburg Castle,51
+Ellmau Village Quarantaine Area,Kufstein Fortress,11
+Ellmau Village Quarantaine Area,Mondsee Waterfront Perimeter,71
+Ellmau Village Quarantaine Area,Eisriesenwelt Ice Cave,64
+Ellmau Village Quarantaine Area,Seefeld in Tirol,76
+Ellmau Village Quarantaine Area,Salzburg Cathedral,51
+Ellmau Village Quarantaine Area,Hallein Salt Mine,53
+Ellmau Village Quarantaine Area,Alpbach Village Towers,27
+Ellmau Village Quarantaine Area,Werfen Ice Caves,58
+Ellmau Village Quarantaine Area,Kitzbuhel Town,8
+Ellmau Village Quarantaine Area,Seefeld Castle,76
+Ellmau Village Quarantaine Area,Hinterglemm Village,20
+Ellmau Village Quarantaine Area,Fuschl am See,69
+Eggenberg Palace Graz,Melk Abbey Sanctuary Zone,78
+Eggenberg Palace Graz,Wachau Valley Green Zone,86
+Eggenberg Palace Graz,FH St Poelten Campus Data Zone,77
+Eggenberg Palace Graz,Klagenfurt Cathedral Zone,79
+Eggenberg Palace Graz,Durnstein Village Survivers Area,90
+Eggenberg Palace Graz,Styrian Armoury,5
+Eggenberg Palace Graz,Stiftsbibliothek Admont Preservation,74
+Eggenberg Palace Graz,Piber Stud Farm Zone,18
+Eggenberg Palace Graz,Hochosterwitz Castle,59
+Eggenberg Palace Graz,Waidhofen an der Ybbs,74
+Hohenwerfen Castle,Hallstatt Village Perimeter,31
+Hohenwerfen Castle,Salzkammergut Lake District,30
+Hohenwerfen Castle,Zell am See Valley of Serenity,29
+Hohenwerfen Castle,Hohensalzburg Castle,23
+Hohenwerfen Castle,Kufstein Fortress,68
+Hohenwerfen Castle,Mondsee Waterfront Perimeter,27
+Hohenwerfen Castle,Eisriesenwelt Ice Cave,8
+Hohenwerfen Castle,Stiftsbibliothek Admont Preservation,83
+Hohenwerfen Castle,Salzburg Cathedral,23
+Hohenwerfen Castle,Hallein Salt Mine,14
+Hohenwerfen Castle,Alpbach Village Towers,83
+Hohenwerfen Castle,Werfen Ice Caves,5
+Hohenwerfen Castle,Kitzbuhel Town,53
+Hohenwerfen Castle,Hinterglemm Village,42
+Hohenwerfen Castle,Fuschl am See,23
+Hohenwerfen Castle,Ellmau Village Quarantaine Area,58
+Saalbach Hinterglemm Isolation Zone,Innsbruck Old Town,83
+Saalbach Hinterglemm Isolation Zone,Hallstatt Village Perimeter,68
+Saalbach Hinterglemm Isolation Zone,Salzkammergut Lake District,65
+Saalbach Hinterglemm Isolation Zone,Hall in Tirol Medical Center,76
+Saalbach Hinterglemm Isolation Zone,Zell am See Valley of Serenity,12
+Saalbach Hinterglemm Isolation Zone,Hohensalzburg Castle,38
+Saalbach Hinterglemm Isolation Zone,Kufstein Fortress,34
+Saalbach Hinterglemm Isolation Zone,Mondsee Waterfront Perimeter,56
+Saalbach Hinterglemm Isolation Zone,Eisriesenwelt Ice Cave,44
+Saalbach Hinterglemm Isolation Zone,Salzburg Cathedral,38
+Saalbach Hinterglemm Isolation Zone,Hallein Salt Mine,36
+Saalbach Hinterglemm Isolation Zone,Alpbach Village Towers,46
+Saalbach Hinterglemm Isolation Zone,Werfen Ice Caves,37
+Saalbach Hinterglemm Isolation Zone,Kitzbuhel Town,17
+Saalbach Hinterglemm Isolation Zone,Hinterglemm Village,5
+Saalbach Hinterglemm Isolation Zone,Fuschl am See,54
+Saalbach Hinterglemm Isolation Zone,Ellmau Village Quarantaine Area,23
+Saalbach Hinterglemm Isolation Zone,Hohenwerfen Castle,37
+Steyr Fortified Old Town,Melk Abbey Sanctuary Zone,62
+Steyr Fortified Old Town,Hallstatt Village Perimeter,60
+Steyr Fortified Old Town,Linz Castle,20
+Steyr Fortified Old Town,Wachau Valley Green Zone,72
+Steyr Fortified Old Town,FH St Poelten Campus Data Zone,80
+Steyr Fortified Old Town,Salzkammergut Lake District,61
+Steyr Fortified Old Town,Durnstein Village Survivers Area,77
+Steyr Fortified Old Town,Mondsee Waterfront Perimeter,72
+Steyr Fortified Old Town,Eisriesenwelt Ice Cave,82
+Steyr Fortified Old Town,Stiftsbibliothek Admont Preservation,32
+Steyr Fortified Old Town,Werfen Ice Caves,90
+Steyr Fortified Old Town,Piber Stud Farm Zone,84
+Steyr Fortified Old Town,Hochosterwitz Castle,85
+Steyr Fortified Old Town,Waidhofen an der Ybbs,24
+Steyr Fortified Old Town,Fuschl am See,74
+Steyr Fortified Old Town,Hohenwerfen Castle,89
+Traunsee Island community,Hallstatt Village Perimeter,26
+Traunsee Island community,Linz Castle,42
+Traunsee Island community,Salzkammergut Lake District,20
+Traunsee Island community,Zell am See Valley of Serenity,77
+Traunsee Island community,Hohensalzburg Castle,51
+Traunsee Island community,Mondsee Waterfront Perimeter,31
+Traunsee Island community,Eisriesenwelt Ice Cave,42
+Traunsee Island community,Stiftsbibliothek Admont Preservation,48
+Traunsee Island community,Salzburg Cathedral,51
+Traunsee Island community,Hallein Salt Mine,49
+Traunsee Island community,Werfen Ice Caves,50
+Traunsee Island community,Hinterglemm Village,89
+Traunsee Island community,Waidhofen an der Ybbs,65
+Traunsee Island community,Fuschl am See,32
+Traunsee Island community,Hohenwerfen Castle,50
+Traunsee Island community,Saalbach Hinterglemm Isolation Zone,84
+Traunsee Island community,Steyr Fortified Old Town,42
+Friesach Castle,Hallstatt Village Perimeter,66
+Friesach Castle,Salzkammergut Lake District,81
+Friesach Castle,Klagenfurt Cathedral Zone,22
+Friesach Castle,Eisriesenwelt Ice Cave,87
+Friesach Castle,Styrian Armoury,69
+Friesach Castle,Stiftsbibliothek Admont Preservation,43
+Friesach Castle,Werfen Ice Caves,90
+Friesach Castle,Piber Stud Farm Zone,49
+Friesach Castle,Hochosterwitz Castle,16
+Friesach Castle,Waidhofen an der Ybbs,73
+Friesach Castle,Eggenberg Palace Graz,67
+Friesach Castle,Hohenwerfen Castle,90
+Friesach Castle,Steyr Fortified Old Town,74
+Friesach Castle,Traunsee Island community,77
+Gussing Castle,FH St Poelten Campus Data Zone,90
+Gussing Castle,Styrian Armoury,59
+Gussing Castle,Esterhazy Palace,55
+Gussing Castle,Piber Stud Farm Zone,78
+Gussing Castle,Eggenberg Palace Graz,60
+Villach Botanical Garden,Hallstatt Village Perimeter,64
+Villach Botanical Garden,Salzkammergut Lake District,79
+Villach Botanical Garden,Zell am See Valley of Serenity,85
+Villach Botanical Garden,Klagenfurt Cathedral Zone,29
+Villach Botanical Garden,Mondsee Waterfront Perimeter,89
+Villach Botanical Garden,Eisriesenwelt Ice Cave,74
+Villach Botanical Garden,Stiftsbibliothek Admont Preservation,73
+Villach Botanical Garden,Hallein Salt Mine,87
+Villach Botanical Garden,Werfen Ice Caves,73
+Villach Botanical Garden,Piber Stud Farm Zone,89
+Villach Botanical Garden,Hochosterwitz Castle,49
+Villach Botanical Garden,Fuschl am See,87
+Villach Botanical Garden,Hohenwerfen Castle,74
+Villach Botanical Garden,Traunsee Island community,86
+Villach Botanical Garden,Friesach Castle,42
+Tannberg Castle,Innsbruck Old Town,79
+Tannberg Castle,Bregenz Waterfront Enclave,32
+Tannberg Castle,Hall in Tirol Medical Center,86
+Tannberg Castle,St Anton am Arlberg,18
+Tannberg Castle,Seefeld in Tirol,65
+Tannberg Castle,Seefeld Castle,65
+Rattenberg Glass Fortress,Innsbruck Old Town,40
+Rattenberg Glass Fortress,Hall in Tirol Medical Center,34
+Rattenberg Glass Fortress,Zell am See Valley of Serenity,60
+Rattenberg Glass Fortress,Hohensalzburg Castle,76
+Rattenberg Glass Fortress,Kufstein Fortress,16
+Rattenberg Glass Fortress,Eisriesenwelt Ice Cave,90
+Rattenberg Glass Fortress,Seefeld in Tirol,51
+Rattenberg Glass Fortress,Salzburg Cathedral,76
+Rattenberg Glass Fortress,Hallein Salt Mine,79
+Rattenberg Glass Fortress,Alpbach Village Towers,11
+Rattenberg Glass Fortress,Werfen Ice Caves,84
+Rattenberg Glass Fortress,Kitzbuhel Town,32
+Rattenberg Glass Fortress,Seefeld Castle,51
+Rattenberg Glass Fortress,Hinterglemm Village,44
+Rattenberg Glass Fortress,Ellmau Village Quarantaine Area,27
+Rattenberg Glass Fortress,Hohenwerfen Castle,84
+Rattenberg Glass Fortress,Saalbach Hinterglemm Isolation Zone,49
+Worthersee,Hallstatt Village Perimeter,73
+Worthersee,Salzkammergut Lake District,88
+Worthersee,Klagenfurt Cathedral Zone,8
+Worthersee,Eisriesenwelt Ice Cave,88
+Worthersee,Styrian Armoury,88
+Worthersee,Stiftsbibliothek Admont Preservation,65
+Worthersee,Werfen Ice Caves,88
+Worthersee,Piber Stud Farm Zone,69
+Worthersee,Hochosterwitz Castle,28
+Worthersee,Eggenberg Palace Graz,86
+Worthersee,Hohenwerfen Castle,89
+Worthersee,Traunsee Island community,90
+Worthersee,Friesach Castle,26
+Worthersee,Villach Botanical Garden,22
+Hochburg Ach Castle,Hallstatt Village Perimeter,49
+Hochburg Ach Castle,Linz Castle,79
+Hochburg Ach Castle,Salzkammergut Lake District,35
+Hochburg Ach Castle,Zell am See Valley of Serenity,54
+Hochburg Ach Castle,Hohensalzburg Castle,20
+Hochburg Ach Castle,Kufstein Fortress,72
+Hochburg Ach Castle,Mondsee Waterfront Perimeter,21
+Hochburg Ach Castle,Eisriesenwelt Ice Cave,35
+Hochburg Ach Castle,Salzburg Cathedral,20
+Hochburg Ach Castle,Hallein Salt Mine,27
+Hochburg Ach Castle,Alpbach Village Towers,90
+Hochburg Ach Castle,Werfen Ice Caves,40
+Hochburg Ach Castle,Kitzbuhel Town,64
+Hochburg Ach Castle,Hinterglemm Village,59
+Hochburg Ach Castle,Fuschl am See,23
+Hochburg Ach Castle,Ellmau Village Quarantaine Area,64
+Hochburg Ach Castle,Hohenwerfen Castle,39
+Hochburg Ach Castle,Saalbach Hinterglemm Isolation Zone,56
+Hochburg Ach Castle,Steyr Fortified Old Town,86
+Hochburg Ach Castle,Traunsee Island community,46
+Hochburg Ach Castle,Rattenberg Glass Fortress,87
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Melk Abbey Sanctuary Zone,81
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Hallstatt Village Perimeter,72
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Linz Castle,78
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Salzkammergut Lake District,84
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Klagenfurt Cathedral Zone,45
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Styrian Armoury,52
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Stiftsbibliothek Admont Preservation,30
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Piber Stud Farm Zone,34
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Hochosterwitz Castle,30
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Waidhofen an der Ybbs,52
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Eggenberg Palace Graz,51
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Steyr Fortified Old Town,59
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Traunsee Island community,75
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Friesach Castle,25
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Villach Botanical Garden,65
+Fohnsdorf Reinstated Ruin and Coalmine Zone,Worthersee,50
+Ehrenhausen Castle,Klagenfurt Cathedral Zone,87
+Ehrenhausen Castle,Styrian Armoury,25
+Ehrenhausen Castle,Piber Stud Farm Zone,36
+Ehrenhausen Castle,Hochosterwitz Castle,69
+Ehrenhausen Castle,Eggenberg Palace Graz,25
+Ehrenhausen Castle,Friesach Castle,81
+Ehrenhausen Castle,Gussing Castle,51
+Ehrenhausen Castle,Fohnsdorf Reinstated Ruin and Coalmine Zone,70
+Sonnberg Castle,Bregenz Waterfront Enclave,18
+Sonnberg Castle,St Anton am Arlberg,50
+Sonnberg Castle,Tannberg Castle,45
+Riegersburg Castle,Melk Abbey Sanctuary Zone,88
+Riegersburg Castle,FH St Poelten Campus Data Zone,81
+Riegersburg Castle,Styrian Armoury,30
+Riegersburg Castle,Esterhazy Palace,70
+Riegersburg Castle,Piber Stud Farm Zone,48
+Riegersburg Castle,Hochosterwitz Castle,87
+Riegersburg Castle,Eggenberg Palace Graz,31
+Riegersburg Castle,Gussing Castle,30
+Riegersburg Castle,Fohnsdorf Reinstated Ruin and Coalmine Zone,81
+Riegersburg Castle,Ehrenhausen Castle,26
+Kornberg Castle,FH St Poelten Campus Data Zone,89
+Kornberg Castle,Styrian Armoury,42
+Kornberg Castle,Esterhazy Palace,69
+Kornberg Castle,Piber Stud Farm Zone,60
+Kornberg Castle,Eggenberg Palace Graz,43
+Kornberg Castle,Gussing Castle,20
+Kornberg Castle,Ehrenhausen Castle,32
+Kornberg Castle,Riegersburg Castle,13
+Heiligenblut Safe Zone,Hallstatt Village Perimeter,64
+Heiligenblut Safe Zone,Salzkammergut Lake District,67
+Heiligenblut Safe Zone,Hall in Tirol Medical Center,89
+Heiligenblut Safe Zone,Zell am See Valley of Serenity,18
+Heiligenblut Safe Zone,Hohensalzburg Castle,51
+Heiligenblut Safe Zone,Kufstein Fortress,55
+Heiligenblut Safe Zone,Mondsee Waterfront Perimeter,63
+Heiligenblut Safe Zone,Eisriesenwelt Ice Cave,45
+Heiligenblut Safe Zone,Salzburg Cathedral,51
+Heiligenblut Safe Zone,Hallein Salt Mine,45
+Heiligenblut Safe Zone,Alpbach Village Towers,62
+Heiligenblut Safe Zone,Werfen Ice Caves,37
+Heiligenblut Safe Zone,Kitzbuhel Town,38
+Heiligenblut Safe Zone,Hinterglemm Village,27
+Heiligenblut Safe Zone,Fuschl am See,60
+Heiligenblut Safe Zone,Ellmau Village Quarantaine Area,45
+Heiligenblut Safe Zone,Hohenwerfen Castle,37
+Heiligenblut Safe Zone,Saalbach Hinterglemm Isolation Zone,25
+Heiligenblut Safe Zone,Traunsee Island community,86
+Heiligenblut Safe Zone,Villach Botanical Garden,76
+Heiligenblut Safe Zone,Rattenberg Glass Fortress,67
+Heiligenblut Safe Zone,Hochburg Ach Castle,70
+Grossglockner Mountain Community,Innsbruck Old Town,87
+Grossglockner Mountain Community,Hallstatt Village Perimeter,71
+Grossglockner Mountain Community,Salzkammergut Lake District,73
+Grossglockner Mountain Community,Hall in Tirol Medical Center,81
+Grossglockner Mountain Community,Zell am See Valley of Serenity,19
+Grossglockner Mountain Community,Hohensalzburg Castle,54
+Grossglockner Mountain Community,Kufstein Fortress,49
+Grossglockner Mountain Community,Mondsee Waterfront Perimeter,68
+Grossglockner Mountain Community,Eisriesenwelt Ice Cave,51
+Grossglockner Mountain Community,Salzburg Cathedral,54
+Grossglockner Mountain Community,Hallein Salt Mine,49
+Grossglockner Mountain Community,Alpbach Village Towers,54
+Grossglockner Mountain Community,Werfen Ice Caves,42
+Grossglockner Mountain Community,Kitzbuhel Town,32
+Grossglockner Mountain Community,Hinterglemm Village,23
+Grossglockner Mountain Community,Fuschl am See,65
+Grossglockner Mountain Community,Ellmau Village Quarantaine Area,40
+Grossglockner Mountain Community,Hohenwerfen Castle,43
+Grossglockner Mountain Community,Saalbach Hinterglemm Isolation Zone,22
+Grossglockner Mountain Community,Villach Botanical Garden,84
+Grossglockner Mountain Community,Rattenberg Glass Fortress,60
+Grossglockner Mountain Community,Hochburg Ach Castle,73
+Grossglockner Mountain Community,Heiligenblut Safe Zone,9
+Mallnitz Welcomes all,Hallstatt Village Perimeter,48
+Mallnitz Welcomes all,Salzkammergut Lake District,55
+Mallnitz Welcomes all,Zell am See Valley of Serenity,32
+Mallnitz Welcomes all,Klagenfurt Cathedral Zone,80
+Mallnitz Welcomes all,Hohensalzburg Castle,52
+Mallnitz Welcomes all,Kufstein Fortress,76
+Mallnitz Welcomes all,Mondsee Waterfront Perimeter,56
+Mallnitz Welcomes all,Eisriesenwelt Ice Cave,37
+Mallnitz Welcomes all,Salzburg Cathedral,52
+Mallnitz Welcomes all,Hallein Salt Mine,44
+Mallnitz Welcomes all,Alpbach Village Towers,85
+Mallnitz Welcomes all,Werfen Ice Caves,30
+Mallnitz Welcomes all,Kitzbuhel Town,59
+Mallnitz Welcomes all,Hinterglemm Village,47
+Mallnitz Welcomes all,Fuschl am See,53
+Mallnitz Welcomes all,Ellmau Village Quarantaine Area,66
+Mallnitz Welcomes all,Hohenwerfen Castle,31
+Mallnitz Welcomes all,Saalbach Hinterglemm Isolation Zone,43
+Mallnitz Welcomes all,Traunsee Island community,72
+Mallnitz Welcomes all,Friesach Castle,83
+Mallnitz Welcomes all,Villach Botanical Garden,54
+Mallnitz Welcomes all,Rattenberg Glass Fortress,90
+Mallnitz Welcomes all,Worthersee,73
+Mallnitz Welcomes all,Hochburg Ach Castle,70
+Mallnitz Welcomes all,Heiligenblut Safe Zone,24
+Mallnitz Welcomes all,Grossglockner Mountain Community,32
+Nockberge Biosphere Reserve,Hallstatt Village Perimeter,42
+Nockberge Biosphere Reserve,Salzkammergut Lake District,57
+Nockberge Biosphere Reserve,Zell am See Valley of Serenity,71
+Nockberge Biosphere Reserve,Klagenfurt Cathedral Zone,41
+Nockberge Biosphere Reserve,Hohensalzburg Castle,75
+Nockberge Biosphere Reserve,Mondsee Waterfront Perimeter,67
+Nockberge Biosphere Reserve,Eisriesenwelt Ice Cave,54
+Nockberge Biosphere Reserve,Stiftsbibliothek Admont Preservation,58
+Nockberge Biosphere Reserve,Salzburg Cathedral,75
+Nockberge Biosphere Reserve,Hallein Salt Mine,67
+Nockberge Biosphere Reserve,Werfen Ice Caves,54
+Nockberge Biosphere Reserve,Piber Stud Farm Zone,90
+Nockberge Biosphere Reserve,Hochosterwitz Castle,54
+Nockberge Biosphere Reserve,Hinterglemm Village,86
+Nockberge Biosphere Reserve,Fuschl am See,65
+Nockberge Biosphere Reserve,Hohenwerfen Castle,54
+Nockberge Biosphere Reserve,Saalbach Hinterglemm Isolation Zone,82
+Nockberge Biosphere Reserve,Steyr Fortified Old Town,83
+Nockberge Biosphere Reserve,Traunsee Island community,63
+Nockberge Biosphere Reserve,Friesach Castle,41
+Nockberge Biosphere Reserve,Villach Botanical Garden,23
+Nockberge Biosphere Reserve,Worthersee,35
+Nockberge Biosphere Reserve,Hochburg Ach Castle,87
+Nockberge Biosphere Reserve,Fohnsdorf Reinstated Ruin and Coalmine Zone,60
+Nockberge Biosphere Reserve,Heiligenblut Safe Zone,66
+Nockberge Biosphere Reserve,Grossglockner Mountain Community,74
+Nockberge Biosphere Reserve,Mallnitz Welcomes all,42
+Lienz Defense Works,Hallstatt Village Perimeter,76
+Lienz Defense Works,Salzkammergut Lake District,81
+Lienz Defense Works,Hall in Tirol Medical Center,89
+Lienz Defense Works,Zell am See Valley of Serenity,33
+Lienz Defense Works,Hohensalzburg Castle,67
+Lienz Defense Works,Kufstein Fortress,64
+Lienz Defense Works,Mondsee Waterfront Perimeter,78
+Lienz Defense Works,Eisriesenwelt Ice Cave,60
+Lienz Defense Works,Salzburg Cathedral,67
+Lienz Defense Works,Hallein Salt Mine,61
+Lienz Defense Works,Alpbach Village Towers,66
+Lienz Defense Works,Werfen Ice Caves,51
+Lienz Defense Works,Kitzbuhel Town,48
+Lienz Defense Works,Hinterglemm Village,39
+Lienz Defense Works,Fuschl am See,75
+Lienz Defense Works,Ellmau Village Quarantaine Area,55
+Lienz Defense Works,Hohenwerfen Castle,52
+Lienz Defense Works,Saalbach Hinterglemm Isolation Zone,38
+Lienz Defense Works,Villach Botanical Garden,75
+Lienz Defense Works,Rattenberg Glass Fortress,73
+Lienz Defense Works,Hochburg Ach Castle,86
+Lienz Defense Works,Heiligenblut Safe Zone,17
+Lienz Defense Works,Grossglockner Mountain Community,17
+Lienz Defense Works,Mallnitz Welcomes all,31
+Lienz Defense Works,Nockberge Biosphere Reserve,70
+Ankogel Isolation Zone,Hallstatt Village Perimeter,48
+Ankogel Isolation Zone,Salzkammergut Lake District,56
+Ankogel Isolation Zone,Zell am See Valley of Serenity,35
+Ankogel Isolation Zone,Klagenfurt Cathedral Zone,77
+Ankogel Isolation Zone,Hohensalzburg Castle,54
+Ankogel Isolation Zone,Kufstein Fortress,79
+Ankogel Isolation Zone,Mondsee Waterfront Perimeter,58
+Ankogel Isolation Zone,Eisriesenwelt Ice Cave,38
+Ankogel Isolation Zone,Stiftsbibliothek Admont Preservation,89
+Ankogel Isolation Zone,Salzburg Cathedral,54
+Ankogel Isolation Zone,Hallein Salt Mine,46
+Ankogel Isolation Zone,Alpbach Village Towers,88
+Ankogel Isolation Zone,Werfen Ice Caves,32
+Ankogel Isolation Zone,Kitzbuhel Town,62
+Ankogel Isolation Zone,Hinterglemm Village,50
+Ankogel Isolation Zone,Fuschl am See,55
+Ankogel Isolation Zone,Ellmau Village Quarantaine Area,69
+Ankogel Isolation Zone,Hohenwerfen Castle,33
+Ankogel Isolation Zone,Saalbach Hinterglemm Isolation Zone,46
+Ankogel Isolation Zone,Traunsee Island community,72
+Ankogel Isolation Zone,Friesach Castle,80
+Ankogel Isolation Zone,Villach Botanical Garden,51
+Ankogel Isolation Zone,Worthersee,70
+Ankogel Isolation Zone,Hochburg Ach Castle,72
+Ankogel Isolation Zone,Heiligenblut Safe Zone,27
+Ankogel Isolation Zone,Grossglockner Mountain Community,35
+Ankogel Isolation Zone,Mallnitz Welcomes all,5
+Ankogel Isolation Zone,Nockberge Biosphere Reserve,40
+Ankogel Isolation Zone,Lienz Defense Works,32
+Goldeck Mountain,Hallstatt Village Perimeter,52
+Goldeck Mountain,Salzkammergut Lake District,64
+Goldeck Mountain,Zell am See Valley of Serenity,58
+Goldeck Mountain,Klagenfurt Cathedral Zone,56
+Goldeck Mountain,Hohensalzburg Castle,72
+Goldeck Mountain,Mondsee Waterfront Perimeter,71
+Goldeck Mountain,Eisriesenwelt Ice Cave,53
+Goldeck Mountain,Stiftsbibliothek Admont Preservation,80
+Goldeck Mountain,Salzburg Cathedral,73
+Goldeck Mountain,Hallein Salt Mine,64
+Goldeck Mountain,Werfen Ice Caves,49
+Goldeck Mountain,Kitzbuhel Town,85
+Goldeck Mountain,Hochosterwitz Castle,73
+Goldeck Mountain,Hinterglemm Village,72
+Goldeck Mountain,Fuschl am See,68
+Goldeck Mountain,Hohenwerfen Castle,50
+Goldeck Mountain,Saalbach Hinterglemm Isolation Zone,69
+Goldeck Mountain,Traunsee Island community,76
+Goldeck Mountain,Friesach Castle,62
+Goldeck Mountain,Villach Botanical Garden,28
+Goldeck Mountain,Worthersee,49
+Goldeck Mountain,Hochburg Ach Castle,88
+Goldeck Mountain,Fohnsdorf Reinstated Ruin and Coalmine Zone,83
+Goldeck Mountain,Heiligenblut Safe Zone,48
+Goldeck Mountain,Grossglockner Mountain Community,56
+Goldeck Mountain,Mallnitz Welcomes all,26
+Goldeck Mountain,Nockberge Biosphere Reserve,23
+Goldeck Mountain,Lienz Defense Works,49
+Goldeck Mountain,Ankogel Isolation Zone,23
+Weissensee Boating community,Hallstatt Village Perimeter,64
+Weissensee Boating community,Salzkammergut Lake District,74
+Weissensee Boating community,Zell am See Valley of Serenity,51
+Weissensee Boating community,Klagenfurt Cathedral Zone,72
+Weissensee Boating community,Hohensalzburg Castle,74
+Weissensee Boating community,Mondsee Waterfront Perimeter,77
+Weissensee Boating community,Eisriesenwelt Ice Cave,58
+Weissensee Boating community,Salzburg Cathedral,74
+Weissensee Boating community,Hallein Salt Mine,66
+Weissensee Boating community,Werfen Ice Caves,52
+Weissensee Boating community,Kitzbuhel Town,75
+Weissensee Boating community,Hochosterwitz Castle,90
+Weissensee Boating community,Hinterglemm Village,63
+Weissensee Boating community,Fuschl am See,74
+Weissensee Boating community,Ellmau Village Quarantaine Area,82
+Weissensee Boating community,Hohenwerfen Castle,53
+Weissensee Boating community,Saalbach Hinterglemm Isolation Zone,61
+Weissensee Boating community,Traunsee Island community,89
+Weissensee Boating community,Friesach Castle,80
+Weissensee Boating community,Villach Botanical Garden,43
+Weissensee Boating community,Worthersee,64
+Weissensee Boating community,Heiligenblut Safe Zone,37
+Weissensee Boating community,Grossglockner Mountain Community,44
+Weissensee Boating community,Mallnitz Welcomes all,23
+Weissensee Boating community,Nockberge Biosphere Reserve,42
+Weissensee Boating community,Lienz Defense Works,33
+Weissensee Boating community,Ankogel Isolation Zone,20
+Weissensee Boating community,Goldeck Mountain,19
+Hochalmspitze Zone of Tranquility,Hallstatt Village Perimeter,44
+Hochalmspitze Zone of Tranquility,Salzkammergut Lake District,54
+Hochalmspitze Zone of Tranquility,Zell am See Valley of Serenity,42
+Hochalmspitze Zone of Tranquility,Klagenfurt Cathedral Zone,70
+Hochalmspitze Zone of Tranquility,Hohensalzburg Castle,57
+Hochalmspitze Zone of Tranquility,Kufstein Fortress,87
+Hochalmspitze Zone of Tranquility,Mondsee Waterfront Perimeter,58
+Hochalmspitze Zone of Tranquility,Eisriesenwelt Ice Cave,39
+Hochalmspitze Zone of Tranquility,Stiftsbibliothek Admont Preservation,83
+Hochalmspitze Zone of Tranquility,Salzburg Cathedral,57
+Hochalmspitze Zone of Tranquility,Hallein Salt Mine,49
+Hochalmspitze Zone of Tranquility,Werfen Ice Caves,34
+Hochalmspitze Zone of Tranquility,Kitzbuhel Town,69
+Hochalmspitze Zone of Tranquility,Hochosterwitz Castle,85
+Hochalmspitze Zone of Tranquility,Hinterglemm Village,57
+Hochalmspitze Zone of Tranquility,Fuschl am See,55
+Hochalmspitze Zone of Tranquility,Ellmau Village Quarantaine Area,76
+Hochalmspitze Zone of Tranquility,Hohenwerfen Castle,35
+Hochalmspitze Zone of Tranquility,Saalbach Hinterglemm Isolation Zone,53
+Hochalmspitze Zone of Tranquility,Traunsee Island community,69
+Hochalmspitze Zone of Tranquility,Friesach Castle,73
+Hochalmspitze Zone of Tranquility,Villach Botanical Garden,44
+Hochalmspitze Zone of Tranquility,Worthersee,63
+Hochalmspitze Zone of Tranquility,Hochburg Ach Castle,74
+Hochalmspitze Zone of Tranquility,Heiligenblut Safe Zone,34
+Hochalmspitze Zone of Tranquility,Grossglockner Mountain Community,42
+Hochalmspitze Zone of Tranquility,Mallnitz Welcomes all,11
+Hochalmspitze Zone of Tranquility,Nockberge Biosphere Reserve,32
+Hochalmspitze Zone of Tranquility,Lienz Defense Works,39
+Hochalmspitze Zone of Tranquility,Ankogel Isolation Zone,8
+Hochalmspitze Zone of Tranquility,Goldeck Mountain,17
+Hochalmspitze Zone of Tranquility,Weissensee Boating community,20
+Falkenstein Castle,Melk Abbey Sanctuary Zone,85
+Falkenstein Castle,Wachau Valley Green Zone,75
+Falkenstein Castle,FH St Poelten Campus Data Zone,68
+Falkenstein Castle,Durnstein Village Survivers Area,70
+Falkenstein Castle,Esterhazy Palace,54
+Wilfersdorf Castle,Melk Abbey Sanctuary Zone,83
+Wilfersdorf Castle,Wachau Valley Green Zone,73
+Wilfersdorf Castle,FH St Poelten Campus Data Zone,66
+Wilfersdorf Castle,Durnstein Village Survivers Area,68
+Wilfersdorf Castle,Esterhazy Palace,52
+Wilfersdorf Castle,Falkenstein Castle,5
+Laa an der Thaya Therme,Melk Abbey Sanctuary Zone,77
+Laa an der Thaya Therme,Wachau Valley Green Zone,66
+Laa an der Thaya Therme,FH St Poelten Campus Data Zone,61
+Laa an der Thaya Therme,Durnstein Village Survivers Area,61
+Laa an der Thaya Therme,Esterhazy Palace,59
+Laa an der Thaya Therme,Falkenstein Castle,12
+Laa an der Thaya Therme,Wilfersdorf Castle,11
+Mariazell Basilica,Melk Abbey Sanctuary Zone,31
+Mariazell Basilica,Linz Castle,77
+Mariazell Basilica,Wachau Valley Green Zone,40
+Mariazell Basilica,FH St Poelten Campus Data Zone,35
+Mariazell Basilica,Durnstein Village Survivers Area,45
+Mariazell Basilica,Styrian Armoury,47
+Mariazell Basilica,Stiftsbibliothek Admont Preservation,60
+Mariazell Basilica,Esterhazy Palace,81
+Mariazell Basilica,Piber Stud Farm Zone,52
+Mariazell Basilica,Hochosterwitz Castle,82
+Mariazell Basilica,Waidhofen an der Ybbs,39
+Mariazell Basilica,Eggenberg Palace Graz,48
+Mariazell Basilica,Steyr Fortified Old Town,62
+Mariazell Basilica,Friesach Castle,82
+Mariazell Basilica,Gussing Castle,83
+Mariazell Basilica,Fohnsdorf Reinstated Ruin and Coalmine Zone,57
+Mariazell Basilica,Ehrenhausen Castle,71
+Mariazell Basilica,Riegersburg Castle,63
+Mariazell Basilica,Kornberg Castle,74
+Oetscher Cave Network,Melk Abbey Sanctuary Zone,26
+Oetscher Cave Network,Linz Castle,68
+Oetscher Cave Network,Wachau Valley Green Zone,37
+Oetscher Cave Network,FH St Poelten Campus Data Zone,36
+Oetscher Cave Network,Durnstein Village Survivers Area,42
+Oetscher Cave Network,Styrian Armoury,55
+Oetscher Cave Network,Stiftsbibliothek Admont Preservation,55
+Oetscher Cave Network,Esterhazy Palace,88
+Oetscher Cave Network,Piber Stud Farm Zone,57
+Oetscher Cave Network,Hochosterwitz Castle,84
+Oetscher Cave Network,Waidhofen an der Ybbs,30
+Oetscher Cave Network,Eggenberg Palace Graz,55
+Oetscher Cave Network,Steyr Fortified Old Town,54
+Oetscher Cave Network,Friesach Castle,81
+Oetscher Cave Network,Fohnsdorf Reinstated Ruin and Coalmine Zone,57
+Oetscher Cave Network,Ehrenhausen Castle,79
+Oetscher Cave Network,Riegersburg Castle,72
+Oetscher Cave Network,Kornberg Castle,83
+Oetscher Cave Network,Mariazell Basilica,10

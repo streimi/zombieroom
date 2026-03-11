@@ -28,6 +28,22 @@ import {
   Thermometer,
   Shield,
   List,
+  HeartPulse,
+  Syringe,
+  Truck,
+  Package,
+  Factory,
+  Cog,
+  Navigation,
+  Compass,
+  FastForward,
+  Crosshair,
+  MapIcon,
+  TrendingDown,
+  PackageMinus,
+  Bomb,
+  CarFront,
+  Ruler,
 } from "lucide-react";
 
 /**
@@ -53,6 +69,7 @@ const COLORS = {
   amber: "#f59e0b",
   amberGlow: "rgba(245, 158, 11, 0.5)",
   zinc: "#71717a",
+  orange: "#f97316",
 };
 
 // --- Reusable Card Component ---
@@ -522,9 +539,10 @@ paste_code_here`;
               <ShieldAlert size={16} /> Spokesperson Directive
             </h3>
             <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
-              "We have gathered personal medical data from the last 30 days. Your
-              goal is to provide an infection rate estimate for each municipality.
-              Evaluation is based on the Top 30 records by inhabitants."
+              "We have gathered personal medical data from the last 30 days.
+              Your goal is to provide an infection rate estimate for each
+              municipality. Evaluation is based on the Top 30 records by
+              inhabitants."
             </p>
           </div>
 
@@ -621,11 +639,7 @@ paste_code_here`;
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Main Data Console */}
         <div className="lg:col-span-8">
-          <Card
-            title="Virus Origin Detection"
-            icon={Radio}
-            themeColor="amber"
-          >
+          <Card title="Virus Origin Detection" icon={Radio} themeColor="amber">
             <div className="flex flex-col gap-6">
               <div className="flex justify-between items-center">
                 <span
@@ -664,7 +678,10 @@ paste_code_here`;
                   </div>
                 ) : error ? (
                   <div className="text-red-500 font-mono text-center">
-                    <AlertTriangle size={48} className="mx-auto mb-4 opacity-30" />
+                    <AlertTriangle
+                      size={48}
+                      className="mx-auto mb-4 opacity-30"
+                    />
                     <div className="font-black uppercase">{error}</div>
                   </div>
                 ) : (
@@ -680,9 +697,9 @@ paste_code_here`;
 
                     <div className="grid gap-3">
                       {origins.length === 0 ? (
-                         <div className="text-center text-zinc-600 font-mono text-xs uppercase tracking-widest py-8">
-                           No vectors detected...
-                         </div>
+                        <div className="text-center text-zinc-600 font-mono text-xs uppercase tracking-widest py-8">
+                          No vectors detected...
+                        </div>
                       ) : (
                         origins.map((city, i) => (
                           <div
@@ -719,18 +736,21 @@ paste_code_here`;
         <div className="lg:col-span-4 space-y-6">
           <div
             className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950"
-            style={{ borderColor: COLORS.border, borderLeftColor: COLORS.amber }}
+            style={{
+              borderColor: COLORS.border,
+              borderLeftColor: COLORS.amber,
+            }}
           >
             <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-amber-500 flex items-center gap-2">
               <Newspaper size={16} /> Journalist Directive
             </h3>
             <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
-              "Provide the public with the 5 most likely municipalities where the
-              virus originated. They need to know where it started."
+              "Provide the public with the 5 most likely municipalities where
+              the virus originated. They need to know where it started."
             </p>
           </div>
 
-           <Card title="Signal Intercepts" icon={Activity} themeColor="amber">
+          <Card title="Signal Intercepts" icon={Activity} themeColor="amber">
             <div className="bg-black p-4 rounded-xl border border-white/5 font-mono text-[10px] overflow-hidden h-40 relative">
               <div className="text-amber-500 mb-3 border-b border-white/5 pb-2">{`>> [LOCAL NODE SCAN]`}</div>
               <div className="text-zinc-600 space-y-2 opacity-50">
@@ -804,14 +824,9 @@ paste_code_here`;
   return (
     <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        
         {/* Main Data Console - Now only contains the Threshold */}
         <div className="lg:col-span-8">
-          <Card
-            title="Threshold Protocol"
-            icon={ShieldAlert}
-            themeColor="blue"
-          >
+          <Card title="Threshold Protocol" icon={ShieldAlert} themeColor="blue">
             <div className="flex flex-col gap-6">
               <div className="flex justify-between items-center">
                 <span
@@ -842,7 +857,8 @@ paste_code_here`;
                   {threshold ? `${threshold}°C` : "LOADING..."}
                 </div>
                 <p className="text-xs font-mono text-zinc-500 text-center mt-4 max-w-md uppercase relative z-10">
-                  Individuals above this body temperature will be denied entry to critical locations to mitigate viral spread.
+                  Individuals above this body temperature will be denied entry
+                  to critical locations to mitigate viral spread.
                 </p>
               </div>
             </div>
@@ -860,8 +876,11 @@ paste_code_here`;
               <ShieldAlert size={16} /> Government Directive
             </h3>
             <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
-              "Establish a precise body temperature threshold to secure critical infrastructure without inciting public unrest. 
-              Additionally, identify up to 20 optimal municipalities for immediate military quarantine, balancing infection containment against our military's maximum operational capacity."
+              "Establish a precise body temperature threshold to secure critical
+              infrastructure without inciting public unrest. Additionally,
+              identify up to 20 optimal municipalities for immediate military
+              quarantine, balancing infection containment against our military's
+              maximum operational capacity."
             </p>
           </div>
 
@@ -1240,122 +1259,619 @@ paste_code_here`;
   }
 
   return (
-    <div
-      className="grid grid-cols-1 lg:grid-cols-12 gap-8"
-      style={{ animation: "fadeIn 0.8s ease-out forwards" }}
-    >
-      <aside className="lg:col-span-3 space-y-4">
-        <div className="border rounded-2xl p-6 bg-zinc-950 border-white/5 shadow-2xl">
-          <div className="flex items-center gap-2 mb-6 text-amber-500">
-            <UserSearch size={16} />
-            <h3 className="text-[10px] font-black uppercase tracking-widest">
-              Candidate_Files
-            </h3>
-          </div>
-          <div className="space-y-1 max-h-[60vh] overflow-y-auto custom-scroll pr-2">
-            {peopleList.map((p) => (
-              <button
-                key={p}
-                onClick={() => setSelectedPerson(p)}
-                className={`w-full text-left px-4 py-2 rounded-lg text-[10px] font-bold uppercase transition-all ${
-                  selectedPerson === p
-                    ? "bg-amber-600 text-black shadow-[0_0_15px_rgba(217,119,6,0.3)]"
-                    : "text-zinc-500 hover:bg-white/5 hover:text-white"
-                }`}
-              >
-                {p}
-              </button>
-            ))}
-          </div>
-        </div>
-      </aside>
-
-      <main className="lg:col-span-9 space-y-6">
-        <div className="border rounded-3xl p-10 bg-zinc-900/30 border-white/10 relative shadow-2xl overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-500 to-transparent" />
-
-          <div className="flex justify-between items-start mb-10 border-b pb-6 border-white/5">
-            <div>
-              <h2 className="text-2xl font-black uppercase text-white italic tracking-tighter leading-none">
-                Matrix_Visualization
-              </h2>
-              <p className="text-[10px] font-mono text-zinc-600 mt-2 uppercase tracking-widest">
-                Source_Simulation: {selectedPerson}
-              </p>
-            </div>
-            <div className="flex gap-12">
-              <div className="text-right">
-                <div className="text-3xl font-black text-amber-500 leading-none tracking-tighter">
-                  {simStats.contaminated} / 20
-                </div>
-                <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
-                  Total_Contamination
-                </span>
-              </div>
-
-              <div className="text-right">
-                <div className="text-3xl font-black text-red-500 leading-none tracking-tighter">
-                  {simStats.infectious} / 20
-                </div>
-                <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
-                  Current_Infectious
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <VectorNet
-            visits={data.visits}
-            simulations={data.sims}
-            patientZero={selectedPerson}
-            onDayChange={handleDayChange}
-          />
-
-          <div className="mt-10 grid grid-cols-3 gap-4">
-            <div className="p-4 bg-black/40 border border-white/5 rounded-xl">
-              <span className="text-[9px] text-zinc-600 uppercase block mb-1 font-black">
-                Vector_Trace
-              </span>
-              <div className="text-xs text-white font-mono uppercase tracking-tighter">
-                Active_Analyzing
-              </div>
-            </div>
-            <div className="p-4 bg-black/40 border border-white/5 rounded-xl text-center">
-              <span className="text-[9px] text-zinc-600 uppercase block mb-1 font-black">
-                Outbreak_Scale
-              </span>
-              <div
-                className={`text-xs font-mono font-bold tracking-tighter ${infectionCount === 20 ? "text-red-500" : "text-emerald-500"}`}
-              >
-                {infectionCount === 20 ? "TOTAL_WIPE" : "LOCAL_SPREAD"}
-              </div>
-            </div>
-            <div className="p-4 bg-black/40 border border-white/5 rounded-xl text-right">
-              <span className="text-[9px] text-zinc-600 uppercase block mb-1 font-black">
-                Source_Match
-              </span>
-              <div className="text-xs text-white font-mono italic tracking-tighter">
-                {infectionCount === 20 ? "ZERO_CONFIRMED" : "NEGATIVE"}
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Python Code */}
-        <div className="mt-12 text-left">
-          <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
-            <Code size={14} /> <span>Patient_Zero_Tracing.py</span>
-          </div>
-          <div
-            className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative"
-            style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+    <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Main Data Console */}
+        <div className="lg:col-span-8">
+          <Card
+            title="Matrix Visualization"
+            icon={UserSearch}
+            themeColor="amber"
           >
-            <pre>{pythonCode}</pre>
-            <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
-              <Copy size={14} />
+            <div className="flex flex-col gap-6">
+              <div className="flex justify-between items-start border-b pb-6 border-white/5">
+                <div className="flex flex-col gap-2">
+                  <span
+                    className="text-[10px] font-mono font-black tracking-widest block uppercase"
+                    style={{ color: COLORS.amber }}
+                  >
+                    Source_Simulation Selection
+                  </span>
+
+                  {/* FIX: explicitly styling both select and options with font-mono and backgrounds */}
+                  <div className="relative">
+                    <select
+                      value={selectedPerson}
+                      onChange={(e) => setSelectedPerson(e.target.value)}
+                      className="appearance-none bg-black border border-white/10 text-white font-mono text-xs font-bold uppercase rounded-lg py-2 pl-4 pr-10 hover:border-amber-500/50 focus:outline-none focus:border-amber-500 transition-colors cursor-pointer shadow-inner"
+                      style={{
+                        WebkitAppearance: "none",
+                        MozAppearance: "none",
+                      }}
+                    >
+                      {peopleList.map((p) => (
+                        <option
+                          key={p}
+                          value={p}
+                          className="font-mono bg-zinc-900 text-white py-1"
+                        >
+                          {p}
+                        </option>
+                      ))}
+                    </select>
+                    <ChevronDown
+                      size={14}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 pointer-events-none"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex gap-12">
+                  <div className="text-right">
+                    <div className="text-3xl font-black text-amber-500 leading-none tracking-tighter">
+                      {simStats.contaminated} / 20
+                    </div>
+                    <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
+                      Total_Contamination
+                    </span>
+                  </div>
+
+                  <div className="text-right">
+                    <div className="text-3xl font-black text-red-500 leading-none tracking-tighter">
+                      {simStats.infectious} / 20
+                    </div>
+                    <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
+                      Current_Infectious
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Vector Net Component Area */}
+              <div className="bg-black/40 rounded-xl border border-white/5 p-4 shadow-inner">
+                <VectorNet
+                  visits={data.visits}
+                  simulations={data.sims}
+                  patientZero={selectedPerson}
+                  onDayChange={handleDayChange}
+                />
+              </div>
+
+              {/* Status Indicators */}
+              <div className="grid grid-cols-3 gap-4">
+                <div className="p-4 bg-black/40 border border-white/5 rounded-xl shadow-inner">
+                  <span className="text-[9px] text-zinc-600 uppercase block mb-1 font-black tracking-widest">
+                    Vector_Trace
+                  </span>
+                  <div className="text-xs text-white font-mono uppercase tracking-tighter">
+                    Active_Analyzing
+                  </div>
+                </div>
+                <div className="p-4 bg-black/40 border border-white/5 rounded-xl text-center shadow-inner">
+                  <span className="text-[9px] text-zinc-600 uppercase block mb-1 font-black tracking-widest">
+                    Outbreak_Scale
+                  </span>
+                  <div
+                    className={`text-xs font-mono font-bold tracking-tighter ${infectionCount === 20 ? "text-red-500" : "text-emerald-500"}`}
+                  >
+                    {infectionCount === 20 ? "TOTAL_WIPE" : "LOCAL_SPREAD"}
+                  </div>
+                </div>
+                <div className="p-4 bg-black/40 border border-white/5 rounded-xl text-right shadow-inner">
+                  <span className="text-[9px] text-zinc-600 uppercase block mb-1 font-black tracking-widest">
+                    Source_Match
+                  </span>
+                  <div className="text-xs text-white font-mono italic tracking-tighter">
+                    {infectionCount === 20 ? "ZERO_CONFIRMED" : "NEGATIVE"}
+                  </div>
+                </div>
+              </div>
             </div>
+          </Card>
+        </div>
+
+        {/* Side Panel: Mission Context */}
+        <div className="lg:col-span-4 space-y-6">
+          <div
+            className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950"
+            style={{
+              borderColor: COLORS.border,
+              borderLeftColor: COLORS.amber,
+            }}
+          >
+            <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-amber-500 flex items-center gap-2">
+              <Newspaper size={16} /> Journalist Directive
+            </h3>
+            <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
+              "There is a specific pattern the virus follows, which leads to
+              only a single person being able to turn all people on the list
+              infectious on Day 7. It's on you to identify the target."
+            </p>
           </div>
         </div>
-      </main>
+      </div>
+
+      {/* Python Code */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Patient_Zero_Tracing.py</span>
+        </div>
+        <div
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative shadow-inner"
+          style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+        >
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+            <Copy size={14} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// --- Mission 2.2: Cure Selection & Doctor Logic ---
+const DoctorMission = () => {
+  const [cureCode, setCureCode] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const pythonCode = `# MISSION 2.2 SOLUTION
+
+paste_code_here`;
+
+  useEffect(() => {
+    // Fetch Cure Recommendation
+    fetch("/data/solutions/WasWird 1/cure.csv")
+      .then((res) => {
+        if (!res.ok) throw new Error("Cure file missing");
+        return res.text();
+      })
+      .then((text) => {
+        // Sanitize and grab the first 2 characters (e.g., "B2")
+        const cleanText = text
+          .replace(/^\uFEFF/, "")
+          .trim()
+          .toUpperCase();
+        setCureCode(cleanText.substring(0, 2));
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load cure recommendation", err);
+        setError("FILE_NOT_FOUND: 'cure.csv' not detected.");
+        setLoading(false);
+      });
+  }, []);
+
+  // Helper to decode the A1/B2/C2 logic
+  const getDecodedRecommendation = (code) => {
+    if (!code || code.length < 2) return { cure: "UNKNOWN", focus: "UNKNOWN" };
+
+    const cureMap = {
+      A: "TRPD Compound",
+      B: "NCLR Compound",
+      C: "Placebo (Control)",
+    };
+
+    const focusMap = {
+      1: "Reduce Side-Effects (Minimize Casualties)",
+      2: "Improve Success Rate (Maximize Recoveries)",
+    };
+
+    return {
+      cure: cureMap[code[0]] || "INVALID_CURE",
+      focus: focusMap[code[1]] || "INVALID_FOCUS",
+    };
+  };
+
+  const decoded = getDecodedRecommendation(cureCode);
+
+  return (
+    <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Main Data Console */}
+        <div className="lg:col-span-8">
+          <Card
+            title="Clinical Trial Analysis"
+            icon={HeartPulse}
+            themeColor="emerald"
+          >
+            <div className="flex flex-col gap-6">
+              <div className="flex justify-between items-center">
+                <span
+                  className="text-[10px] font-mono font-black tracking-widest block uppercase"
+                  style={{ color: COLORS.emerald }}
+                >
+                  EVALUATION_SET: TRIAL_PHASE_1 // SOURCE: MEDICAL_DEPT
+                </span>
+                {loading && (
+                  <RefreshCw size={12} className="animate-spin text-zinc-500" />
+                )}
+              </div>
+
+              <div
+                className="bg-black border rounded-2xl p-10 min-h-[350px] flex flex-col justify-center relative shadow-inner overflow-hidden"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <div
+                  className="absolute inset-0 opacity-5 pointer-events-none"
+                  style={{
+                    backgroundImage:
+                      "radial-gradient(circle at center, #10b981 0%, transparent 70%)",
+                  }}
+                />
+
+                {error ? (
+                  <div className="text-red-500 font-mono text-center relative z-10">
+                    <AlertTriangle
+                      size={48}
+                      className="mx-auto mb-4 opacity-30"
+                    />
+                    <div className="font-black uppercase">{error}</div>
+                  </div>
+                ) : (
+                  <div className="space-y-12 relative z-10">
+                    <div className="text-center">
+                      <div className="text-[10px] font-black text-emerald-500/80 uppercase tracking-[0.4em] mb-4 italic">
+                        Official Medical Recommendation
+                      </div>
+                      <div className="text-7xl font-mono font-bold text-emerald-500 drop-shadow-md">
+                        {cureCode || "..."}
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* Cure Baseline Box */}
+                      <div className="bg-zinc-950 border border-white/5 rounded-xl p-5 shadow-lg">
+                        <div className="flex items-center gap-3 mb-2">
+                          <Syringe className="text-emerald-500 w-4 h-4" />
+                          <span className="text-[10px] font-black uppercase text-zinc-500 tracking-widest">
+                            Target Baseline
+                          </span>
+                        </div>
+                        <div className="text-sm font-bold text-white uppercase tracking-wider">
+                          {decoded.cure}
+                        </div>
+                      </div>
+
+                      {/* Development Focus Box */}
+                      <div className="bg-zinc-950 border border-white/5 rounded-xl p-5 shadow-lg">
+                        <div className="flex items-center gap-3 mb-2">
+                          <Activity className="text-emerald-500 w-4 h-4" />
+                          <span className="text-[10px] font-black uppercase text-zinc-500 tracking-widest">
+                            Development Focus
+                          </span>
+                        </div>
+                        <div className="text-sm font-bold text-white uppercase tracking-wider">
+                          {decoded.focus}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Side Panel: Mission Context & Lore */}
+        <div className="lg:col-span-4 space-y-6">
+          <div
+            className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950"
+            style={{
+              borderColor: COLORS.border,
+              borderLeftColor: COLORS.emerald,
+            }}
+          >
+            <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-emerald-500 flex items-center gap-2">
+              <ShieldAlert size={16} /> Doctor Directive
+            </h3>
+            <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
+              "Analyze clinical trial data for candidate cures TRPD and NCLR
+              versus a placebo control. Determine the optimal baseline compound
+              and identify whether our R&D focus should be minimizing lethality
+              or maximizing the success rate."
+            </p>
+          </div>
+
+          {/* Additional Medical Stats Widget */}
+          <Card
+            title="Clinical Trial Specs"
+            icon={Activity}
+            themeColor="emerald"
+          >
+            <div className="space-y-4 pt-2">
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Total Patients
+                </span>
+                <span className="text-sm font-black text-emerald-400">300</span>
+              </div>
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Compounds Tested
+                </span>
+                <span className="text-sm font-black text-emerald-500">
+                  2 + Placebo
+                </span>
+              </div>
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  R&D Projection
+                </span>
+                <span className="text-[10px] mt-1 font-black text-amber-500 uppercase tracking-tighter">
+                  2x Efficacy / 0.5x Lethality
+                </span>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+
+      {/* Python Code */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Clinical_Trial_Analysis.py</span>
+        </div>
+        <div
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative shadow-inner"
+          style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+        >
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+            <Copy size={14} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// --- Mission 3.0: Doctor Logistics ---
+const DoctorMission2 = () => {
+  const [trucks, setTrucks] = useState(Array.from({ length: 10 }, () => []));
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const pythonCode = `# MISSION 3.0 SOLUTION
+
+paste_code_here`;
+
+  useEffect(() => {
+    fetch("/data/solutions/WasWird 2/shipments.csv")
+      .then((res) => {
+        if (!res.ok) throw new Error("Shipments file missing");
+        return res.text();
+      })
+      .then((text) => {
+        const cleanText = text.replace(/^\uFEFF/, "");
+        const lines = cleanText
+          .split(/\r?\n/)
+          .map((l) => l.trim())
+          .filter(
+            (l) => l.length > 0 && !l.toLowerCase().includes("shipment_id"),
+          );
+
+        const parsedTrucks = Array.from({ length: 10 }, () => []);
+
+        lines.forEach((line) => {
+          const [shipmentId, truckId] = line.split(",");
+          const tId = parseInt(truckId, 10);
+          if (!isNaN(tId) && tId >= 0 && tId < 10) {
+            parsedTrucks[tId].push(shipmentId);
+          }
+        });
+
+        setTrucks(parsedTrucks);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load shipments", err);
+        setError("FILE_NOT_FOUND: 'shipments.csv' not detected.");
+        setLoading(false);
+      });
+  }, []);
+
+  const totalShipments = trucks.reduce((acc, curr) => acc + curr.length, 0);
+
+  return (
+    <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Main Data Console */}
+        <div className="lg:col-span-8">
+          <Card
+            title="Fleet Dispatch Command"
+            icon={Truck}
+            themeColor="emerald"
+          >
+            <div className="flex flex-col gap-6">
+              <div className="flex justify-between items-center border-b pb-4 border-white/5">
+                <span
+                  className="text-[10px] font-mono font-black tracking-widest block uppercase"
+                  style={{ color: COLORS.emerald }}
+                >
+                  EVALUATION_SET: LOGISTICS_24H // SOURCE: MEDICAL_DEPT
+                </span>
+                <div className="flex gap-6 text-right">
+                  <div>
+                    <div className="text-2xl font-black text-emerald-500 leading-none tracking-tighter">
+                      10 / 10
+                    </div>
+                    <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
+                      Active_Units
+                    </span>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-black text-emerald-500 leading-none tracking-tighter">
+                      {totalShipments}
+                    </div>
+                    <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
+                      Total_Shipments
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Truck Grid */}
+              <div
+                className="bg-black border rounded-2xl p-6 min-h-[350px] relative shadow-inner overflow-hidden"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <div
+                  className="absolute inset-0 opacity-5 pointer-events-none"
+                  style={{
+                    backgroundImage:
+                      "radial-gradient(circle at center, #10b981 0%, transparent 70%)",
+                  }}
+                />
+
+                {loading ? (
+                  <div className="h-full flex flex-col items-center justify-center text-emerald-500 opacity-50 space-y-4 py-20">
+                    <RefreshCw size={32} className="animate-spin" />
+                    <span className="text-[10px] font-mono tracking-widest uppercase animate-pulse">
+                      Syncing Fleet Telemetry...
+                    </span>
+                  </div>
+                ) : error ? (
+                  <div className="h-full flex flex-col items-center justify-center text-red-500 space-y-4 py-20">
+                    <AlertTriangle size={48} className="opacity-50" />
+                    <div className="font-mono text-xs uppercase tracking-widest">
+                      {error}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-2 md:grid-cols-5 gap-4 relative z-10">
+                    {trucks.map((shipmentList, index) => (
+                      <div
+                        key={index}
+                        className="bg-zinc-950 border border-white/10 rounded-xl p-3 shadow-lg hover:border-emerald-500/30 transition-colors flex flex-col"
+                      >
+                        <div className="flex justify-between items-center mb-3 pb-2 border-b border-white/5">
+                          <div className="flex items-center gap-1.5">
+                            <Truck size={12} className="text-emerald-500" />
+                            <span className="text-xs font-black text-white uppercase">
+                              T-{index}
+                            </span>
+                          </div>
+                          <div className="text-[9px] font-mono text-zinc-500">
+                            {shipmentList.length} RUNS
+                          </div>
+                        </div>
+
+                        <div className="flex-1 overflow-y-auto max-h-[120px] custom-scrollbar pr-1 space-y-1.5">
+                          {shipmentList.length > 0 ? (
+                            shipmentList.map((id, i) => (
+                              <div
+                                key={i}
+                                className="flex items-center gap-2 text-[10px] font-mono text-zinc-400 bg-white/5 px-2 py-1 rounded"
+                              >
+                                <Package
+                                  size={10}
+                                  className="text-emerald-700"
+                                />
+                                <span>ID: {id}</span>
+                              </div>
+                            ))
+                          ) : (
+                            <div className="text-[9px] font-mono text-zinc-600 italic text-center py-4 uppercase">
+                              Standby
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Side Panel: Mission Context & Lore */}
+        <div className="lg:col-span-4 space-y-6">
+          <div
+            className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950"
+            style={{
+              borderColor: COLORS.border,
+              borderLeftColor: COLORS.emerald,
+            }}
+          >
+            <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-emerald-500 flex items-center gap-2">
+              <ShieldAlert size={16} /> Doctor Directive
+            </h3>
+            <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
+              "Coordinate the collection of raw materials for mass medicine
+              production. You have 24 hours and 10 refrigerated trucks to
+              maximize ingredient yield, strictly adhering to the
+              one-shipment-per-truck capacity rule."
+            </p>
+          </div>
+
+          {/* Logistics Specs Widget */}
+          <Card title="Operational Specs" icon={Activity} themeColor="emerald">
+            <div className="space-y-4 pt-2">
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Time Window
+                </span>
+                <span className="text-sm font-black text-emerald-400">
+                  24 Hours
+                </span>
+              </div>
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Max Payload / Truck
+                </span>
+                <span className="text-sm font-black text-amber-500">
+                  5000 L
+                </span>
+              </div>
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Shipment Capacity
+                </span>
+                <span className="text-sm font-black text-red-500">
+                  1 Per Run
+                </span>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+
+      {/* Python Code */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Logistics_Optimization.py</span>
+        </div>
+        <div
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative shadow-inner"
+          style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+        >
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+            <Copy size={14} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
@@ -1379,13 +1895,8 @@ paste_code_here`;
 
   return (
     <div className="space-y-8 animate-in fade-in duration-700">
-      
       {/* Wrapped in Card to fix gradient border and styling */}
-      <Card
-        title="Riot Surveillance Grid"
-        icon={Activity}
-        themeColor="red"
-      >
+      <Card title="Riot Surveillance Grid" icon={Activity} themeColor="red">
         <div className="flex flex-col gap-6">
           <div className="flex justify-between items-center">
             <span
@@ -1395,7 +1906,9 @@ paste_code_here`;
               Ultralytics YOLOv8 // Person Detection Active
             </span>
             <div className="text-right">
-              <div className="text-3xl font-black text-red-500 leading-none mb-1">{total}</div>
+              <div className="text-3xl font-black text-red-500 leading-none mb-1">
+                {total}
+              </div>
               <span className="text-[9px] uppercase text-zinc-500 tracking-widest font-black">
                 TOTAL_HEADCOUNT
               </span>
@@ -1462,7 +1975,7 @@ paste_code_here`;
           </div>
         </div>
       </Card>
-      
+
       {/* Python Code */}
       <div className="mt-12 text-left">
         <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
@@ -1682,6 +2195,1850 @@ paste_code_here`;
   );
 };
 
+// --- Mission 4.0: Doctor Factory Production ---
+const DoctorMission3 = () => {
+  const [stationCounts, setStationCounts] = useState([]);
+  const [totalDeployed, setTotalDeployed] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const pythonCode = `# MISSION 4.0 SOLUTION
+
+paste_code_here`;
+
+  useEffect(() => {
+    fetch("/data/solutions/WasWird 3/stations.csv")
+      .then((res) => {
+        if (!res.ok) throw new Error("Stations file missing");
+        return res.text();
+      })
+      .then((text) => {
+        const cleanText = text.replace(/^\uFEFF/, "");
+        const lines = cleanText
+          .split(/\r?\n/)
+          .map((l) => l.trim())
+          .filter((l) => l.length > 0 && !isNaN(parseInt(l, 10)));
+
+        // Aggregate station deployments
+        const counts = {};
+        lines.forEach((line) => {
+          const id = parseInt(line, 10);
+          counts[id] = (counts[id] || 0) + 1;
+        });
+
+        // Convert to sorted array for rendering
+        const sortedStations = Object.entries(counts)
+          .map(([id, count]) => ({ id, count }))
+          .sort((a, b) => parseInt(a.id) - parseInt(b.id));
+
+        setStationCounts(sortedStations);
+        setTotalDeployed(lines.length);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load stations", err);
+        setError("FILE_NOT_FOUND: 'stations.csv' not detected.");
+        setLoading(false);
+      });
+  }, []);
+
+  return (
+    <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Main Data Console */}
+        <div className="lg:col-span-8">
+          <Card
+            title="Factory Configuration Matrix"
+            icon={Factory}
+            themeColor="emerald"
+          >
+            <div className="flex flex-col gap-6">
+              <div className="flex justify-between items-center border-b pb-4 border-white/5">
+                <span
+                  className="text-[10px] font-mono font-black tracking-widest block uppercase"
+                  style={{ color: COLORS.emerald }}
+                >
+                  EVALUATION_SET: PROD_LINE_ALPHA // SOURCE: MEDICAL_DEPT
+                </span>
+                <div className="flex gap-6 text-right">
+                  <div>
+                    <div className="text-2xl font-black text-emerald-500 leading-none tracking-tighter">
+                      {totalDeployed}
+                    </div>
+                    <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
+                      Total_Modules_Deployed
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Factory Grid */}
+              <div
+                className="bg-black border rounded-2xl p-6 min-h-[350px] relative shadow-inner overflow-hidden"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <div
+                  className="absolute inset-0 opacity-5 pointer-events-none"
+                  style={{
+                    backgroundImage:
+                      "radial-gradient(circle at center, #10b981 0%, transparent 70%)",
+                  }}
+                />
+
+                {loading ? (
+                  <div className="h-full flex flex-col items-center justify-center text-emerald-500 opacity-50 space-y-4 py-20">
+                    <RefreshCw size={32} className="animate-spin" />
+                    <span className="text-[10px] font-mono tracking-widest uppercase animate-pulse">
+                      Initializing Assembly Line...
+                    </span>
+                  </div>
+                ) : error ? (
+                  <div className="h-full flex flex-col items-center justify-center text-red-500 space-y-4 py-20">
+                    <AlertTriangle size={48} className="opacity-50" />
+                    <div className="font-mono text-xs uppercase tracking-widest">
+                      {error}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10">
+                    {stationCounts.map((station, index) => (
+                      <div
+                        key={index}
+                        className="bg-zinc-950 border border-white/10 rounded-xl p-4 shadow-lg hover:border-emerald-500/30 transition-colors flex flex-col justify-between"
+                      >
+                        <div className="flex justify-between items-start mb-4">
+                          <Cog size={16} className="text-emerald-500" />
+                          <div className="text-[10px] font-mono font-black text-emerald-500/50 uppercase">
+                            Operational
+                          </div>
+                        </div>
+
+                        <div>
+                          <div className="text-[10px] text-zinc-500 uppercase font-black tracking-widest mb-1">
+                            Station ID
+                          </div>
+                          <div className="text-xl font-black text-white leading-none">
+                            {station.id.padStart(2, "0")}
+                          </div>
+                        </div>
+
+                        <div className="mt-4 pt-3 border-t border-white/5 flex justify-between items-center">
+                          <span className="text-[9px] text-zinc-600 font-mono uppercase">
+                            Quantity
+                          </span>
+                          <span className="text-sm font-bold text-emerald-400">
+                            x{station.count}
+                          </span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Side Panel: Mission Context & Lore */}
+        <div className="lg:col-span-4 space-y-6">
+          <div
+            className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950"
+            style={{
+              borderColor: COLORS.border,
+              borderLeftColor: COLORS.emerald,
+            }}
+          >
+            <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-emerald-500 flex items-center gap-2">
+              <ShieldAlert size={16} /> Doctor Directive
+            </h3>
+            <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
+              "Configure the factory assembly line to maximize medicine
+              production. Deploy stations strictly according to the 8-step
+              blueprint, ensuring all required input ingredients are available
+              while balancing personnel limits and floor space constraints."
+            </p>
+          </div>
+
+          {/* Logistics Specs Widget */}
+          <Card
+            title="Production Blueprint"
+            icon={Activity}
+            themeColor="emerald"
+          >
+            <div className="space-y-4 pt-2">
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Required Steps
+                </span>
+                <span className="text-sm font-black text-emerald-400">
+                  8 Phases
+                </span>
+              </div>
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Space & Personnel
+                </span>
+                <span className="text-sm font-black text-amber-500">
+                  Strict Cap
+                </span>
+              </div>
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Dose Output Goal
+                </span>
+                <span className="text-sm font-black text-emerald-500">
+                  Maximum
+                </span>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+
+      {/* Python Code */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Factory_Optimization.py</span>
+        </div>
+        <div
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative shadow-inner"
+          style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+        >
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+            <Copy size={14} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// --- Mission 4.1: General Data Aggregation ---
+const GeneralMission4 = () => {
+  const [data, setData] = useState([]);
+  const [stats, setStats] = useState({
+    total: 0,
+    terminations: 0,
+    severeRiots: 0,
+  });
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const pythonCode = `# MISSION 4.1 SOLUTION
+
+paste_code_here`;
+
+  useEffect(() => {
+    fetch("/data/solutions/WasWird 3/general_status_combined.csv")
+      .then((res) => {
+        if (!res.ok) throw new Error("Combined status file missing");
+        return res.text();
+      })
+      .then((text) => {
+        const cleanText = text.replace(/^\uFEFF/, "");
+        const lines = cleanText
+          .split(/\r?\n/)
+          .map((l) => l.trim())
+          .filter((l) => l.length > 0);
+
+        const headers = lines[0].split(",");
+
+        let terminations = 0;
+        let severeRiots = 0;
+
+        const parsedData = lines.slice(1).map((line) => {
+          // Handle potential commas inside quotes if needed, though standard split usually works for this simple dataset
+          const values = line.split(",");
+          const obj = {
+            location: values[0],
+            time: values[1],
+            infection: parseInt(values[2], 10),
+            loyalty: parseInt(values[3], 10),
+            riot: parseInt(values[4], 10),
+            termination: values[5].trim() === "True",
+          };
+
+          if (obj.termination) terminations++;
+          if (obj.riot >= 4) severeRiots++;
+
+          return obj;
+        });
+
+        setStats({
+          total: parsedData.length,
+          terminations,
+          severeRiots,
+        });
+
+        setData(parsedData);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load general status combined", err);
+        setError("FILE_NOT_FOUND: 'general_status_combined.csv' not detected.");
+        setLoading(false);
+      });
+  }, []);
+
+  return (
+    <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Main Data Console */}
+        <div className="lg:col-span-8">
+          <Card
+            title="Regional Status Aggregation"
+            icon={Database}
+            themeColor="blue"
+          >
+            <div className="flex flex-col gap-6">
+              <div className="flex justify-between items-center border-b pb-4 border-white/5">
+                <span
+                  className="text-[10px] font-mono font-black tracking-widest block uppercase"
+                  style={{ color: COLORS.blue }}
+                >
+                  EVALUATION_SET: PIPELINE_MERGE // SOURCE: JOINT_OPS
+                </span>
+
+                {/* Top Quick Stats */}
+                <div className="flex gap-8 text-right">
+                  <div>
+                    <div className="text-2xl font-black text-red-500 leading-none tracking-tighter">
+                      {stats.terminations}
+                    </div>
+                    <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
+                      Terminations
+                    </span>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-black text-amber-500 leading-none tracking-tighter">
+                      {stats.severeRiots}
+                    </div>
+                    <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
+                      Severe_Riots
+                    </span>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-black text-blue-500 leading-none tracking-tighter">
+                      {stats.total}
+                    </div>
+                    <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
+                      Total_Records
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Data Grid */}
+              <div
+                className="bg-black border rounded-2xl p-6 min-h-[400px] relative shadow-inner overflow-hidden flex flex-col"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <div
+                  className="absolute inset-0 opacity-5 pointer-events-none"
+                  style={{
+                    backgroundImage:
+                      "radial-gradient(circle at center, #2563eb 0%, transparent 70%)",
+                  }}
+                />
+
+                {loading ? (
+                  <div className="flex-1 flex flex-col items-center justify-center text-blue-500 opacity-50 space-y-4">
+                    <RefreshCw size={32} className="animate-spin" />
+                    <span className="text-[10px] font-mono tracking-widest uppercase animate-pulse">
+                      Compiling Intelligence Reports...
+                    </span>
+                  </div>
+                ) : error ? (
+                  <div className="flex-1 flex flex-col items-center justify-center text-red-500 space-y-4">
+                    <AlertTriangle size={48} className="opacity-50" />
+                    <div className="font-mono text-xs uppercase tracking-widest">
+                      {error}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="relative z-10 flex flex-col h-full max-h-[400px]">
+                    {/* Table Header */}
+                    <div className="grid grid-cols-12 text-[9px] font-black uppercase text-zinc-500 tracking-widest border-b border-white/10 pb-2 mb-2 px-2">
+                      <div className="col-span-3">Location</div>
+                      <div className="col-span-2 text-center">Time</div>
+                      <div className="col-span-2 text-center">Infection</div>
+                      <div className="col-span-2 text-center">Riot / Lylty</div>
+                      <div className="col-span-3 text-right">Termination</div>
+                    </div>
+
+                    {/* Table Body */}
+                    <div className="flex-1 overflow-y-auto custom-scrollbar pr-2 space-y-1">
+                      {data.map((row, idx) => (
+                        <div
+                          key={idx}
+                          className="grid grid-cols-12 items-center text-xs font-mono bg-zinc-900/50 px-2 py-2 rounded border border-white/5 hover:bg-white/5 transition-colors"
+                        >
+                          <div className="col-span-3 font-bold text-zinc-300 truncate pr-2 uppercase tracking-tighter">
+                            {row.location}
+                          </div>
+                          <div className="col-span-2 text-center text-zinc-500">
+                            {row.time}
+                          </div>
+                          <div className="col-span-2 text-center">
+                            <span
+                              className={`px-2 py-0.5 rounded font-black ${row.infection > 7 ? "bg-red-500/10 text-red-500" : row.infection > 4 ? "bg-amber-500/10 text-amber-500" : "bg-emerald-500/10 text-emerald-500"}`}
+                            >
+                              LVL {row.infection}
+                            </span>
+                          </div>
+                          <div className="col-span-2 text-center flex justify-center gap-2 text-[10px]">
+                            <span
+                              className={
+                                row.riot > 3
+                                  ? "text-red-500 font-bold"
+                                  : "text-zinc-400"
+                              }
+                            >
+                              R:{row.riot}
+                            </span>
+                            <span className="text-zinc-600">|</span>
+                            <span
+                              className={
+                                row.loyalty === 3
+                                  ? "text-red-500 font-bold"
+                                  : "text-zinc-400"
+                              }
+                            >
+                              L:{row.loyalty}
+                            </span>
+                          </div>
+                          <div className="col-span-3 text-right">
+                            {row.termination ? (
+                              <span className="text-[10px] font-black tracking-widest text-red-500 bg-red-500/10 px-2 py-1 rounded border border-red-500/20 uppercase">
+                                Recommended
+                              </span>
+                            ) : (
+                              <span className="text-[10px] font-bold text-zinc-600 uppercase">
+                                Standby
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Side Panel: Mission Context & Lore */}
+        <div className="lg:col-span-4 space-y-6">
+          <div
+            className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950"
+            style={{ borderColor: COLORS.border, borderLeftColor: COLORS.blue }}
+          >
+            <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-blue-500 flex items-center gap-2">
+              <ShieldAlert size={16} /> General Directive
+            </h3>
+            <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
+              "I tasked 5 operatives to gather intelligence on approximately 500
+              municipalities. Unfortunately, each used their own data format.
+              Aggregate their reports into a single, standardized pipeline to
+              assess infection severity, riots, and termination
+              recommendations."
+            </p>
+          </div>
+
+          {/* Operative Specs Widget */}
+          <Card title="Intelligence Sources" icon={Activity} themeColor="blue">
+            <div className="space-y-3 pt-2">
+              <div className="flex justify-between items-center bg-black/50 p-2 rounded border border-white/5">
+                <span className="text-[10px] text-zinc-500 font-mono uppercase">
+                  Agent 002 (Grubesa)
+                </span>
+                <span className="text-[10px] font-black text-blue-400">
+                  .XLSX
+                </span>
+              </div>
+              <div className="flex justify-between items-center bg-black/50 p-2 rounded border border-white/5">
+                <span className="text-[10px] text-zinc-500 font-mono uppercase">
+                  Agent 021 (Magma)
+                </span>
+                <span className="text-[10px] font-black text-blue-400">
+                  .XML
+                </span>
+              </div>
+              <div className="flex justify-between items-center bg-black/50 p-2 rounded border border-white/5">
+                <span className="text-[10px] text-zinc-500 font-mono uppercase">
+                  Agent 004 (Orienttable)
+                </span>
+                <span className="text-[10px] font-black text-blue-400">
+                  .JSON
+                </span>
+              </div>
+              <div className="flex justify-between items-center bg-black/50 p-2 rounded border border-white/5">
+                <span className="text-[10px] text-zinc-500 font-mono uppercase">
+                  Agent 111 (Doubledot)
+                </span>
+                <span className="text-[10px] font-black text-blue-400">
+                  .TXT
+                </span>
+              </div>
+              <div className="flex justify-between items-center bg-black/50 p-2 rounded border border-white/5">
+                <span className="text-[10px] text-zinc-500 font-mono uppercase">
+                  Agent 008 (Dezimalkomma)
+                </span>
+                <span className="text-[10px] font-black text-blue-400">
+                  .YAML
+                </span>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+
+      {/* Python Code */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Data_Aggregation_Pipeline.py</span>
+        </div>
+        <div
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative shadow-inner"
+          style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+        >
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+            <Copy size={14} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// --- Mission 5.0: Doctor Convoy Routing ---
+const DoctorMission5 = () => {
+  const [route, setRoute] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const pythonCode = `# MISSION 5.0 SOLUTION
+
+paste_code_here`;
+
+  useEffect(() => {
+    fetch("/data/solutions/WasWird 4/travelorder.csv")
+      .then((res) => {
+        if (!res.ok) throw new Error("Travel order file missing");
+        return res.text();
+      })
+      .then((text) => {
+        const cleanText = text.replace(/^\uFEFF/, "");
+        const lines = cleanText
+          .split(/\r?\n/)
+          .map((l) => l.trim())
+          .filter((l) => l.length > 0);
+
+        setRoute(lines);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load travel order", err);
+        setError("FILE_NOT_FOUND: 'travelorder.csv' not detected.");
+        setLoading(false);
+      });
+  }, []);
+
+  return (
+    <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Main Data Console */}
+        <div className="lg:col-span-8">
+          <Card
+            title="Convoy Routing Protocol"
+            icon={MapIcon}
+            themeColor="emerald"
+          >
+            <div className="flex flex-col gap-6">
+              <div className="flex justify-between items-center border-b pb-4 border-white/5">
+                <span
+                  className="text-[10px] font-mono font-black tracking-widest block uppercase"
+                  style={{ color: COLORS.emerald }}
+                >
+                  EVALUATION_SET: TSP_OPTIMIZATION // SOURCE: MEDICAL_DEPT
+                </span>
+                <div className="flex gap-6 text-right">
+                  <div>
+                    <div className="text-2xl font-black text-emerald-500 leading-none tracking-tighter">
+                      {route.length}
+                    </div>
+                    <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
+                      Total_Waypoints
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Route Timeline */}
+              <div
+                className="bg-black border rounded-2xl p-6 min-h-[400px] flex flex-col relative shadow-inner overflow-hidden"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <div
+                  className="absolute inset-0 opacity-5 pointer-events-none"
+                  style={{
+                    backgroundImage:
+                      "radial-gradient(circle at center, #10b981 0%, transparent 70%)",
+                  }}
+                />
+
+                {loading ? (
+                  <div className="flex-1 flex flex-col items-center justify-center text-emerald-500 opacity-50 space-y-4">
+                    <RefreshCw size={32} className="animate-spin" />
+                    <span className="text-[10px] font-mono tracking-widest uppercase animate-pulse">
+                      Calculating Optimal Vector...
+                    </span>
+                  </div>
+                ) : error ? (
+                  <div className="flex-1 flex flex-col items-center justify-center text-red-500 space-y-4">
+                    <AlertTriangle size={48} className="opacity-50" />
+                    <div className="font-mono text-xs uppercase tracking-widest">
+                      {error}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex-1 overflow-y-auto custom-scrollbar pr-4 relative z-10">
+                    <div className="space-y-0 relative before:absolute before:inset-0 before:ml-[15px] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-emerald-500 before:via-emerald-900 before:to-transparent">
+                      {route.map((location, idx) => {
+                        const isStart = idx === 0;
+                        const isEnd = idx === route.length - 1;
+
+                        return (
+                          <div
+                            key={idx}
+                            className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active py-2"
+                          >
+                            {/* Marker */}
+                            <div
+                              className={`flex items-center justify-center w-8 h-8 rounded-full border-4 border-black shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_10px_rgba(0,0,0,0.5)] ${isStart ? "bg-emerald-400" : "bg-zinc-800 group-hover:bg-emerald-700 transition-colors"}`}
+                            >
+                              {isStart ? (
+                                <Navigation size={12} className="text-black" />
+                              ) : (
+                                <span className="text-[9px] font-black text-white">
+                                  {idx}
+                                </span>
+                              )}
+                            </div>
+
+                            {/* Card */}
+                            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-3 rounded-xl border border-white/5 bg-zinc-900/80 hover:border-emerald-500/30 transition-colors">
+                              <div className="flex items-center gap-2 mb-1">
+                                <MapPin
+                                  size={12}
+                                  className={
+                                    isStart
+                                      ? "text-emerald-400"
+                                      : "text-emerald-700"
+                                  }
+                                />
+                                <span
+                                  className={`text-[10px] font-black uppercase tracking-widest ${isStart ? "text-emerald-400" : "text-zinc-500"}`}
+                                >
+                                  {isStart
+                                    ? "Convoy Origin"
+                                    : `Waypoint ${idx}`}
+                                </span>
+                              </div>
+                              <div
+                                className={`font-mono text-xs tracking-tighter uppercase font-bold ${isStart ? "text-white" : "text-zinc-300"}`}
+                              >
+                                {location}
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Side Panel: Mission Context & Lore */}
+        <div className="lg:col-span-4 space-y-6">
+          <div
+            className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950"
+            style={{
+              borderColor: COLORS.border,
+              borderLeftColor: COLORS.emerald,
+            }}
+          >
+            <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-emerald-500 flex items-center gap-2">
+              <ShieldAlert size={16} /> Doctor Directive
+            </h3>
+            <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
+              "Distribute the synthesized medicine to all safe zones using our
+              armoured transport group. Determine the optimal continuous route
+              starting from the FH St Poelten Campus Data Zone, minimizing
+              travel time and avoiding unmapped connections."
+            </p>
+          </div>
+
+          {/* Operation Specs Widget */}
+          <Card
+            title="Transport Logistics"
+            icon={Activity}
+            themeColor="emerald"
+          >
+            <div className="space-y-4 pt-2">
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Convoy Leader
+                </span>
+                <span className="text-sm font-black text-emerald-400">
+                  Mr. Hamilton
+                </span>
+              </div>
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Unloading Time
+                </span>
+                <span className="text-sm font-black text-emerald-500">
+                  0 Minutes
+                </span>
+              </div>
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Penalties Received
+                </span>
+                <span className="text-sm font-black text-emerald-500">
+                  0 Minutes
+                </span>
+              </div>
+              <div className="text-[10px] text-zinc-500 font-bold uppercase mt-8">
+                Possible Penalties for not fulfilling requirements
+              </div>
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Missing Connection Penalty
+                </span>
+                <span className="text-sm font-black text-red-500">
+                  +240 Minutes
+                </span>
+              </div>
+              <div
+                className="flex justify-between border-b py-2"
+                style={{ borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Missing Node Penalty
+                </span>
+                <span className="text-sm font-black text-red-500">
+                  +300 Minutes
+                </span>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+
+      {/* Python Code */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Route_Optimization_TSP.py</span>
+        </div>
+        <div
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative shadow-inner"
+          style={{ borderColor: COLORS.border, color: COLORS.emerald }}
+        >
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100">
+            <Copy size={14} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 5.1 stuff
+// --- Dependency-Free Radar Map (Red Theme) ---
+const RedHordeMap = ({ sightings, safeZones, threatenedZone }) => {
+  const allLats = safeZones
+    .map((z) => parseFloat(z.latitude))
+    .filter((n) => !isNaN(n));
+  const allLngs = safeZones
+    .map((z) => parseFloat(z.longitude))
+    .filter((n) => !isNaN(n));
+
+  threatenedZone = "FH St Poelten Campus Data Zone";
+
+  const minLat = Math.min(...allLats) - 0.1;
+  const maxLat = Math.max(...allLats) + 0.1;
+  const minLng = Math.min(...allLngs) - 0.1;
+  const maxLng = Math.max(...allLngs) + 0.1;
+
+  const getTop = (lat) =>
+    `${100 - ((lat - minLat) / (maxLat - minLat)) * 100}%`;
+  const getLeft = (lng) => `${((lng - minLng) / (maxLng - minLng)) * 100}%`;
+
+  const threatenedNode = safeZones.find((z) => z.location === threatenedZone);
+
+  console.log(
+    "safeZones:",
+    safeZones.map((z) => z.location),
+  );
+  console.log("threatenedZone:", threatenedZone);
+
+  return (
+    <div className="h-[400px] w-full bg-black border border-white/5 rounded-xl relative overflow-hidden shadow-inner flex items-center justify-center">
+      {/* Radar Grid Background */}
+      <div
+        className="absolute inset-0 opacity-20 pointer-events-none"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, #dc2626 1px, transparent 1px),
+            linear-gradient(to bottom, #dc2626 1px, transparent 1px)
+          `,
+          backgroundSize: "40px 40px",
+          backgroundPosition: "center center",
+        }}
+      />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#000_100%)] pointer-events-none" />
+
+      {/* Center Radar Sweep */}
+      <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2 border border-red-500/10 rounded-full" />
+      <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] -translate-x-1/2 -translate-y-1/2 border border-red-500/20 rounded-full" />
+      <div className="absolute top-1/2 left-1/2 w-[200px] h-[200px] -translate-x-1/2 -translate-y-1/2 border border-red-500/30 rounded-full" />
+
+      {/* Plot Safe Zones */}
+      {safeZones.map((zone, idx) => {
+        const isThreatened = zone.location === threatenedZone;
+        const top = getTop(parseFloat(zone.latitude));
+        const left = getLeft(parseFloat(zone.longitude));
+
+        return (
+          <div
+            key={idx}
+            className="absolute group z-10"
+            style={{ top, left, transform: "translate(-50%, -50%)" }}
+          >
+            {/* The Dot */}
+            <div
+              className={`w-2.5 h-2.5 rounded-full border ${
+                isThreatened
+                  ? "bg-red-500 border-white animate-pulse shadow-[0_0_20px_rgba(220,38,38,1)] scale-125"
+                  : "bg-red-900/50 border-red-800"
+              }`}
+            />
+
+            {/* Hover Tooltip */}
+            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max bg-zinc-950 border border-red-500/30 text-white text-[9px] font-mono px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-20">
+              {zone.location}
+            </div>
+
+            {/* Threat Indicator Label */}
+            {isThreatened && (
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-max text-red-500 text-[8px] font-black uppercase tracking-widest animate-pulse pointer-events-none">
+                Target Lock
+              </div>
+            )}
+          </div>
+        );
+      })}
+
+      {/* Horde Origin Vector */}
+      {threatenedNode && (
+        <svg className="absolute inset-0 w-full h-full pointer-events-none z-0">
+          <line
+            x1="95%" // Starting roughly East
+            y1={getTop(parseFloat(threatenedNode.latitude))}
+            x2={getLeft(parseFloat(threatenedNode.longitude))}
+            y2={getTop(parseFloat(threatenedNode.latitude))}
+            stroke="#dc2626"
+            strokeWidth="2"
+            strokeDasharray="4 4"
+            className="opacity-60 animate-pulse"
+          />
+        </svg>
+      )}
+    </div>
+  );
+};
+
+// --- Mission 5.1: Whistler Horde Tracking ---
+const WhistlerMission5 = () => {
+  const [sightings, setSightings] = useState([]);
+  const [safeZones, setSafeZones] = useState([]);
+  const [solution, setSolution] = useState({
+    direction: "",
+    speed: "",
+    threatened: "",
+  });
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const pythonCode = `# MISSION 5.1 SOLUTION
+
+paste_code_here`;
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const [chronoRes, solRes, zonesRes] = await Promise.all([
+          fetch("/data/coding/Day5/chronological_zombie_movement.csv"),
+          fetch("/data/solutions/WasWird 4/hordedirection.csv"),
+          fetch("/data/intel/Day5/safezonelocations.csv"),
+        ]);
+
+        if (!chronoRes.ok || !solRes.ok || !zonesRes.ok) {
+          throw new Error("Required intelligence files missing");
+        }
+
+        // --- Safe CSV Line Parser to handle quotes/commas ---
+        const parseCSVLine = (line) => {
+          const result = [];
+          let current = "";
+          let inQuotes = false;
+          for (let i = 0; i < line.length; i++) {
+            if (line[i] === '"') {
+              inQuotes = !inQuotes;
+            } else if (line[i] === "," && !inQuotes) {
+              result.push(current);
+              current = "";
+            } else {
+              current += line[i];
+            }
+          }
+          result.push(current);
+          return result;
+        };
+
+        // 1. Parse Sightings
+        const chronoText = await chronoRes.text();
+        const chronoLines = chronoText
+          .replace(/^\uFEFF/, "")
+          .split(/\r?\n/)
+          .filter((l) => l.trim());
+
+        const parsedSightings = chronoLines
+          .slice(1)
+          .map((line) => {
+            const cols = parseCSVLine(line);
+
+            if (cols.length < 4) return null;
+
+            return {
+              city: cols[0]?.trim(),
+              street: cols[1]?.trim(),
+              timestamp: cols[2]?.trim(),
+              text: cols[3]?.trim(),
+            };
+          })
+          .filter(Boolean);
+
+        // 2. Parse Solution
+        const solText = await solRes.text();
+        const solLines = solText
+          .replace(/^\uFEFF/, "")
+          .split(/\r?\n/)
+          .filter((l) => l.trim());
+
+        // 3. Parse Safe Zones
+        const zonesText = await zonesRes.text();
+        const zonesLines = zonesText
+          .replace(/^\uFEFF/, "")
+          .split(/\r?\n/)
+          .filter((l) => l.trim());
+        const parsedZones = zonesLines.slice(1).map((line) => {
+          const cols = parseCSVLine(line);
+
+          return {
+            location: cols[0]?.trim(),
+            latitude: cols[1]?.trim(),
+            longitude: cols[2]?.trim(),
+          };
+        });
+
+        setSightings(parsedSightings);
+        const solCols = parseCSVLine(solLines[1] || "");
+
+        setSolution({
+          direction: solCols[0],
+          speed: solCols[1],
+          threatened: solCols[2],
+        });
+        setSafeZones(parsedZones);
+        setLoading(false);
+      } catch (err) {
+        console.error("Failed to load intelligence", err);
+        setError("FILE_NOT_FOUND: Required intel files missing.");
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Main Data Console */}
+        <div className="lg:col-span-8">
+          <Card
+            title="Horde Threat Vector Analysis"
+            icon={Compass}
+            themeColor="red"
+          >
+            <div className="flex flex-col gap-6">
+              <div className="flex justify-between items-center border-b pb-4 border-white/5">
+                <span
+                  className="text-[10px] font-mono font-black tracking-widest block uppercase"
+                  style={{ color: COLORS.red }}
+                >
+                  EVALUATION_SET: CROWDSOURCED_INTEL // SOURCE: WHISTLER
+                </span>
+              </div>
+
+              {loading ? (
+                <div className="h-[400px] flex flex-col items-center justify-center text-red-500 opacity-50 space-y-4">
+                  <RefreshCw size={32} className="animate-spin" />
+                  <span className="text-[10px] font-mono tracking-widest uppercase animate-pulse">
+                    Decrypting Threat Vectors...
+                  </span>
+                </div>
+              ) : error ? (
+                <div className="h-[400px] flex flex-col items-center justify-center text-red-500 space-y-4">
+                  <AlertTriangle size={48} className="opacity-50" />
+                  <div className="font-mono text-xs uppercase tracking-widest">
+                    {error}
+                  </div>
+                </div>
+              ) : (
+                <>
+                  {/* Solution Dashboard */}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-zinc-950 border border-white/5 rounded-xl p-5 shadow-lg relative overflow-hidden">
+                      <div className="absolute -right-4 -bottom-4 opacity-5 text-red-500">
+                        <Compass size={64} />
+                      </div>
+                      <div className="text-[10px] text-zinc-500 font-black uppercase tracking-widest mb-1 flex items-center gap-2">
+                        <Compass size={12} className="text-red-500" /> Heading
+                      </div>
+                      <div className="text-2xl font-black text-white uppercase tracking-tighter">
+                        {/* {solution.direction} */}
+                        West
+                      </div>
+                    </div>
+
+                    <div className="bg-zinc-950 border border-white/5 rounded-xl p-5 shadow-lg relative overflow-hidden">
+                      <div className="absolute -right-4 -bottom-4 opacity-5 text-red-500">
+                        <FastForward size={64} />
+                      </div>
+                      <div className="text-[10px] text-zinc-500 font-black uppercase tracking-widest mb-1 flex items-center gap-2">
+                        <FastForward size={12} className="text-red-500" />{" "}
+                        Velocity
+                      </div>
+                      <div className="text-2xl font-black text-red-400 uppercase tracking-tighter">
+                        {/* {solution.speed} */}
+                        3.81 <span className="text-xs text-zinc-500">KM/H</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-zinc-950 border border-red-500/30 rounded-xl p-5 shadow-[0_0_15px_rgba(220,38,38,0.15)] relative overflow-hidden">
+                      <div className="absolute -right-4 -bottom-4 opacity-10 text-red-500">
+                        <Crosshair size={64} />
+                      </div>
+                      <div className="text-[10px] text-red-500 font-black uppercase tracking-widest mb-1 flex items-center gap-2">
+                        <Crosshair size={12} /> Imminent Threat
+                      </div>
+                      <div className="text-sm font-black text-white uppercase tracking-tighter leading-tight mt-1">
+                        {/* {solution.threatened} */}
+                        FH St Poelten Campus Data Zone
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Intercept Timeline */}
+                  <div className="bg-black border rounded-2xl p-6 relative shadow-inner overflow-hidden border-white/5 mt-2">
+                    <h4 className="text-[10px] font-black uppercase text-red-500 tracking-widest mb-4 flex items-center gap-2">
+                      <Radio size={12} /> Filtered Intel Intercepts
+                      (Chronological)
+                    </h4>
+                    <div className="h-[250px] overflow-y-auto custom-scrollbar pr-2 space-y-2 relative z-10">
+                      {sightings.map((sighting, idx) => (
+                        <div
+                          key={idx}
+                          className="bg-zinc-900/50 p-3 rounded-lg border border-white/5 flex flex-col gap-2 hover:border-red-500/30 transition-colors"
+                        >
+                          <div className="flex justify-between items-center border-b border-white/5 pb-2">
+                            <span className="text-[10px] font-mono text-zinc-400 font-bold">
+                              {sighting.timestamp?.replace("1900-01-01 ", "")}
+                            </span>
+                            <span className="text-[10px] font-black uppercase text-red-500 tracking-widest">
+                              {sighting.city}
+                            </span>
+                          </div>
+                          <p className="text-xs text-zinc-300 font-mono italic">
+                            "{sighting.text}"
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+          </Card>
+        </div>
+
+        {/* Side Panel: Mission Context & Map */}
+        <div className="lg:col-span-4 space-y-6">
+          <div className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950 border-white/5 border-l-red-500">
+            <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-red-500 flex items-center gap-2">
+              <ShieldAlert size={16} /> Whistler Directive
+            </h3>
+            <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
+              "We intercepted text messages regarding a large zombie horde
+              moving through Vienna and Niederösterreich. Analyze the
+              chronologically filtered sightings to determine their general
+              heading, calculate their average speed, and identify the Safe Zone
+              directly in their path."
+            </p>
+          </div>
+
+          <Card title="Tactical Map" icon={MapIcon} themeColor="red">
+            {!loading && !error && safeZones.length > 0 && (
+              <RedHordeMap
+                sightings={sightings}
+                safeZones={safeZones}
+                threatenedZone={solution.threatened}
+              />
+            )}
+          </Card>
+        </div>
+      </div>
+
+      {/* Python Code */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Horde_Vector_Analysis.py</span>
+        </div>
+        <div
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative shadow-inner text-red-500"
+          style={{ borderColor: COLORS.border }}
+        >
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100 text-red-500 transition-colors">
+            <Copy size={14} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// --- Mission 5.2: Militia Supply Forecasting ---
+const MilitiaMission5 = () => {
+  const [shortageDay, setShortageDay] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const pythonCode = `# MISSION 5.2 SOLUTION
+
+paste_code_here`;
+
+  // Hardcoded historical data from the mission brief
+  const historicalData = [
+    { day: 0, pop: 2, supplies: 1024 },
+    { day: 1, pop: 6, supplies: 1018 },
+    { day: 2, pop: 15, supplies: 993 },
+    { day: 3, pop: 26, supplies: 929 },
+    { day: 4, pop: 38, supplies: 808 },
+    { day: 5, pop: 47, supplies: 651 },
+    { day: 6, pop: 59, supplies: 458 },
+  ];
+
+  useEffect(() => {
+    fetch("/data/solutions/WasWird 4/suppliesshortage.csv")
+      .then((res) => {
+        if (!res.ok) throw new Error("Supply shortage file missing");
+        return res.text();
+      })
+      .then((text) => {
+        const cleanText = text.replace(/^\uFEFF/, "").trim();
+        const parsedDay = parseInt(cleanText, 10);
+        setShortageDay(parsedDay);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load supply shortage file", err);
+        setError("FILE_NOT_FOUND: 'suppliesshortage.csv' not detected.");
+        setLoading(false);
+      });
+  }, []);
+
+  // --- Dependency-Free SVG Chart Logic ---
+  const renderProjectionChart = () => {
+    if (!shortageDay) return null;
+
+    const maxDays = shortageDay;
+    const maxSupplies = 1100;
+    const maxPop = 100;
+
+    // Projection points for visual aesthetics
+    const projectedData = [
+      { day: 6, pop: 59, supplies: 458 },
+      { day: 7, pop: 72, supplies: 220 }, // rough estimate
+      { day: 8, pop: 85, supplies: 0 },
+    ];
+
+    const getX = (day) => `${(day / maxDays) * 100}%`;
+    const getYSupplies = (val) => `${100 - (val / maxSupplies) * 100}%`;
+    const getYPop = (val) => `${100 - (val / maxPop) * 100}%`;
+
+    return (
+      <div className="relative w-full h-[250px] bg-black border border-white/5 rounded-xl p-4 shadow-inner mt-4 overflow-visible">
+        {/* Background Grid */}
+        <div
+          className="absolute inset-0 opacity-10 pointer-events-none"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)",
+            backgroundSize: "12.5% 20%",
+          }}
+        />
+
+        <svg
+          className="absolute inset-0 w-full h-full overflow-visible px-4 py-4"
+          preserveAspectRatio="none"
+        >
+          {/* Historical Lines (Supply) */}
+          {historicalData.map((d, i) => {
+            if (i === 0) return null;
+            const prev = historicalData[i - 1];
+            return (
+              <line
+                key={`hs-${i}`}
+                x1={getX(prev.day)}
+                y1={getYSupplies(prev.supplies)}
+                x2={getX(d.day)}
+                y2={getYSupplies(d.supplies)}
+                stroke={COLORS.orange}
+                strokeWidth="3"
+                className="drop-shadow-[0_0_8px_rgba(245,158,11,0.8)]"
+              />
+            );
+          })}
+
+          {/* Historical Lines (Pop) */}
+          {historicalData.map((d, i) => {
+            if (i === 0) return null;
+            const prev = historicalData[i - 1];
+            return (
+              <line
+                key={`hp-${i}`}
+                x1={getX(prev.day)}
+                y1={getYPop(prev.pop)}
+                x2={getX(d.day)}
+                y2={getYPop(d.pop)}
+                stroke="#3b82f6"
+                strokeWidth="3"
+                className="drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+              />
+            );
+          })}
+
+          {/* Projected Lines (Supply) */}
+          {projectedData.map((d, i) => {
+            if (i === 0) return null;
+            const prev = projectedData[i - 1];
+            return (
+              <line
+                key={`ps-${i}`}
+                x1={getX(prev.day)}
+                y1={getYSupplies(prev.supplies)}
+                x2={getX(d.day)}
+                y2={getYSupplies(d.supplies)}
+                stroke={COLORS.orange}
+                strokeWidth="3"
+                strokeDasharray="6 6"
+                className="opacity-60"
+              />
+            );
+          })}
+
+          {/* Projected Lines (Pop) */}
+          {projectedData.map((d, i) => {
+            if (i === 0) return null;
+            const prev = projectedData[i - 1];
+            return (
+              <line
+                key={`pp-${i}`}
+                x1={getX(prev.day)}
+                y1={getYPop(prev.pop)}
+                x2={getX(d.day)}
+                y2={getYPop(d.pop)}
+                stroke="#3b82f6"
+                strokeWidth="3"
+                strokeDasharray="6 6"
+                className="opacity-60"
+              />
+            );
+          })}
+
+          {/* Data Points */}
+          {[...historicalData, ...projectedData.slice(1)].map((d, i) => {
+            const isProjection = d.day > 6;
+            return (
+              <g key={`points-${i}`}>
+                {/* Supply Dot */}
+                <circle
+                  cx={getX(d.day)}
+                  cy={getYSupplies(d.supplies)}
+                  r="4"
+                  fill={isProjection ? "black" : "#f59e0b"}
+                  stroke={COLORS.orange}
+                  strokeWidth="2"
+                  className={isProjection ? "animate-pulse" : ""}
+                />
+                {/* Pop Dot */}
+                <circle
+                  cx={getX(d.day)}
+                  cy={getYPop(d.pop)}
+                  r="4"
+                  fill={isProjection ? "black" : "#3b82f6"}
+                  stroke="#3b82f6"
+                  strokeWidth="2"
+                  className={isProjection ? "animate-pulse" : ""}
+                />
+
+                {/* X-Axis Labels */}
+                <text
+                  x={getX(d.day)}
+                  y="105%"
+                  fill="#71717a"
+                  fontSize="10"
+                  fontFamily="monospace"
+                  textAnchor="middle"
+                >
+                  D{d.day}
+                </text>
+              </g>
+            );
+          })}
+
+          {/* Zero Line / Crash Point Indicator */}
+          <line
+            x1="0"
+            y1="100%"
+            x2="100%"
+            y2="100%"
+            stroke="#ef4444"
+            strokeWidth="1"
+            strokeDasharray="4 4"
+            className="opacity-50"
+          />
+          <circle
+            cx={getX(shortageDay)}
+            cy={getYSupplies(0)}
+            r="8"
+            fill="#ef4444"
+            className="animate-pulse drop-shadow-[0_0_15px_rgba(239,68,68,1)]"
+          />
+        </svg>
+
+        {/* Legend */}
+        <div className="absolute top-4 right-4 bg-zinc-950 border border-white/10 p-2 rounded flex flex-col gap-2 shadow-xl">
+          <div className="flex items-center gap-2 text-[9px] font-mono font-black uppercase text-zinc-400">
+            <div className="w-3 h-0.5 bg-amber-500 rounded-full drop-shadow-[0_0_5px_rgba(245,158,11,1)]" />{" "}
+            Supplies Count
+          </div>
+          <div className="flex items-center gap-2 text-[9px] font-mono font-black uppercase text-zinc-400">
+            <div className="w-3 h-0.5 bg-blue-500 rounded-full drop-shadow-[0_0_5px_rgba(59,130,246,1)]" />{" "}
+            Population Size
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Main Data Console */}
+        <div className="lg:col-span-8">
+          <Card
+            title="Resource Depletion Model"
+            icon={TrendingDown}
+            themeColor="orange"
+          >
+            <div className="flex flex-col gap-6">
+              <div className="flex justify-between items-center border-b pb-4 border-white/5">
+                <span
+                  className="text-[10px] font-mono font-black tracking-widest block uppercase"
+                  style={{ color: COLORS.orange }}
+                >
+                  EVALUATION_SET: OLS_PROJECTION // SOURCE: MILITIA
+                </span>
+              </div>
+
+              {loading ? (
+                <div className="h-[300px] flex flex-col items-center justify-center text-orange-500 opacity-50 space-y-4">
+                  <RefreshCw size={32} className="animate-spin" />
+                  <span className="text-[10px] font-mono tracking-widest uppercase animate-pulse">
+                    Calculating Linear Regressions...
+                  </span>
+                </div>
+              ) : error ? (
+                <div className="h-[300px] flex flex-col items-center justify-center text-red-500 space-y-4">
+                  <AlertTriangle size={48} className="opacity-50" />
+                  <div className="font-mono text-xs uppercase tracking-widest">
+                    {error}
+                  </div>
+                </div>
+              ) : (
+                <>
+                  {/* Alert Dashboard */}
+                  <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6 shadow-[0_0_20px_rgba(239,68,68,0.1)] relative overflow-hidden flex items-center justify-between">
+                    <div className="absolute -right-4 -top-8 opacity-5 text-red-500">
+                      <Skull size={120} />
+                    </div>
+
+                    <div>
+                      <div className="text-[10px] text-red-500 font-black uppercase tracking-widest mb-1 flex items-center gap-2">
+                        <AlertTriangle size={12} /> Critical Shortage Imminent
+                      </div>
+                      <div className="text-3xl font-black text-white uppercase tracking-tighter">
+                        DAY {shortageDay}
+                      </div>
+                    </div>
+
+                    <div className="text-right z-10">
+                      <div className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest mb-1">
+                        Current Status (Day 6)
+                      </div>
+                      <div className="text-sm font-black text-orange-500">
+                        {historicalData[6].supplies} Rations Remaining
+                      </div>
+                      <div className="text-sm font-black text-blue-400">
+                        {historicalData[6].pop} Survivors
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Render the SVG Graph */}
+                  {renderProjectionChart()}
+                </>
+              )}
+            </div>
+          </Card>
+        </div>
+
+        {/* Side Panel: Mission Context */}
+        <div className="lg:col-span-4 space-y-6">
+          <div className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950 border-white/5 border-l-orange-500">
+            <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-orange-500 flex items-center gap-2">
+              <ShieldAlert size={16} /> Militia Directive
+            </h3>
+            <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
+              "We need to organise another food and supply scavenging mission.
+              In order to convince our people on the urgency, we need to know
+              how long our current supplies will last, assuming our population
+              grows constantly as it has over the past few days. Use Ordinary
+              Least Squares to project the crash point."
+            </p>
+          </div>
+
+          {/* Additional Spec Card */}
+          <Card title="Survival Metrics" icon={Activity} themeColor="orange">
+            <div className="space-y-4 pt-2">
+              <div className="flex justify-between border-b border-white/5 py-2">
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Starting Supplies
+                </span>
+                <span className="text-sm font-black text-zinc-300">1024</span>
+              </div>
+              <div className="flex justify-between border-b border-white/5 py-2">
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Daily Pop. Growth
+                </span>
+                <span className="text-sm font-black text-blue-400">
+                  Accelerating
+                </span>
+              </div>
+              <div className="flex justify-between border-b border-white/5 py-2">
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Supply Depletion
+                </span>
+                <span className="text-sm font-black text-orange-500">
+                  Exponential
+                </span>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+
+      {/* Python Code - FIX: Added COLORS.border style here! */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Supply_OLS_Projection.py</span>
+        </div>
+        <div
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative shadow-inner text-orange-500"
+          style={{ borderColor: COLORS.border }}
+        >
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100 text-orange-500 transition-colors">
+            <Copy size={14} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// --- Mission 6.0: Militia Bridge Blocking ---
+const MilitiaMission6 = () => {
+  const [data, setData] = useState({
+    blownBridge: "",
+    barricades: {}, // { bridgename: [carIds...] }
+    bridges: {},    // { bridgename: width }
+    cars: {}        // { id: { type, length } }
+  });
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const pythonCode = `# MISSION 6.0 SOLUTION
+
+paste_code_here`;
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const [blockRes, bridgeRes, carRes] = await Promise.all([
+          fetch("/data/solutions/WasWird 5/Bridgeblocking.csv"),
+          fetch("/data/intel/Day6/bridges.csv"),
+          fetch("/data/intel/Day6/cars.csv")
+        ]);
+
+        if (!blockRes.ok || !bridgeRes.ok || !carRes.ok) {
+          throw new Error("One or more intelligence files are missing.");
+        }
+
+        const parseCSV = (text) => text.replace(/^\uFEFF/, "").split(/\r?\n/).filter(l => l.trim().length > 0);
+
+        // 1. Parse Bridges (bridgename,width)
+        const bridgeLines = parseCSV(await bridgeRes.text()).slice(1);
+        const bridgeMap = {};
+        bridgeLines.forEach(line => {
+          // split by first comma in case names have weird characters, though standard split is fine here
+          const parts = line.split(",");
+          if (parts.length >= 2) {
+            bridgeMap[parts[0].trim()] = parseFloat(parts[1].trim());
+          }
+        });
+
+        // 2. Parse Cars (number,type,length)
+        const carLines = parseCSV(await carRes.text()).slice(1);
+        const carMap = {};
+        carLines.forEach(line => {
+          const parts = line.split(",");
+          if (parts.length >= 3) {
+            carMap[parts[0].trim()] = {
+              type: parts[1].trim(),
+              length: parseFloat(parts[2].trim())
+            };
+          }
+        });
+
+        // 3. Parse Blockade Solution
+        const blockLines = parseCSV(await blockRes.text());
+        let blown = "";
+        const barricadeMap = {};
+        
+        if (blockLines.length > 0) {
+          blown = blockLines[0].trim();
+          for (let i = 1; i < blockLines.length; i++) {
+            const parts = blockLines[i].split(", ");
+            if (parts.length >= 2) {
+              const carId = parts[0].trim();
+              const bName = parts[1].trim();
+              if (!barricadeMap[bName]) barricadeMap[bName] = [];
+              barricadeMap[bName].push(carId);
+            }
+          }
+        }
+
+        setData({
+          blownBridge: blown,
+          barricades: barricadeMap,
+          bridges: bridgeMap,
+          cars: carMap
+        });
+        setLoading(false);
+      } catch (err) {
+        console.error("Failed to load blockade intel", err);
+        setError("FILE_NOT_FOUND: Ensure Bridgeblocking.csv, bridges.csv, and cars.csv are present.");
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  // Aggregated Statistics
+  const totalCarsUsed = Object.values(data.barricades).reduce((acc, curr) => acc + curr.length, 0);
+  const totalBridgesBarricaded = Object.keys(data.barricades).length;
+  
+  const totalBarricadeLength = Object.values(data.barricades).flat().reduce((sum, carId) => {
+    return sum + (data.cars[carId]?.length || 0);
+  }, 0);
+
+  return (
+    <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        {/* Main Data Console */}
+        <div className="lg:col-span-8">
+          <Card
+            title="Traisen River Defense Perimeter"
+            icon={Shield}
+            themeColor="orange"
+          >
+            <div className="flex flex-col gap-6">
+              <div className="flex justify-between items-center border-b pb-4 border-white/5">
+                <span
+                  className="text-[10px] font-mono font-black tracking-widest block uppercase text-orange-500"
+                >
+                  EVALUATION_SET: TACTICAL_BLOCKADE // SOURCE: MILITIA
+                </span>
+                
+                {/* Top Quick Stats */}
+                <div className="flex gap-8 text-right">
+                  <div>
+                    <div className="text-2xl font-black text-red-500 leading-none tracking-tighter">
+                      1
+                    </div>
+                    <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
+                      Destroyed
+                    </span>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-black text-orange-500 leading-none tracking-tighter">
+                      {totalBridgesBarricaded}
+                    </div>
+                    <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
+                      Secured
+                    </span>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-black text-blue-500 leading-none tracking-tighter">
+                      {totalBarricadeLength.toFixed(1)}m
+                    </div>
+                    <span className="text-[9px] font-black uppercase text-zinc-600 mt-1 block tracking-widest">
+                      Deployed_Steel
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {loading ? (
+                 <div className="h-[400px] flex flex-col items-center justify-center text-orange-500 opacity-50 space-y-4">
+                   <RefreshCw size={32} className="animate-spin" />
+                   <span className="text-[10px] font-mono tracking-widest uppercase animate-pulse">
+                     Syncing Blockade Coverage Matrices...
+                   </span>
+                 </div>
+              ) : error ? (
+                 <div className="h-[400px] flex flex-col items-center justify-center text-red-500 space-y-4">
+                   <AlertTriangle size={48} className="opacity-50" />
+                   <div className="font-mono text-xs uppercase tracking-widest">
+                     {error}
+                   </div>
+                 </div>
+              ) : (
+                <div className="space-y-6">
+                  
+                  {/* Explosives Target */}
+                  <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6 shadow-[0_0_20px_rgba(239,68,68,0.1)] relative overflow-hidden flex items-center justify-between">
+                     <div className="absolute -right-4 -top-8 opacity-10 text-red-500"><Bomb size={120}/></div>
+                     
+                     <div className="relative z-10">
+                       <div className="text-[10px] text-red-500 font-black uppercase tracking-widest mb-1 flex items-center gap-2">
+                         <Bomb size={12}/> Primary Demolition Target
+                       </div>
+                       <div className="text-2xl font-black text-white uppercase tracking-tighter">
+                         {data.blownBridge || "UNKNOWN"}
+                       </div>
+                     </div>
+
+                     <div className="text-right relative z-10">
+                        <div className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest mb-1">
+                          Bridge Width
+                        </div>
+                        <div className="text-lg font-black text-red-400">
+                          {data.bridges[data.blownBridge] ? `${data.bridges[data.blownBridge]}m` : "N/A"}
+                        </div>
+                     </div>
+                  </div>
+
+                  {/* Vehicle Barricades Blockade Coverage Grid */}
+                  <div>
+                    <h4 className="text-[10px] font-black uppercase text-orange-500 tracking-widest mb-4 flex items-center gap-2">
+                      <Ruler size={12}/> Blockade Width Coverage Analysis
+                    </h4>
+                    
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-h-[400px] overflow-y-auto custom-scrollbar pr-2">
+                      {Object.entries(data.barricades).map(([bridge, cars], idx) => {
+                        const requiredWidth = data.bridges[bridge] || 0;
+                        const currentCoverage = cars.reduce((sum, id) => sum + (data.cars[id]?.length || 0), 0);
+                        const isSecure = currentCoverage >= requiredWidth;
+                        const fillPercent = requiredWidth > 0 ? Math.min(100, (currentCoverage / requiredWidth) * 100) : 0;
+
+                        return (
+                          <div key={idx} className="bg-zinc-950 border border-white/5 rounded-xl p-4 hover:border-orange-500/30 transition-colors flex flex-col gap-3 relative overflow-hidden group">
+                            
+                            {/* Header */}
+                            <div className="flex justify-between items-start z-10 relative">
+                              <div className="text-xs text-zinc-300 uppercase font-black tracking-widest truncate max-w-[70%]" title={bridge}>
+                                {bridge}
+                              </div>
+                              <div className={`text-[9px] font-black uppercase tracking-widest px-2 py-0.5 rounded ${isSecure ? 'bg-orange-500/10 text-orange-500' : 'bg-red-500/10 text-red-500'}`}>
+                                {isSecure ? 'SECURE' : 'BREACH RISK'}
+                              </div>
+                            </div>
+
+                            {/* Coverage Bar */}
+                            <div className="relative z-10">
+                              <div className="flex justify-between text-[9px] font-mono text-zinc-500 mb-1">
+                                <span>Coverage: {currentCoverage.toFixed(1)}m</span>
+                                <span>Target: {requiredWidth.toFixed(1)}m</span>
+                              </div>
+                              <div className="w-full h-1.5 bg-black rounded-full overflow-hidden border border-white/5">
+                                <div 
+                                  className={`h-full rounded-full transition-all duration-1000 ${isSecure ? 'bg-orange-500 shadow-[0_0_10px_rgba(249,115,22,0.8)]' : 'bg-red-500'}`}
+                                  style={{ width: `${fillPercent}%` }}
+                                />
+                              </div>
+                            </div>
+                            
+                            {/* Assigned Vehicles (Details on Hover) */}
+                            <div className="mt-1 pt-3 border-t border-white/5 flex flex-wrap gap-1.5 z-10 relative">
+                              {cars.map((carId, cIdx) => {
+                                const car = data.cars[carId];
+                                return (
+                                  <div key={cIdx} className="group/car relative flex items-center gap-1 bg-white/5 border border-white/10 px-1.5 py-0.5 rounded text-[9px] font-mono text-zinc-400 cursor-help hover:bg-orange-500/10 hover:border-orange-500/30 hover:text-orange-400 transition-colors">
+                                    <CarFront size={8} /> #{carId}
+                                    
+                                    {/* Tooltip for car detail */}
+                                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max bg-zinc-900 border border-orange-500/30 text-white text-[9px] font-mono px-2 py-1 rounded opacity-0 group-hover/car:opacity-100 transition-opacity pointer-events-none z-20 shadow-xl">
+                                      {car ? `${car.type} (${car.length}m)` : "Unknown Vehicle"}
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                            </div>
+
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                </div>
+              )}
+            </div>
+          </Card>
+        </div>
+
+        {/* Side Panel: Mission Context */}
+        <div className="lg:col-span-4 space-y-6">
+          <div
+            className="border p-6 rounded-2xl border-l-4 shadow-xl bg-zinc-950 border-white/5 border-l-orange-500"
+          >
+            <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-orange-500 flex items-center gap-2">
+              <ShieldAlert size={16} /> Militia Directive
+            </h3>
+            <p className="text-sm text-zinc-400 leading-relaxed italic mb-4">
+              "The horde of zombies is approaching St. Pölten, and we want to defend the safe zone by blockading the bridges. We must crash available cars into each other to block the width of the bridges. We also have one set of explosives to blow up exactly one bridge."
+            </p>
+          </div>
+
+          {/* Fleet Arsenal Card */}
+          <Card title="Vehicle Arsenal" icon={Activity} themeColor="orange">
+            <div className="space-y-4 pt-2">
+              <div className="flex justify-between items-center border-b border-white/5 py-2">
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Available Fleet
+                </span>
+                <span className="text-sm font-black text-blue-400">
+                  {Object.keys(data.cars).length} Units
+                </span>
+              </div>
+              <div className="flex justify-between items-center border-b border-white/5 py-2">
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Lightest Vehicle
+                </span>
+                <span className="text-[10px] font-black text-zinc-400 uppercase text-right">
+                  Smart fortwo (2.7m)
+                </span>
+              </div>
+              <div className="flex justify-between items-center border-b border-white/5 py-2">
+                <span className="text-[10px] text-zinc-500 font-bold uppercase">
+                  Heaviest Vehicle
+                </span>
+                <span className="text-[10px] font-black text-orange-500 uppercase text-right">
+                  Hummer Limo (11m)
+                </span>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+
+      {/* Python Code */}
+      <div className="mt-12 text-left">
+        <div className="flex items-center gap-2 mb-4 text-zinc-600 font-mono text-[10px] uppercase font-black tracking-widest">
+          <Code size={14} /> <span>Bridge_Blockade_Algorithm.py</span>
+        </div>
+        <div
+          className="bg-zinc-950 p-6 rounded-2xl border text-[11px] font-mono overflow-x-auto relative shadow-inner text-orange-500"
+          style={{ borderColor: COLORS.border }}
+        >
+          <pre>{pythonCode}</pre>
+          <div className="absolute top-4 right-4 opacity-30 cursor-pointer hover:opacity-100 text-orange-500 transition-colors">
+            <Copy size={14} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // --- Main App ---
 
 export default function App() {
@@ -1827,6 +4184,33 @@ export default function App() {
               #2.1 - patient_zero.json
             </button>
 
+            {/* Mission 2.2: Doctor */}
+            {/* use this styling for everything else because it's awesome */}
+            <button
+              onClick={() => setActiveTab("doctor")}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg font-mono text-xs uppercase font-bold transition-all ${
+                activeTab === "doctor"
+                  ? "bg-emerald-500/10 text-emerald-500 border border-emerald-500/20"
+                  : "text-zinc-500 hover:text-zinc-300 hover:bg-white/5 border border-transparent"
+              }`}
+            >
+              <HeartPulse size={16} />
+              2.2 - Clinical Trials
+            </button>
+
+            {/* Mission 3.0: Doctor */}
+            <button
+              onClick={() => setActiveTab("doctor2")}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg font-mono text-xs uppercase font-bold transition-all ${
+                activeTab === "doctor2"
+                  ? "bg-emerald-500/10 text-emerald-500 border border-emerald-500/20"
+                  : "text-zinc-500 hover:text-zinc-300 hover:bg-white/5 border border-transparent"
+              }`}
+            >
+              <HeartPulse size={16} />
+              3.0 - Shipment Logs
+            </button>
+
             {/* NEW TAB FOR MISSION 3.1 */}
             <button
               onClick={() => setActiveTab("riotintel")}
@@ -1851,6 +4235,84 @@ export default function App() {
               #3.2 - Vigenere.decrypt
             </button>
 
+            {/* Mission 4.0: Doctor */}
+            <button
+              onClick={() => setActiveTab("doctor3")}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg font-mono text-xs uppercase font-bold transition-all ${
+                activeTab === "doctor3"
+                  ? "bg-emerald-500/10 text-emerald-500 border border-emerald-500/20"
+                  : "text-zinc-500 hover:text-zinc-300 hover:bg-white/5 border border-transparent"
+              }`}
+            >
+              <HeartPulse size={16} />
+              4.0 - Factory Stations
+            </button>
+
+            {/* Mission 4.1: General */}
+            <button
+              onClick={() => setActiveTab("general4")}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg font-mono text-xs uppercase font-bold transition-all ${
+                activeTab === "general4"
+                  ? "bg-blue-500/10 text-blue-500 border border-blue-500/20"
+                  : "text-zinc-500 hover:text-zinc-300 hover:bg-white/5 border border-transparent"
+              }`}
+            >
+              <Database size={16} />
+              4.1 - General Status
+            </button>
+
+            {/* Mission 5.0: Doctor */}
+            <button
+              onClick={() => setActiveTab("doctor5")}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg font-mono text-xs uppercase font-bold transition-all ${
+                activeTab === "doctor5"
+                  ? "bg-emerald-500/10 text-emerald-500 border border-emerald-500/20"
+                  : "text-zinc-500 hover:text-zinc-300 hover:bg-white/5 border border-transparent"
+              }`}
+            >
+              <MapIcon size={16} />
+              5.0 - Convoy Routing
+            </button>
+
+            {/* Mission 5.1: Whistler */}
+            <button
+              onClick={() => setActiveTab("whistler5")}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg font-mono text-xs uppercase font-bold transition-all ${
+                activeTab === "whistler5"
+                  ? "bg-red-500/10 text-red-500 border border-red-500/20"
+                  : "text-zinc-500 hover:text-zinc-300 hover:bg-white/5 border border-transparent"
+              }`}
+            >
+              <Compass size={16} />
+              5.1 - Horde Tracking
+            </button>
+
+            {/* Mission 5.2: Militia */}
+            <button
+              onClick={() => setActiveTab("militia5")}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg font-mono text-xs uppercase font-bold transition-all ${
+                activeTab === "militia5"
+                  ? "bg-orange-500/10 text-orange-500 border border-orange-500/20"
+                  : "text-zinc-500 hover:text-zinc-300 hover:bg-white/5 border border-transparent"
+              }`}
+            >
+              <PackageMinus size={16} />
+              5.2 - Supply Forecast
+            </button>
+
+            {/* Mission 6.0: Militia */}
+            <button
+              onClick={() => setActiveTab("militia6")}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg font-mono text-xs uppercase font-bold transition-all ${
+                activeTab === "militia6"
+                  ? "bg-orange-500/10 text-orange-500 border border-orange-500/20"
+                  : "text-zinc-500 hover:text-zinc-300 hover:bg-white/5 border border-transparent"
+              }`}
+            >
+              <Shield size={16} />
+              6.0 - Bridge Blockade
+            </button>
+
             <div className="w-full text-left px-8 py-3 text-[10px] font-black tracking-widest uppercase text-zinc-800 opacity-50 flex items-center gap-2">
               <Lock size={10} /> lab_origin.dna
             </div>
@@ -1867,13 +4329,28 @@ export default function App() {
             }}
           />
           <div className="max-w-7xl mx-auto">
+            {/* general */}
             {activeTab === "dashboard" && <Dashboard stats={stats} />}
+            {/* Day 1 */}
             {activeTab === "government" && <GovernmentMission />}
             {activeTab === "journalist" && <JournalistMission />}
+            {/* Day 2 */}
             {activeTab === "government2" && <GovernmentMission2 />}
             {activeTab === "patientzero" && <PatientZeroMission />}
+            {activeTab === "doctor" && <DoctorMission />}
+            {/* Day 3 */}
+            {activeTab === "doctor2" && <DoctorMission2 />}
             {activeTab === "whistleblower" && <WhistleblowerMission />}
             {activeTab === "riotintel" && <RiotMission />}
+            {/* Day 4 */}
+            {activeTab === "doctor3" && <DoctorMission3 />}
+            {activeTab === "general4" && <GeneralMission4 />}
+            {/* Day 5 */}
+            {activeTab === "doctor5" && <DoctorMission5 />}
+            {activeTab === "whistler5" && <WhistlerMission5 />}
+            {activeTab === "militia5" && <MilitiaMission5 />}
+            {/* Day 6 */}
+            {activeTab === "militia6" && <MilitiaMission6 />}
           </div>
         </main>
       </div>

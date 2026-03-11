@@ -1,0 +1,18 @@
+City,Street,Timestamp,Text,Matches
+Vienna,Maxingstraße 83,18:15:00,"Had to flee my home, but all seems quiet now. Apparently the horde moved on. ","groupings: horde, impact_terms: flee"
+Vienna,Stephansplatz 3,12:07:00,Hey! I'm at Stephansplatz and just saw a huge crowd of... zombies?! No kidding!,groupings: crowd
+Vienna,Hietzinger Hauptstraße 22,14:04:00,Hietzinger Hauptstraße is a zombie hotspot right now. Do we have an apocalypse on our hands?,groupings: hotspot
+Unter-Oberndorf,Obere Hauptstraße 18,20:46:00,I have to report a large aggregation of zombies. My world is turning upside down. ,groupings: aggregation
+Maria Anzbach,Rehgartenstraße 10,21:43:00,"I went to bed early, but was awoken by loud noises in the street. Tons of Zombies outside, I don't know what to do!",quantities: tons
+Winkl,Severinstraße 7,19:54:00,Just saw a load of zombies in Winkl. I freed the alpacas. ,quantities: load
+Vienna,Mariahilfer Straße 12,12:53:00,"Museumquartier is a mess right now, full of zombies! This can't be real, can it?",impact_terms: mess
+Winkl,Klosterstraße 1,20:21:00,OMG. I just saw the hugest bunch of Zombies shuffling through the neighbourhood. ,movement_verbs: shuffling
+Purkersdorf,Hauptplatz 2,15:55:00,"Purkersdorf is a mess. There's a massive horde of zombies, it's scary! ","groupings: horde, impact_terms: mess"
+Gablitz,Linzerstraße 3,16:47:00,"Seeing lots of zombies on Linzer Straße, Gablitz. Stay indoors, folks!",quantities: lots
+Neulengbach,Sankt Pöltner Straße 69,23:29:00,"So many zombies outside, shuffling through the dark. Where could they be heading?","quantities: many, movement_verbs: shuffling"
+Pressbaum,Hauptstraße 38,17:38:00,"So, Pressbaum is the new zombie capital? They're swarming Hauptstraße!","groupings: swarm, movement_verbs: swarming"
+Vienna,Herrengasse 14,12:27:00,The whole Herrengasse is swarmed by what looks like zombies. Terrifying!,groupings: swarm
+Vienna,Keißlergasse 1,15:28:00,"We are abandoning the Stadium, it is no longer safe. Massive zombie horde sighted. ","groupings: horde, impact_terms: abandoning"
+Neulengbach,Rathausplatz 2,22:10:00,"Zombies are overrunning Rathausplatz. What's next, aliens?",movement_verbs: overrunning
+Pressbaum,Kaiserkrone 1,18:03:00,"Zombies are swarming in from all directions. Even from the forest. Safe yourselves, avoid Pressbaum.","groupings: swarm, movement_verbs: swarming"
+Pressbaum,Buchbergstraße 1a,18:33:00,"Zombies everywhere, I can't escape! This is a nightmare!",impact_terms: nightmare
